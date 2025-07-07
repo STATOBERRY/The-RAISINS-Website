@@ -10,8 +10,11 @@ project:
 
 website:
   title: "RAISINS"
+  favicon: www/logo.png
+  # logo: www/logo.png   # 👈 Adds logo to the navbar
   navbar:
-    background: primary
+    background: "#634360"
+    logo: www/logo.png
     search: true
     left:
       - text: "Home"
@@ -40,18 +43,20 @@ format:
   html:
     theme:
       light:
-        - minty
+        - cosmo
       dark:
         - slate
+    css: styles.css 
     toc: true
     toc-depth: 2
     number-sections: true
     smooth-scroll: true
-    code-tools: true
+    code-tools: false
     page-layout: full
     lightbox: true
-    
+
 execute:
   freeze: auto
   echo: false
+
 editor: visual

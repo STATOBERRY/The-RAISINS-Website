@@ -1,26 +1,129 @@
 ---
-title: "Untitled"
+title: ""
 format: html
 editor: visual
----
-
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
+---  
+```{=html}
+<div style="margin-top: 1rem;">
+  <img src="www/banner.png" alt="RAISINS Banner" style="width: 100%; height: auto; border-radius: 10px;">
+</div>
 ```
 
-You can add options to executable code like this
+# Welcome to RAISINS {.unnumbered}  
 
-```{r}
-#| echo: false
-2 * 2
-```
+RAISINS is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.  
 
-The `echo: false` option disables the printing of code (only output is displayed).
+::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: left; margin-top: 1.5em;"}
+<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#aboutRAISINS" aria-expanded="false" aria-controls="aboutRAISINS">
+  <i class="bi bi-info-circle"></i> More About Us
+</button>
+:::  
+
+
+```{=html}
+<div class="collapse mt-3" id="aboutRAISINS">
+  <div class="card card-body border-0 shadow-sm">
+    <p>RAISINS is developed by a group of young statisticians at Statoberry LLP, inspired and mentored by the Department of Agricultural Statistics, College of Agriculture, Vellayani, under Kerala Agricultural University. Statoberry LLP is a research-focused startup committed to making statistical computing more accessible, efficient, and impactful.</p>
+
+<p>Proudly incubated under the NABARD–KAU–WSU AgTech Launchpad, RAISINS supports cutting-edge research in agriculture and allied sciences. From experimental design and survey analysis to multivariate techniques and predictive modeling, RAISINS combines academic rigor with modern computational tools to support the full research lifecycle.</p>
+
+<p>Each module in RAISINS is meticulously tested over months and reviewed by expert statisticians to ensure statistical accuracy and real-world relevance.</p>  
+
+<b>We simply make statistics sweet!</b>
+  </div>
+</div>
+```  
+
+## Analysis Modules {.unnumbered}  
+
+### Analysis of Experiments {.unnumbered}  
+
+```{=html}
+<div class="container px-4">
+  <!-- Design Tools -->
+  <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="CRD.qmd"
+         title="Analyze Completely Randomized Designs including mean comparisons and plots">
+         CRD (Completely Randomized Design)
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="RBD.qmd"
+         title="Perform RBD analysis with diagnostics and publication-ready outputs">
+         RBD (Randomized Block Design)
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="2FCRD.qmd"
+         title="Two-factor factorial design with CRD layout">
+         2FCRD (Two Factor Factorial CRD)
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="2FRCBD.qmd"
+         title="Two-factor factorial design with RBD layout">
+         2FRCBD (Two Factor Factorial RBD)
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="splitplot.qmd"
+         title="Split-plot design with main and subplot analysis">
+         Split-plot Designs
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="stripplot.qmd"
+         title="Strip-plot design analysis for complex factorial layouts">
+         Strip-plot Designs
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="ancova.qmd"
+         title="ANCOVA analysis for CRD with covariate adjustment">
+         One-Way ANCOVA in CRD
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="kruskal.qmd"
+         title="Non-parametric Kruskal-Wallis test for multiple group comparison">
+         Kruskal-Wallis Test
+      </a>
+    </div>
+  </div>
+</div>
+
+```  
+
+### Social Science Tools {.unnumbered}  
+
+```{=html}
+<div class="container px-4">
+  <!-- Design Tools -->
+  <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="CRD.qmd"
+         title="Factor analysis to identify hidden factors">
+         Factor Analysis
+      </a>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="RBD.qmd"
+         title="Perform Binary Logistic Regression">
+        Binary Logistic Regression
+      </a>
+    </div>
+  </div>
+</div>
+
+```  

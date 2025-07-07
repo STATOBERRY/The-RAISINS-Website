@@ -1,0 +1,45 @@
+/* Default navbar link style */
+.navbar-nav .nav-link {
+  color: #ffffff !important; /* unselected: white */
+}
+
+/* Selected (active) navbar tab */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-item.show .nav-link {
+  color: #c1a5c4 !important;            /* black text for contrast */
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Hover effect for all nav links */
+.navbar-nav .nav-link:hover {
+  color: #140124!important;
+  border-radius: 4px;
+}
+
+/* Dropdown menu hover */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  color:#140124 !important;
+}
+
+/* Dropdown selected/active item */
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+/* Rounded dropdown */
+.dropdown-menu {
+  border-radius: 8px;
+}
+
+/* Custom hover color for outline-primary buttons */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: #1d0030 !important;  /* green hover */
+  color: #fff !important;
+  border-color: #1d0030 !important;
+}
+
