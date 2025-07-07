@@ -2,23 +2,25 @@
 title: ""
 format: html
 editor: visual
----  
+---
+
 ```{=html}
 <div style="margin-top: 1rem;">
   <img src="www/banner.png" alt="RAISINS Banner" style="width: 100%; height: auto; border-radius: 10px;">
 </div>
 ```
 
-# Welcome to RAISINS {.unnumbered}  
+# Welcome to RAISINS {.unnumbered}
 
-RAISINS is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.  
+RAISINS is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.
 
 ::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: left; margin-top: 1.5em;"}
 <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#aboutRAISINS" aria-expanded="false" aria-controls="aboutRAISINS">
-  <i class="bi bi-info-circle"></i> More About Us
-</button>
-:::  
 
+<i class="bi bi-info-circle"></i> More About Us
+
+</button>
+:::
 
 ```{=html}
 <div class="collapse mt-3" id="aboutRAISINS">
@@ -32,11 +34,11 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
 <b>We simply make statistics sweet!</b>
   </div>
 </div>
-```  
+```
 
-## Analysis Modules {.unnumbered}  
+## Analysis Modules {.unnumbered}
 
-### Analysis of Experiments {.unnumbered}  
+### Analysis of Experiments {.unnumbered}
 
 ```{=html}
 <div class="container px-4">
@@ -44,21 +46,21 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="CRD.qmd"
+         href="design/CRD.qmd"
          title="Analyze Completely Randomized Designs including mean comparisons and plots">
          CRD (Completely Randomized Design)
       </a>
     </div>
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="RBD.qmd"
+         href="design/RBD.qmd"
          title="Perform RBD analysis with diagnostics and publication-ready outputs">
          RBD (Randomized Block Design)
       </a>
     </div>
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="2FCRD.qmd"
+         href="design/2FCRD.qmd"
          title="Two-factor factorial design with CRD layout">
          2FCRD (Two Factor Factorial CRD)
       </a>
@@ -100,10 +102,9 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
     </div>
   </div>
 </div>
+```
 
-```  
-
-### Social Science Tools {.unnumbered}  
+### Social Science Tools {.unnumbered}
 
 ```{=html}
 <div class="container px-4">
@@ -125,5 +126,4 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
     </div>
   </div>
 </div>
-
-```  
+```

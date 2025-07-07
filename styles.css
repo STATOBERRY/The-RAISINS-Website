@@ -13,20 +13,20 @@
 
 /* Hover effect for all nav links */
 .navbar-nav .nav-link:hover {
-  color: #140124!important;
+  color: #f1bdff!important;
   border-radius: 4px;
 }
 
 /* Dropdown menu hover */
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
-  color:#140124 !important;
+  color:#8c0299 !important;
 }
 
 /* Dropdown selected/active item */
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item:active {
-  color: #000000 !important;
+  color: #2e9c03 !important;
   font-weight: bold;
 }
 
@@ -38,8 +38,8 @@
 /* Custom hover color for outline-primary buttons */
 .btn-outline-primary:hover,
 .btn-outline-primary:focus {
-  background-color: #1d0030 !important;  /* green hover */
+  background-color: #4a005e !important;  /* green hover */
   color: #fff !important;
-  border-color: #1d0030 !important;
+  border-color: #4a005e !important;
 }
 

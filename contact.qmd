@@ -1,0 +1,57 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+    page-layout: full
+---
+
+```{=html}
+<div class="container mt-4 mb-5 px-4">
+  <h2 class="mb-4 text-center">📬 Get in touch with us</h2>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    
+    <div class="col">
+      <div class="card shadow border-0 h-100">
+        <div class="card-body">
+          <h5 class="card-title">General Support</h5>
+          <p class="card-text">
+            <strong>Email:</strong> <a href="mailto:support@statoberry.com">support@statoberry.com</a><br>
+            <strong>Doubts:</strong> <a href="mailto:statistician@statoberry.com">statistician@statoberry.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card shadow border-0 h-100">
+        <div class="card-body">
+          <h5 class="card-title">Phone & WhatsApp</h5>
+          <p class="card-text">
+            <strong>Contact:</strong> Hisham M., <a href="tel:+919947599837">+91 99475 99837</a><br>
+            <strong>Alternate:</strong> <a href="tel:+919746919099">+91 97469 19099</a>, <a href="tel:+916238295604">+91 62382 95604</a><br>
+            <strong>WhatsApp:</strong> <a href="https://wa.me/919526850087" target="_blank">+91 95268 50087</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card shadow border-0 h-100">
+        <div class="card-body">
+          <h5 class="card-title">Mentor</h5>
+          <p class="card-text">
+            Dr. Pratheesh P Gopinath<br>
+            Asst. Professor, Department of Agricultural Statistics<br>
+            College of Agriculture, Vellayani<br>
+            Kerala Agricultural University<br>
+            <strong>Email:</strong> <a href="mailto:pratheesh.pg@kau.in">pratheesh.pg@kau.in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+```

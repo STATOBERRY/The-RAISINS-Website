@@ -11,7 +11,6 @@ project:
 website:
   title: "RAISINS"
   favicon: www/logo.png
-  # logo: www/logo.png   # 👈 Adds logo to the navbar
   navbar:
     background: "#634360"
     logo: www/logo.png
@@ -22,21 +21,31 @@ website:
       - text: "Analysis of Experiments"
         menu:
           - text: "CRD Analysis"
-            href: CRD.qmd
+            href: design/CRD.qmd
           - text: "RBD Analysis"
-            href: RBD.qmd
+            href: design/RBD.qmd 
+          - text: "Two factor CRD"
+            href: design/2FCRD.qmd 
+      - text: "Quick video"
+        href: video.qmd
     right:
+      - icon: telephone
+        href: contact.qmd
+        text: " "
+
+  page-footer:
+    left: "© 2025 RAISINS by Statoberry LLP"
+    right:
+      - icon: youtube
+        href: https://www.youtube.com/@statoberry
       - icon: facebook
         href: https://facebook.com/statoberry
       - icon: twitter
         href: https://twitter.com/statoberry
-      - icon: github
-        href: https://github.com/statoberry
+      - icon: linkedin
+        href: https://linkedin.com/company/statoberry
       - icon: instagram
         href: https://instagram.com/statoberry
-  page-footer:
-    left: "© 2025 RAISINS by Statoberry LLP"
-    right: "Version 2.0"
     background: light
 
 format:
@@ -60,3 +69,4 @@ execute:
   echo: false
 
 editor: visual
+
