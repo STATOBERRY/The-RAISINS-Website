@@ -1,0 +1,104 @@
+---
+title: "Cite Us – RAISINS"
+format: 
+   html:
+    toc: false
+editor: visual
+---
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      font-size: 2em;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.2em;
+    }
+    h2 {
+      margin-top: 2em;
+      color: #444;
+    }
+    .download-button, .zenodo-link, .html-link {
+      display: inline-block;
+      background-color: #222;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+    .download-button:hover, .zenodo-link:hover, .html-link:hover {
+      background-color: #444;
+    }
+    .citation-block {
+      background-color: #fff;
+      padding: 20px;
+      border-left: 5px solid #444;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    code, pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      display: block;
+      overflow-x: auto;
+      font-size: 0.9em;
+    }
+    .button-container {
+      margin-top: 30px;
+      margin-bottom: 60px; /* Space at bottom */
+    }
+  </style>
+</head>
+<body> 
+
+  <p>If you are using <strong>RAISINS</strong>, please cite the following publication:</p>
+
+  <!-- APA Citation -->
+  <div class="citation-block">
+    <h2>APA Style</h2>
+    <p>Hisham M, M., Chandran, J., &amp; Gopinath, P. P. (2025). <em>RAISINS: Integrating R and AI for Agricultural Data Analysis</em>. <em>Journal of Sustainable Technology in Agriculture</em>, <strong>1</strong>(1). PAPAYA Academic Press. <a href="https://doi.org/10.5281/zenodo.15622128" target="_blank">https://doi.org/10.5281/zenodo.15622128</a></p>
+  </div>
+
+  <!-- Harvard Citation -->
+  <div class="citation-block">
+    <h2>Harvard Style</h2>
+    <p>Hisham M, M., Chandran, J. and Gopinath, P.P., 2025. <em>RAISINS: Integrating R and AI for Agricultural Data Analysis</em>. <em>Journal of Sustainable Technology in Agriculture</em>, 1(1). PAPAYA Academic Press. Available at: <a href="https://doi.org/10.5281/zenodo.15622128" target="_blank">https://doi.org/10.5281/zenodo.15622128</a></p>
+  </div>
+
+  <!-- BibTeX Citation -->
+  <div class="citation-block">
+    <h2>BibTeX</h2>
+    <pre><code>@article{mohammed2025raisins,
+  title     = {RAISINS: Integrating R and AI for Agricultural Data Analysis},
+  author    = {Hisham, M. M. and Chandran, J. and Gopinath, P. P.},
+  journal   = {Journal of Sustainable Technology in Agriculture},
+  volume    = {1},
+  number    = {1},
+  year      = {2025},
+  publisher = {PAPAYA Academic Press},
+  doi       = {10.5281/zenodo.15622128},
+  url       = {https://doi.org/10.5281/zenodo.15622128}
+}</code></pre>
+  </div>
+
+  <!-- Buttons -->
+  <div class="button-container">
+    <a class="zenodo-link" href="https://doi.org/10.5281/zenodo.15622128" target="_blank">🔗 View on Zenodo</a>
+    <a class="html-link" href="https://www.jostapubs.com/volume1/josta111raisins2025.html" target="_blank">📄 View Online Version</a>
+  </div>
+
+</body>
+</html>
+```

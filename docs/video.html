@@ -40,8 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d36551d82d8316ab2ed09d847e52c19a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-2644e41d57ece424bfe53ed218f31a94.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d537361e11716f92ab7e5a91490b23aa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b0fd9b221086ab08f5c5fa6732eae946.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,23 +104,88 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Analysis of Experiments</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-analysis-of-experiments">    
+        <li class="dropdown-header">Single Factor Experiments</li>
         <li>
-    <a class="dropdown-item" href="./design/CRD.html">
+    <a class="dropdown-item" href="./CRD.html">
  <span class="dropdown-text">CRD Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./design/RBD.html">
+    <a class="dropdown-item" href="./RBD.html">
  <span class="dropdown-text">RBD Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./design/2FCRD.html">
+    <a class="dropdown-item" href="./ancovacrd.html">
+ <span class="dropdown-text">ANCOVA in CRD</span></a>
+  </li>  
+        <li class="dropdown-header">Non parametric tests</li>
+        <li>
+    <a class="dropdown-item" href="./kruskal.html">
+ <span class="dropdown-text">Kruskal Wallis Test</span></a>
+  </li>  
+        <li class="dropdown-header">Two Factor Experiments</li>
+        <li>
+    <a class="dropdown-item" href="./2FCRD.html">
  <span class="dropdown-text">Two factor CRD</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./2FRCBD.html">
+ <span class="dropdown-text">Two factor RBD</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./splitplot.html">
+ <span class="dropdown-text">Split-Plot Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./stripplot.html">
+ <span class="dropdown-text">Strip-Plot Analysis</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-social-sciences" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Social Sciences</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-social-sciences">    
+        <li>
+    <a class="dropdown-item" href="./factor.html">
+ <span class="dropdown-text">Factor Analysis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./BLR.html">
+ <span class="dropdown-text">Binary Logistic Regression</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-custom-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Custom tools</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-custom-tools">    
+        <li class="dropdown-header">Custom tool for KAU</li>
+        <li>
+    <a class="dropdown-item" href="./cabbage.html">
+ <span class="dropdown-text">CABBAGE</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-others" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Others</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-others">    
+        <li>
+    <a class="dropdown-item" href="./tutorial.html">
+ <span class="dropdown-text">Tutorial</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./citation.html">
+ <span class="dropdown-text">Citation Info</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
     <a class="nav-link active" href="./video.html" aria-current="page"> 
-<span class="menu-text">Quick video</span></a>
+<span class="menu-text">Quick videos</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
@@ -864,7 +929,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2025 RAISINS by Statoberry LLP</p>
+<p>© 2025 RAISINS by <a href="https://www.statoberry.com/">Statoberry LLP</a><br> <img src="www/statologo.png" alt="Statoberry Logo" style="height:25px; padding: 5px 10px 5px 10px; margin-bottom: 5px;"></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

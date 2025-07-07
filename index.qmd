@@ -8,18 +8,28 @@ editor: visual
 <div style="margin-top: 1rem;">
   <img src="www/banner.png" alt="RAISINS Banner" style="width: 100%; height: auto; border-radius: 10px;">
 </div>
-```
+```  
 
 # Welcome to RAISINS {.unnumbered}
 
-RAISINS is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.
+RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.
 
-::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: left; margin-top: 1.5em;"}
-<button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#aboutRAISINS" aria-expanded="false" aria-controls="aboutRAISINS">
-
-<i class="bi bi-info-circle"></i> More About Us
-
-</button>
+::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em;"}
+<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS">
+  <i class="bi bi-info-circle-fill"></i> More Info
+</a>
+<a href="citation.qmd" class="btn btn-outline-success">
+  <i class="bi bi-journal-arrow-up"></i> Cite us
+</a>
+<a href="tutorial.qmd" class="btn btn-outline-info">
+  <i class="bi bi-book-half"></i> Tutorial
+</a>
+<a href="policy.qmd" class="btn btn-outline-warning">
+  <i class="bi bi-shield-lock"></i> Policy
+</a>
+<a href="issue.qmd" class="btn btn-outline-secondary">
+  <i class="bi bi-bug"></i> Report a Bug
+</a>
 :::
 
 ```{=html}
@@ -27,14 +37,14 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
   <div class="card card-body border-0 shadow-sm">
     <p>RAISINS is developed by a group of young statisticians at Statoberry LLP, inspired and mentored by the Department of Agricultural Statistics, College of Agriculture, Vellayani, under Kerala Agricultural University. Statoberry LLP is a research-focused startup committed to making statistical computing more accessible, efficient, and impactful.</p>
 
-<p>Proudly incubated under the NABARD–KAU–WSU AgTech Launchpad, RAISINS supports cutting-edge research in agriculture and allied sciences. From experimental design and survey analysis to multivariate techniques and predictive modeling, RAISINS combines academic rigor with modern computational tools to support the full research lifecycle.</p>
+    <p>Proudly incubated under the NABARD–KAU–WSU AgTech Launchpad, RAISINS supports cutting-edge research in agriculture and allied sciences. From experimental design and survey analysis to multivariate techniques and predictive modeling, RAISINS combines academic rigor with modern computational tools to support the full research lifecycle.</p>
 
-<p>Each module in RAISINS is meticulously tested over months and reviewed by expert statisticians to ensure statistical accuracy and real-world relevance.</p>  
+    <p>Each module in RAISINS is meticulously tested over months and reviewed by expert statisticians to ensure statistical accuracy and real-world relevance.</p>  
 
-<b>We simply make statistics sweet!</b>
+    <b>We simply make statistics sweet!</b>
   </div>
 </div>
-```
+``` 
 
 ## Analysis Modules {.unnumbered}
 
@@ -44,23 +54,38 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
 <div class="container px-4">
   <!-- Design Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
+  <!-- Single Factor Experiments -->
+    <div class="w-100">
+      <h5 class="mt-3 mb-2 text-primary">Single Factor Experiments</h5>
+    </div>
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="design/CRD.qmd"
+         href="CRD.qmd"
          title="Analyze Completely Randomized Designs including mean comparisons and plots">
          CRD (Completely Randomized Design)
       </a>
     </div>
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="design/RBD.qmd"
+         href="RBD.qmd"
          title="Perform RBD analysis with diagnostics and publication-ready outputs">
          RBD (Randomized Block Design)
       </a>
     </div>
+      <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="ancovacrd.qmd"
+         title="ANCOVA analysis for CRD with covariate adjustment">
+         One-Way ANCOVA in CRD
+      </a>
+    </div>  
+    <!-- Two Factor Experiments -->
+    <div class="w-100">
+      <h5 class="mt-3 mb-2 text-primary">Two Factor Experiments</h5>
+    </div>
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="design/2FCRD.qmd"
+         href="2FCRD.qmd"
          title="Two-factor factorial design with CRD layout">
          2FCRD (Two Factor Factorial CRD)
       </a>
@@ -86,12 +111,8 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
          Strip-plot Designs
       </a>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="ancova.qmd"
-         title="ANCOVA analysis for CRD with covariate adjustment">
-         One-Way ANCOVA in CRD
-      </a>
+        <div class="w-100">
+      <h5 class="mt-3 mb-2 text-primary">Non Parametric</h5>
     </div>
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
@@ -112,14 +133,14 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="CRD.qmd"
+         href="factor.qmd"
          title="Factor analysis to identify hidden factors">
-         Factor Analysis
+         Exploratory Factor Analysis
       </a>
     </div>
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
-         href="RBD.qmd"
+         href="BLR.qmd"
          title="Perform Binary Logistic Regression">
         Binary Logistic Regression
       </a>
@@ -127,3 +148,113 @@ RAISINS is an advanced, user-friendly online platform for statistical analysis, 
   </div>
 </div>
 ```
+
+### Custom Tools {.unnumbered}
+
+#### Tools for KAU {.unnumbered}
+
+```{=html}
+<div class="container px-4">
+  <!-- KAU Tools -->
+  <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="cabbage.qmd"
+         title="Citation and Bibliography Builder for Academic General Editing">
+         CABBAGE for KAU referencing style
+      </a>
+    </div>
+  </div>
+</div>
+```  
+
+## 💬 What Our Users Say {.unnumbered}  
+
+```{=html}
+<div class="container my-4">
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Peram Nagaseshi Reddy, Ph.D. Scholar</h6>
+            <p class="card-subtitle text-muted small mb-1">1 month ago</p>
+            <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
+            <p class="card-text">As an agricultural student, I initially found statistics challenging. Thanks to <strong>RAISINS</strong>, I published my M.Sc. manuscript and now use it in my Ph.D. research. Highly recommended!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
+          <div class="card-body">
+            <h6 class="card-title mb-1">ABHILA S R, Assistant Professor, KAU</h6>
+            <p class="card-subtitle text-muted small mb-1">2 months ago</p>
+            <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
+            <p class="card-text">This site makes statistics so much easier to understand! Clean interface, beginner-friendly tools—perfect for students and quick analysis. 😊</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Dr Priya Kumari I, Asst Prof. Floriculture, KAU</h6>
+            <p class="card-subtitle text-muted small mb-1">2 months ago</p>
+            <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
+            <p class="card-text">Started using RAISINS. Simple and super. All the analysis in seconds. Graphs, plots, interpretation—all in a single click. Great work!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Neha E S, PhD Scholar, Food and Nutrition</h6>
+            <p class="card-subtitle text-muted small mb-1">2 months ago</p>
+            <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
+            <p class="card-text"><strong>RAISINS</strong> is a miracle in digital form! What once took me hours now takes minutes with clean, publication-ready tables. Eternal gratitude to the creators!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item">
+        <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
+          <div class="card-body">
+            <h6 class="card-title mb-1">Arindam Deb</h6>
+            <p class="card-subtitle text-muted small mb-1">2 months ago</p>
+            <p class="text-warning mb-2">⭐⭐⭐⭐</p>
+            <p class="card-text">I've been using RAISINS extensively. The ready-made tables are a life saver. A few tweaks like axis and color control would be great additions!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Simple arrow-only controls -->
+    <div class="d-flex justify-content-center gap-4 mt-3">
+      <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        ← Prev
+      </button>
+      <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        Next →
+      </button>
+    </div>
+  </div>
+</div>
+```  
+
+```{=html}
+<marquee behavior="scroll" direction="left" scrollamount="6" style="margin-top: 1rem;">
+  <span style="color: green; font-weight: 500; margin-right: 1em;">Powered by:</span>
+  <img src="www/kaulogo.png" alt="KAU" height="40" style="margin: 0 1em;">
+  <img src="www/nabardlogo.png" alt="NABARD" height="40" style="margin: 0 1em;">
+  <img src="www/ksumlogo.png" alt="WSU" height="40" style="margin: 0 1em;">
+</marquee>
+```  

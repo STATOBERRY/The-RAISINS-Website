@@ -20,13 +20,43 @@ website:
         href: index.qmd
       - text: "Analysis of Experiments"
         menu:
+          - text: "Single Factor Experiments"
           - text: "CRD Analysis"
-            href: design/CRD.qmd
+            href: CRD.qmd
           - text: "RBD Analysis"
-            href: design/RBD.qmd 
+            href: RBD.qmd 
+          - text: "ANCOVA in CRD"
+            href: ancovacrd.qmd
+          - text: "Non parametric tests"
+          - text: "Kruskal Wallis Test"
+            href: kruskal.qmd
+          - text: "Two Factor Experiments"
           - text: "Two factor CRD"
-            href: design/2FCRD.qmd 
-      - text: "Quick video"
+            href: 2FCRD.qmd
+          - text: "Two factor RBD"
+            href: 2FRCBD.qmd
+          - text: "Split-Plot Analysis"
+            href: splitplot.qmd
+          - text: "Strip-Plot Analysis"
+            href: stripplot.qmd
+      - text: "Social Sciences"
+        menu:
+          - text: "Factor Analysis"
+            href: factor.qmd
+          - text: "Binary Logistic Regression"
+            href: BLR.qmd
+      - text: "Custom tools"
+        menu:
+          - text: "Custom tool for KAU"
+          - text: "CABBAGE"
+            href: cabbage.qmd
+      - text: "Others"
+        menu:
+          - text: "Tutorial"
+            href: tutorial.qmd
+          - text: "Citation Info"
+            href: citation.qmd
+      - text: "Quick videos"
         href: video.qmd
     right:
       - icon: telephone
@@ -34,7 +64,9 @@ website:
         text: " "
 
   page-footer:
-    left: "© 2025 RAISINS by Statoberry LLP"
+    left: |
+      © 2025 RAISINS by <a href="https://www.statoberry.com/">Statoberry LLP</a><br>
+      <img src="www/statologo.png" alt="Statoberry Logo" style="height:25px; padding: 5px 10px 5px 10px; margin-bottom: 5px;">
     right:
       - icon: youtube
         href: https://www.youtube.com/@statoberry
@@ -46,7 +78,7 @@ website:
         href: https://linkedin.com/company/statoberry
       - icon: instagram
         href: https://instagram.com/statoberry
-    background: light
+    background: "#f0ddef"
 
 format:
   html:

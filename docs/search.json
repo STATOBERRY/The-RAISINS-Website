@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "index.html#analysis-modules",
+    "href": "index.html#analysis-modules",
+    "title": "Welcome to RAISINS",
+    "section": "Analysis Modules",
+    "text": "Analysis Modules\n\nAnalysis of Experiments\n\n  \n  \n  \n    \n      Single Factor Experiments\n    \n    \n      \n         CRD (Completely Randomized Design)\n      \n    \n    \n      \n         RBD (Randomized Block Design)\n      \n    \n      \n      \n         One-Way ANCOVA in CRD\n      \n      \n    \n    \n      Two Factor Experiments\n    \n    \n      \n         2FCRD (Two Factor Factorial CRD)\n      \n    \n    \n      \n         2FRCBD (Two Factor Factorial RBD)\n      \n    \n    \n      \n         Split-plot Designs\n      \n    \n    \n      \n         Strip-plot Designs\n      \n    \n        \n      Non Parametric\n    \n    \n      \n         Kruskal-Wallis Test\n      \n    \n  \n\n\n\nSocial Science Tools\n\n  \n  \n    \n      \n         Exploratory Factor Analysis\n      \n    \n    \n      \n        Binary Logistic Regression\n      \n    \n  \n\n\n\nCustom Tools\n\nTools for KAU\n\n  \n  \n    \n      \n         CABBAGE for KAU referencing style"
+  },
+  {
+    "objectID": "index.html#what-our-users-say",
+    "href": "index.html#what-our-users-say",
+    "title": "Welcome to RAISINS",
+    "section": "💬 What Our Users Say",
+    "text": "💬 What Our Users Say\n\n  \n    \n\n      \n      \n        \n          \n            Peram Nagaseshi Reddy, Ph.D. Scholar\n            1 month ago\n            ⭐⭐⭐⭐⭐\n            As an agricultural student, I initially found statistics challenging. Thanks to RAISINS, I published my M.Sc. manuscript and now use it in my Ph.D. research. Highly recommended!\n          \n        \n      \n\n      \n      \n        \n          \n            ABHILA S R, Assistant Professor, KAU\n            2 months ago\n            ⭐⭐⭐⭐⭐\n            This site makes statistics so much easier to understand! Clean interface, beginner-friendly tools—perfect for students and quick analysis. 😊\n          \n        \n      \n\n      \n      \n        \n          \n            Dr Priya Kumari I, Asst Prof. Floriculture, KAU\n            2 months ago\n            ⭐⭐⭐⭐⭐\n            Started using RAISINS. Simple and super. All the analysis in seconds. Graphs, plots, interpretation—all in a single click. Great work!\n          \n        \n      \n\n      \n      \n        \n          \n            Neha E S, PhD Scholar, Food and Nutrition\n            2 months ago\n            ⭐⭐⭐⭐⭐\n            RAISINS is a miracle in digital form! What once took me hours now takes minutes with clean, publication-ready tables. Eternal gratitude to the creators!\n          \n        \n      \n\n      \n      \n        \n          \n            Arindam Deb\n            2 months ago\n            ⭐⭐⭐⭐\n            I've been using RAISINS extensively. The ready-made tables are a life saver. A few tweaks like axis and color control would be great additions!\n          \n        \n      \n\n    \n\n    \n    \n      \n        ← Prev\n      \n      \n        Next →\n      \n    \n  \n\n\n  Powered by:"
+  },
+  {
+    "objectID": "citation.html",
+    "href": "citation.html",
+    "title": "Cite Us – RAISINS",
+    "section": "",
+    "text": "If you are using RAISINS, please cite the following publication:\n\n  \n  \n    APA Style\n    Hisham M, M., Chandran, J., & Gopinath, P. P. (2025). RAISINS: Integrating R and AI for Agricultural Data Analysis. Journal of Sustainable Technology in Agriculture, 1(1). PAPAYA Academic Press. https://doi.org/10.5281/zenodo.15622128\n  \n\n  \n  \n    Harvard Style\n    Hisham M, M., Chandran, J. and Gopinath, P.P., 2025. RAISINS: Integrating R and AI for Agricultural Data Analysis. Journal of Sustainable Technology in Agriculture, 1(1). PAPAYA Academic Press. Available at: https://doi.org/10.5281/zenodo.15622128\n  \n\n  \n  \n    BibTeX\n    @article{mohammed2025raisins,\n  title     = {RAISINS: Integrating R and AI for Agricultural Data Analysis},\n  author    = {Hisham, M. M. and Chandran, J. and Gopinath, P. P.},\n  journal   = {Journal of Sustainable Technology in Agriculture},\n  volume    = {1},\n  number    = {1},\n  year      = {2025},\n  publisher = {PAPAYA Academic Press},\n  doi       = {10.5281/zenodo.15622128},\n  url       = {https://doi.org/10.5281/zenodo.15622128}\n}\n  \n\n  \n  \n    🔗 View on Zenodo\n    📄 View Online Version"
+  },
+  {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "RAISINS",
@@ -7,10 +28,45 @@
     "text": "📬 Get in touch with us\n\n  \n    \n    \n      \n        \n          General Support\n          \n            Email: support@statoberry.com\n            Doubts: statistician@statoberry.com\n          \n        \n      \n    \n    \n    \n      \n        \n          Phone & WhatsApp\n          \n            Contact: Hisham M., +91 99475 99837\n            Alternate: +91 97469 19099, +91 62382 95604\n            WhatsApp: +91 95268 50087\n          \n        \n      \n    \n    \n    \n      \n        \n          Mentor\n          \n            Dr. Pratheesh P Gopinath\n            Asst. Professor, Department of Agricultural Statistics\n            College of Agriculture, Vellayani\n            Kerala Agricultural University\n            Email: pratheesh.pg@kau.in"
   },
   {
-    "objectID": "index.html#analysis-modules",
-    "href": "index.html#analysis-modules",
-    "title": "Welcome to RAISINS",
-    "section": "Analysis Modules",
-    "text": "Analysis Modules\n\nAnalysis of Experiments\n\n  \n  \n    \n      \n         CRD (Completely Randomized Design)\n      \n    \n    \n      \n         RBD (Randomized Block Design)\n      \n    \n    \n      \n         2FCRD (Two Factor Factorial CRD)\n      \n    \n    \n      \n         2FRCBD (Two Factor Factorial RBD)\n      \n    \n    \n      \n         Split-plot Designs\n      \n    \n    \n      \n         Strip-plot Designs\n      \n    \n    \n      \n         One-Way ANCOVA in CRD\n      \n    \n    \n      \n         Kruskal-Wallis Test\n      \n    \n  \n\n\n\nSocial Science Tools\n\n  \n  \n    \n      \n         Factor Analysis\n      \n    \n    \n      \n        Binary Logistic Regression"
+    "objectID": "issue.html",
+    "href": "issue.html",
+    "title": "RAISINS",
+    "section": "",
+    "text": "Thank you for helping improve RAISINS. If you’ve encountered a bug, suggestion, or problem, we provide two simple ways to reach us:\n\n\n\nIf you have a GitHub account, click below to file an issue directly in our GitHub repository:\n  File a GitHub Issue \n\n\n\n\nIf you do not have a GitHub account, you can email us:\n\n📬 Email: support@statoberry.com\n📞 Contact page: Go to contact→\n\n\n\n\n\nWe do not store any uploaded data or personal information. Every session is temporary and deleted once you close the app.\n\nFor more, read our Privacy & Data Policy.\n\n\nIf you’re reporting a technical issue, please include: - The name of the module - A brief description of the issue - A screenshot or error message (if any)"
+  },
+  {
+    "objectID": "issue.html#report-an-issue",
+    "href": "issue.html#report-an-issue",
+    "title": "RAISINS",
+    "section": "",
+    "text": "Thank you for helping improve RAISINS. If you’ve encountered a bug, suggestion, or problem, we provide two simple ways to reach us:\n\n\n\nIf you have a GitHub account, click below to file an issue directly in our GitHub repository:\n  File a GitHub Issue \n\n\n\n\nIf you do not have a GitHub account, you can email us:\n\n📬 Email: support@statoberry.com\n📞 Contact page: Go to contact→\n\n\n\n\n\nWe do not store any uploaded data or personal information. Every session is temporary and deleted once you close the app.\n\nFor more, read our Privacy & Data Policy.\n\n\nIf you’re reporting a technical issue, please include: - The name of the module - A brief description of the issue - A screenshot or error message (if any)"
+  },
+  {
+    "objectID": "policy.html",
+    "href": "policy.html",
+    "title": "RAISINS",
+    "section": "",
+    "text": "At RAISINS by Statoberry LLP, we are committed to protecting your privacy. We do not collect or store any personally identifiable information unless explicitly provided by the user for communication or support purposes.\n\nWe do not use third-party advertising tools.\nWe do not share your data with any third parties.\nWe collect only anonymized usage data (e.g., feature usage frequency) to improve platform performance and user experience.\n\nYour use of RAISINS is secure, and we ensure that no unauthorized access occurs to any part of your interaction with the platform."
+  },
+  {
+    "objectID": "policy.html#privacy-policy",
+    "href": "policy.html#privacy-policy",
+    "title": "RAISINS",
+    "section": "",
+    "text": "At RAISINS by Statoberry LLP, we are committed to protecting your privacy. We do not collect or store any personally identifiable information unless explicitly provided by the user for communication or support purposes.\n\nWe do not use third-party advertising tools.\nWe do not share your data with any third parties.\nWe collect only anonymized usage data (e.g., feature usage frequency) to improve platform performance and user experience.\n\nYour use of RAISINS is secure, and we ensure that no unauthorized access occurs to any part of your interaction with the platform."
+  },
+  {
+    "objectID": "policy.html#data-policy",
+    "href": "policy.html#data-policy",
+    "title": "RAISINS",
+    "section": "Data Policy",
+    "text": "Data Policy\nRAISINS operates on a temporary, cloud-based computing environment.\n\nNo uploaded data is stored permanently.\nEvery analysis session is a virtual instance. Once the session ends (i.e., when the user closes the app or navigates away), all uploaded files, temporary outputs, and analysis results are permanently deleted.\nNo backup copies are created, and no user input is saved unless explicitly exported by the user.\n\nThis ensures that your data remains confidential and fully under your control. We do not retain any files, results, or metadata beyond the duration of your session.\n\n💡 In short: No uploaded data is stored anywhere. Once the user quits, everything in that session is lost forever."
+  },
+  {
+    "objectID": "policy.html#refund-policy",
+    "href": "policy.html#refund-policy",
+    "title": "RAISINS",
+    "section": "Refund Policy",
+    "text": "Refund Policy\nStatoberry LLP strives to provide a high-quality experience with RAISINS. Our refund policy is as follows:\n\nFor one-time purchases or subscriptions made in error, please contact us within 7 days of payment.\nRefunds are not issued if a module was purchased in error; however, we will gladly switch access to the correct module upon request.\nRefunds are only considered if the user was unable to access a module for more than one day (24 hrs) due to technical failure.\nInstitutional and multi-user licenses are non-refundable once activated, except in cases of verified technical failure that prevents access.\n\nTo request a refund, email us at support@statoberry.com with your order details and reason for the request. We review all requests individually and aim to process valid claims within 7 working days.\n\nFor questions about any of the above policies, feel free to contact us at support@statoberry.com."
   }
 ]

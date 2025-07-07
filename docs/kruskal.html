@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>contact – RAISINS</title>
+<title>kruskal – RAISINS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,250 +20,213 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <link href="./www/logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d537361e11716f92ab7e5a91490b23aa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b0fd9b221086ab08f5c5fa6732eae946.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html-5276476b5bdb9cfe1f92c505466e0bf3.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./www/logo.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">RAISINS</span>
-    </a>
+
+
+
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    #tipBox {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: #f0f4ff;
+      color: #1a3c66;
+      padding: 1rem 1.5rem;
+      border: 1px solid #c2d3ff;
+      border-radius: 8px;
+      z-index: 20;
+      max-width: 300px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    #tipBox span.close {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #loadTip {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #fef6e4;
+      color: #6c4c00;
+      padding: 12px 18px;
+      border: 1px solid #f9d976;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      font-size: 14px;
+      max-width: 280px;
+      z-index: 9999;
+      animation: slideUpFade 0.6s ease-out;
+    }
+
+    #loadTip span.close {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #a26c00;
+      font-size: 16px;
+    }
+
+    @keyframes slideUpFade {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 2rem;
+      z-index: 10;
+    }
+
+    #loader img {
+      width: 40vw;
+      height: auto;
+      max-width: 40%;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* FAB Styles */
+    .fab-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .fab-button {
+      background-color: #634360;
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .fab-button:hover {
+      background-color: #452d45;
+    }
+
+    .fab-home {
+      display: none;
+      position: absolute;
+      bottom: 60px;
+      right: 5px;
+      background-color: #ecf0f1;
+      color: #634360;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .fab-home.show {
+      display: inline-block;
+    }
+  </style>
+
+
+
+  <!-- <!-- Tip Box --> --&gt;
+  <!-- <div id="tipBox"> -->
+  <!--   <span class="close" onclick="document.getElementById('tipBox').style.display='none';">&times;</span> -->
+  <!--   🛎️ <strong>Tip:</strong> To zoom in and adjust the app window for better visibility and hide sidebar, press <strong>Ctrl</strong> and <strong>+</strong>. Use <strong>Ctrl</strong> and <strong>-</strong> to zoom out. -->
+  <!-- </div> -->
+
+  <!-- Loader -->
+  <div id="loader">
+    <img src="https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/general_website%2Fraisinloader.GIF?alt=media" alt="Loading...">
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-analysis-of-experiments" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Analysis of Experiments</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-analysis-of-experiments">    
-        <li class="dropdown-header">Single Factor Experiments</li>
-        <li>
-    <a class="dropdown-item" href="./CRD.html">
- <span class="dropdown-text">CRD Analysis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./RBD.html">
- <span class="dropdown-text">RBD Analysis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./ancovacrd.html">
- <span class="dropdown-text">ANCOVA in CRD</span></a>
-  </li>  
-        <li class="dropdown-header">Non parametric tests</li>
-        <li>
-    <a class="dropdown-item" href="./kruskal.html">
- <span class="dropdown-text">Kruskal Wallis Test</span></a>
-  </li>  
-        <li class="dropdown-header">Two Factor Experiments</li>
-        <li>
-    <a class="dropdown-item" href="./2FCRD.html">
- <span class="dropdown-text">Two factor CRD</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./2FRCBD.html">
- <span class="dropdown-text">Two factor RBD</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./splitplot.html">
- <span class="dropdown-text">Split-Plot Analysis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./stripplot.html">
- <span class="dropdown-text">Strip-Plot Analysis</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-social-sciences" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Social Sciences</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-social-sciences">    
-        <li>
-    <a class="dropdown-item" href="./factor.html">
- <span class="dropdown-text">Factor Analysis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./BLR.html">
- <span class="dropdown-text">Binary Logistic Regression</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-custom-tools" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Custom tools</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-custom-tools">    
-        <li class="dropdown-header">Custom tool for KAU</li>
-        <li>
-    <a class="dropdown-item" href="./cabbage.html">
- <span class="dropdown-text">CABBAGE</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-others" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Others</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-others">    
-        <li>
-    <a class="dropdown-item" href="./tutorial.html">
- <span class="dropdown-text">Tutorial</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./citation.html">
- <span class="dropdown-text">Citation Info</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./video.html"> 
-<span class="menu-text">Quick videos</span></a>
-  </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./contact.html" aria-current="page"> <i class="bi bi-telephone" role="img">
-</i> 
-<span class="menu-text"> </span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
+  <!-- App iframe -->
+  <iframe src="https://statoberry-kruskalwtest.share.connect.posit.cloud/" onload="document.getElementById('loader').style.display='none';"></iframe>
 
-
-
-<div class="container mt-4 mb-5 px-4">
-  <h2 class="mb-4 text-center anchored">📬 Get in touch with us</h2>
-
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    
-    <div class="col">
-      <div class="card shadow border-0 h-100">
-        <div class="card-body">
-          <h5 class="card-title anchored">General Support</h5>
-          <p class="card-text">
-            <strong>Email:</strong> <a href="mailto:support@statoberry.com">support@statoberry.com</a><br>
-            <strong>Doubts:</strong> <a href="mailto:statistician@statoberry.com">statistician@statoberry.com</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col">
-      <div class="card shadow border-0 h-100">
-        <div class="card-body">
-          <h5 class="card-title anchored">Phone &amp; WhatsApp</h5>
-          <p class="card-text">
-            <strong>Contact:</strong> Hisham M., <a href="tel:+919947599837">+91 99475 99837</a><br>
-            <strong>Alternate:</strong> <a href="tel:+919746919099">+91 97469 19099</a>, <a href="tel:+916238295604">+91 62382 95604</a><br>
-            <strong>WhatsApp:</strong> <a href="https://wa.me/919526850087" target="_blank">+91 95268 50087</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col">
-      <div class="card shadow border-0 h-100">
-        <div class="card-body">
-          <h5 class="card-title anchored">Mentor</h5>
-          <p class="card-text">
-            Dr. Pratheesh P Gopinath<br>
-            Asst. Professor, Department of Agricultural Statistics<br>
-            College of Agriculture, Vellayani<br>
-            Kerala Agricultural University<br>
-            <strong>Email:</strong> <a href="mailto:pratheesh.pg@kau.in">pratheesh.pg@kau.in</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
+  <!-- Floating Action Button (FAB) -->
+  <div class="fab-container">
+    <div class="fab-button" onclick="toggleFAB()">⬆️</div>
+   <a href="index.html" class="fab-home" id="fabHome" title="Go to Home">🏠 Home</a>
   </div>
-</div>
+
+  <script>
+    function toggleFAB() {
+      const homeBtn = document.getElementById("fabHome");
+      homeBtn.classList.toggle("show");
+    }
+  </script>
 
 
 
-</main> <!-- /main -->
+
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -284,150 +247,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
+  const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+  tabsets.forEach(function(tabset) {
+    const tabby = new Tabby('#' + tabset.id);
+  });
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -525,7 +348,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       },
       interactive: true,
       interactiveBorder: 10,
-      theme: 'quarto',
+      theme: 'light-border',
       placement: 'bottom-start',
     };
     if (contentFn) {
@@ -825,51 +648,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>© 2025 RAISINS by <a href="https://www.statoberry.com/">Statoberry LLP</a><br> <img src="www/statologo.png" alt="Statoberry Logo" style="height:25px; padding: 5px 10px 5px 10px; margin-bottom: 5px;"></p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://www.youtube.com/@statoberry">
-      <i class="bi bi-youtube" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://facebook.com/statoberry">
-      <i class="bi bi-facebook" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/statoberry">
-      <i class="bi bi-twitter" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com/company/statoberry">
-      <i class="bi bi-linkedin" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://instagram.com/statoberry">
-      <i class="bi bi-instagram" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
 
 
 
