@@ -43,3 +43,18 @@
   border-color: #4a005e !important;
 }
 
+/* Show dropdown menu on hover instead of click */
+.navbar-nav li.dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Optional: smooth hover transition */
+.dropdown-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Keep submenu open when hovered */
+.navbar-nav li.dropdown:hover > .dropdown-toggle {
+  color: #f1bdff!important; /* Adjust if needed */
+}
