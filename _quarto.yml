@@ -39,6 +39,10 @@ website:
             href: splitplot.qmd
           - text: "Strip-Plot Analysis"
             href: stripplot.qmd
+      - text: "Statistical Genetics"
+        menu:
+          - text: "Statbility Analysis (E&R)"
+            href: eberhart.qmd
       - text: "Social Sciences"
         menu:
           - text: "Factor Analysis"

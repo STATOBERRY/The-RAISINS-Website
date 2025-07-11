@@ -8,28 +8,14 @@ editor: visual
 <div style="margin-top: 1rem;">
   <img src="www/banner.png" alt="RAISINS Banner" style="width: 100%; height: auto; border-radius: 10px;">
 </div>
-```  
+```
 
 # Welcome to RAISINS {.unnumbered}
 
 RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.
 
 ::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em;"}
-<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS">
-  <i class="bi bi-info-circle-fill"></i> More Info
-</a>
-<a href="citation.qmd" class="btn btn-outline-success">
-  <i class="bi bi-journal-arrow-up"></i> Cite us
-</a>
-<a href="tutorial.qmd" class="btn btn-outline-info">
-  <i class="bi bi-book-half"></i> Tutorial
-</a>
-<a href="policy.qmd" class="btn btn-outline-warning">
-  <i class="bi bi-shield-lock"></i> Policy
-</a>
-<a href="issue.qmd" class="btn btn-outline-secondary">
-  <i class="bi bi-bug"></i> Report a Bug
-</a>
+<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS"> <i class="bi bi-info-circle-fill"></i> More Info </a> <a href="citation.qmd" class="btn btn-outline-success"> <i class="bi bi-journal-arrow-up"></i> Cite us </a> <a href="tutorial.qmd" class="btn btn-outline-info"> <i class="bi bi-book-half"></i> Tutorial </a> <a href="policy.qmd" class="btn btn-outline-warning"> <i class="bi bi-shield-lock"></i> Policy </a> <a href="issue.qmd" class="btn btn-outline-secondary"> <i class="bi bi-bug"></i> Report a Bug </a>
 :::
 
 ```{=html}
@@ -44,7 +30,7 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
     <b>We simply make statistics sweet!</b>
   </div>
 </div>
-``` 
+```
 
 ## Analysis Modules {.unnumbered}
 
@@ -123,7 +109,23 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
     </div>
   </div>
 </div>
-```
+```  
+### Statistical Genetics {.unnumbered}
+
+```{=html}
+<div class="container px-4">
+  <!-- Design Tools -->
+  <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="eberhart.qmd"
+         title="Eberhart and Russell's stability analysis (1966)">
+         Stability Analysis (Eberhart and Russell's Model)
+      </a>
+    </div>
+  </div>
+</div>
+```  
 
 ### Social Science Tools {.unnumbered}
 
@@ -166,9 +168,9 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
     </div>
   </div>
 </div>
-```  
+```
 
-## 💬 What Our Users Say {.unnumbered}  
+## 💬 What Our Users Say {.unnumbered}
 
 ```{=html}
 <div class="container my-4">
@@ -248,7 +250,7 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
     </div>
   </div>
 </div>
-```  
+```
 
 ```{=html}
 <marquee behavior="scroll" direction="left" scrollamount="6" style="margin-top: 1rem;">
@@ -257,4 +259,4 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
   <img src="www/nabardlogo.png" alt="NABARD" height="40" style="margin: 0 1em;">
   <img src="www/ksumlogo.png" alt="WSU" height="40" style="margin: 0 1em;">
 </marquee>
-```  
+```
