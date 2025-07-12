@@ -1,0 +1,38 @@
+---
+title: ""
+format: 
+   html:
+    toc: true
+editor: visual
+---  
+
+## Discussion Corner {#discussion_corner .unnumbered}
+
+Welcome to the Discussion Corner!
+
+This is an open space for researchers, students, and data enthusiasts to discuss anything related to statistics, data analysis, and research methodology, not just limited to RAISINS. Have a new idea for a statistical method? Struggling with the right technique for your experiment? Recently published a paper or came across an interesting approach in your field? Let’s explore it together.
+
+We're listening and evolving. If there's a feature, model, or analysis you think would benefit others, suggest it here. Your contributions can directly shape what RAISINS offers next.
+
+Let’s build a vibrant and collaborative statistical community
+
+```{=html}
+<script src="https://utteranc.es/client.js"
+        repo="STATOBERRY/The-RAISINS-Website"
+        issue-number="1"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>  
+```  
+
+
+## Feedback {#feedback .unnumbered}  
+
+Your suggestions, bug reports, and ideas are incredibly valuable to us. Whether you're facing an issue, have a feature request, or just want to share your thoughts this is the place to do it.  
+
+```{=html}
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelzE39FsQXqQaUb3pgq9XbRhPqSOBZPdWKJ--8hDBNp8lb2w/viewform?usp=header" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  
+```
+
+

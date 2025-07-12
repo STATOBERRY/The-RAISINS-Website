@@ -18,25 +18,8 @@ editor: visual
 RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.
 
 ::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em;"}
-<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS">
-  <i class="bi bi-info-circle-fill"></i> More Info
-</a>
-<a href="citation.qmd" class="btn btn-outline-success">
-  <i class="bi bi-journal-arrow-up"></i> Cite us
-</a>
-<a href="tutorial.qmd" class="btn btn-outline-info">
-  <i class="bi bi-book-half"></i> Tutorial
-</a>
-<a href="policy.qmd" class="btn btn-outline-warning">
-  <i class="bi bi-shield-lock"></i> Policy
-</a>
-<a href="issue.qmd" class="btn btn-outline-secondary">
-  <i class="bi bi-bug"></i> Report a Bug
-</a>
-<a href="#discussion_corner" class="btn btn-outline-primary">
-  <i class="bi bi-chat-dots"></i> Discuss
-</a>
-:::  
+<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS"> <i class="bi bi-info-circle-fill"></i> More Info </a> <a href="citation.qmd" class="btn btn-outline-success"> <i class="bi bi-journal-arrow-up"></i> Cite us </a> <a href="tutorial.qmd" class="btn btn-outline-info"> <i class="bi bi-book-half"></i> Tutorial </a> <a href="policy.qmd" class="btn btn-outline-warning"> <i class="bi bi-shield-lock"></i> Policy </a> <a href="issue.qmd" class="btn btn-outline-secondary"> <i class="bi bi-bug"></i> Report a Bug </a> <a href="discuss.qmd" class="btn btn-outline-primary"> <i class="bi bi-chat-dots"></i> Discuss </a> <a href="plans.qmd" class="btn btn-outline-success"> <i class="bi bi-person-badge"></i> License </a>
+:::
 
 ```{=html}
 <div class="collapse mt-3" id="aboutRAISINS">
@@ -52,7 +35,7 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
 </div>
 ```
 
-## Analysis Modules {.unnumbered}
+## Analysis Modules {#analysis .unnumbered}
 
 ### Analysis of Experiments {.unnumbered}
 
@@ -129,7 +112,8 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
     </div>
   </div>
 </div>
-```  
+```
+
 ### Statistical Genetics {.unnumbered}
 
 ```{=html}
@@ -145,7 +129,7 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
     </div>
   </div>
 </div>
-```  
+```
 
 ### Social Science Tools {.unnumbered}
 
@@ -280,27 +264,5 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
   <img src="www/nabardlogo.png" alt="NABARD" height="60" style="margin: 0 1em;">
   <img src="www/ksumlogo.png" alt="WSU" height="60" style="margin: 0 1em;">
 </marquee>
-```  
-
-## Discussion Corner {#discussion_corner .unnumbered}
-
-Welcome to the Discussion Corner!
-
-This is an open space for researchers, students, and data enthusiasts to discuss anything related to statistics, data analysis, and research methodology, not just limited to RAISINS. Have a new idea for a statistical method? Struggling with the right technique for your experiment? Recently published a paper or came across an interesting approach in your field? Let’s explore it together.
-
-We're listening and evolving. If there's a feature, model, or analysis you think would benefit others, suggest it here. Your contributions can directly shape what RAISINS offers next.
-
-Let’s build a vibrant and collaborative statistical community 
-
-```{=html}
-<script src="https://utteranc.es/client.js"
-        repo="STATOBERRY/The-RAISINS-Website"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>  
-```  
-
-
+```
 

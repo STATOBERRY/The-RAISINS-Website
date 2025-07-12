@@ -58,10 +58,15 @@ website:
         menu:
           - text: "Tutorial"
             href: tutorial.qmd
+          - text: "Quick videos"
+            href: video.qmd
           - text: "Citation Info"
             href: citation.qmd
-      - text: "Quick videos"
-        href: video.qmd
+          - text: "Discussion & Feedback"
+            href: discuss.qmd  
+          
+      - text: "License"
+        href: plans.qmd
     right:
       - icon: telephone
         href: contact.qmd

@@ -1,0 +1,242 @@
+---
+title: ""
+format: 
+   html:
+    toc: true
+editor: visual
+---  
+
+## 🧩 Module License {.unnumbered}
+
+At RAISINS, we believe in accessibility and flexibility for all learners. That’s why **each app is available as an independent module**, allowing you to subscribe only to the tools you need. Whether you're analyzing a simple test or running complex analysis modules, you can unlock any app on a monthly or 6-month basis, starting at **just ₹199**. This modular approach is perfect for individual students and researchers who need targeted analysis without the commitment of a full institutional plan. Simply click on the app listed under [Analysis Modules](index.qmd#analysis) and choose a *monthly or 6-month license*, starting at just ₹199. This modular subscription is perfect for students and researchers who need access to specific tools for a limited period.
+
+> 💡 *Module Licenses are specific to individual apps and are ideal for personal or single-user access. If you are affiliated with an academic or research institution and require full access to all RAISINS modules, please refer to the Institutional License section below and encourage your institution to partner with us.*
+
+------------------------------------------------------------------------
+
+## 🏫 Institutional License {.unnumbered}
+
+We also offer comprehensive **Institutional Licenses** to support collaborative research and academic teaching. These plans provide **Access to all RAISINS apps** for a fixed number of users within a department, college, or university. Whether you're supervising a small team or managing a large institution, there’s a plan designed to fit your scale and scope.
+
+> *Institutional licenses are ideal for teaching labs, research projects, and campus-wide adoption of RAISINS.*
+
+### Explore Institutional License plans 👇 {.unnumbered}
+
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RAISINS Subscription Plans</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    .plans-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .plan-card {
+      background: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .plan-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+    .plan-card h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .plan-emoji {
+      font-size: 2rem;
+    }
+    .plan-details {
+      margin: 1rem 0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .plan-details i {
+      margin-right: 8px;
+      color: #634360;
+    }
+    .plan-price {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #2c3e50;
+    }
+    .plan-international {
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 0.25rem;
+      font-style: italic;
+    }
+    .enquiry-button {
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      background-color: #634360;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .enquiry-button:hover {
+      background-color: #472c44;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: 0.95rem;
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+  </style>
+</head>
+<body>  
+
+  <p style="text-align: center; color: #666; font-size: 1rem;">Choose the flavour that fits your institution’s taste for research</p>
+<p style="text-align: center; color: #888; font-size: 0.9rem;"><em>All amounts listed are exclusive of GST.</em></p>
+
+  <div class="plans-container">
+
+    <div class="plan-card">
+      <div>
+        <div class="plan-emoji">🫐</div>
+        <h3>Blueberry RAISINS — Individual Plan</h3>
+        <div class="plan-details">
+          <p><i class="fa-solid fa-user"></i>Users: 1</p>
+          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
+          <p><i class="fa-regular fa-clock"></i>1000 user hours</p>
+          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+        </div>
+        <div class="plan-price">₹12,712/-</div>
+        <div class="plan-international">International: $500 USD</div>
+      </div>
+      <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+    </div>
+
+    <div class="plan-card">
+      <div>
+        <div class="plan-emoji">🍓</div>
+        <h3>Strawberry RAISINS — Department Pack</h3>
+        <div class="plan-details">
+          <p><i class="fa-solid fa-users"></i>Users: 5</p>
+          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
+          <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
+          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+        </div>
+        <div class="plan-price">₹50,847/-</div>
+        <div class="plan-international">International: $1800 USD</div>
+      </div>
+      <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+    </div>
+<!-- 🧪 NEW: 10 Users Plan -->
+<div class="plan-card">
+  <div>
+    <div class="plan-emoji">🧁</div>
+    <h3>Raspberry RAISINS — Lab Pack</h3>
+    <div class="plan-details">
+      <p><i class="fa-solid fa-users"></i>Users: 10</p>
+      <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
+      <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
+      <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+    </div>
+    <div class="plan-price">₹72,034/-</div>
+    <div class="plan-international">International: $2500 USD</div>
+  </div>
+  <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+</div>
+
+<!-- 🧬 NEW: 15 Users Plan -->
+<div class="plan-card">
+  <div>
+    <div class="plan-emoji">🍥</div>
+    <h3>Mulberry RAISINS — Small Department</h3>
+    <div class="plan-details">
+      <p><i class="fa-solid fa-users"></i>Users: 15</p>
+      <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
+      <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
+      <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+    </div>
+    <div class="plan-price">₹83,898/-</div>
+    <div class="plan-international">International: $2900 USD</div>
+  </div>
+  <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+</div>
+    <div class="plan-card">
+      <div>
+        <div class="plan-emoji">🍒</div>
+        <h3>Cherry RAISINS — College Basic Bundle</h3>
+        <div class="plan-details">
+          <p><i class="fa-solid fa-users"></i>Users: 25</p>
+          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
+          <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
+          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+        </div>
+        <div class="plan-price">₹2,54,237/-</div>
+        <div class="plan-international">International: $8800 USD</div>
+      </div>
+      <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+    </div>
+
+    <div class="plan-card">
+      <div>
+        <div class="plan-emoji">🥝</div>
+        <h3>Kiwi RAISINS — College Extended Bundle</h3>
+        <div class="plan-details">
+          <p><i class="fa-solid fa-users"></i>Users: 50</p>
+          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
+          <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
+          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+        </div>
+        <div class="plan-price">₹4,23,728/-</div>
+        <div class="plan-international">International: $14,850 USD</div>
+      </div>
+     <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+    </div>
+
+    <div class="plan-card">
+      <div>
+        <div class="plan-emoji">🍇</div>
+        <h3>Blackcurrant RAISINS — University Plan</h3>
+        <div class="plan-details">
+          <p><i class="fa-solid fa-users"></i>Users: 100</p>
+          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
+          <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
+          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+        </div>
+        <div class="plan-price">₹6,77,966/-</div>
+        <div class="plan-international">International: $24,500 USD</div>
+      </div>
+      <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+    </div>
+
+  </div>
+
+  <div class="footer-note">
+    <p>📩 Write to us at <a href="mailto:support@statoberry.com">support@statoberry.com</a> to get a custom flavour for your organization.</p>
+  </div>
+
+</body>
+</html>
+```

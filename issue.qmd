@@ -1,27 +1,37 @@
+---
+title: ""
+format: 
+   html:
+    toc: true
+editor: visual
+---  
+
 ## 🐞 Report an Issue {.unnumbered}
 
 Thank you for helping improve **RAISINS**. If you've encountered a bug, suggestion, or problem, we provide two simple ways to reach us:
 
----
+------------------------------------------------------------------------
 
 ### 🔧 Option 1: Report via GitHub {.unnumbered}
 
 If you have a **GitHub account**, click below to file an issue directly in our GitHub repository:
 
-<a href="https://github.com/STATOBERRY/The-RAISINS-Website/issues/new" target="_blank" class="btn btn-danger mt-2">
-  <i class="bi bi-github"></i> File a GitHub Issue
-</a>
+<a href="https://github.com/STATOBERRY/The-RAISINS-Website/issues/new" target="_blank" class="btn btn-danger mt-2"> <i class="bi bi-github"></i> File a GitHub Issue </a>
 
----
+------------------------------------------------------------------------
 
-### ✉️ Option 2: Contact Us by Email {.unnumbered}
+### ✉️ Option 2: File a direct feedback {.unnumbered}
 
-If you do not have a GitHub account, you can email us:
+If you do not have a GitHub account: [File a feedback→](discuss.qmd#feedback)
 
-- 📬 Email: [support@statoberry.com](mailto:support@statoberry.com)
-- 📞 Contact page: [Go to contact→](contact.qmd)
 
----
+
+you can email us:
+
+-   📬 Email: [support\@statoberry.com](mailto:support@statoberry.com)
+-   📞 Contact page: [Go to contact→](contact.qmd)
+
+------------------------------------------------------------------------
 
 ### 🔒 Note on Data Privacy {.unnumbered}
 
@@ -29,9 +39,6 @@ We do not store any uploaded data or personal information. Every session is temp
 
 > For more, read our [Privacy & Data Policy](policy.qmd).
 
----
+------------------------------------------------------------------------
 
-If you're reporting a technical issue, please include:
-- The name of the module
-- A brief description of the issue
-- A screenshot or error message (if any)
+If you're reporting a technical issue, please include: - The name of the module - A brief description of the issue - A screenshot or error message (if any)
