@@ -64,9 +64,9 @@ website:
             href: citation.qmd
           - text: "Discussion & Feedback"
             href: discuss.qmd  
-          
-      - text: "License"
-        href: plans.qmd
+          - text: "Institutional Plans"
+            href: plans.qmd
+
     right:
       - icon: telephone
         href: contact.qmd

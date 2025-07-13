@@ -4,9 +4,9 @@ format:
    html:
     toc: true
 editor: visual
----  
+---
 
-## Discussion Corner {#discussion_corner .unnumbered}
+## Discussion Corner {#discussion_corner .unnumbered}  
 
 Welcome to the Discussion Corner!
 
@@ -24,15 +24,12 @@ Let’s build a vibrant and collaborative statistical community
         crossorigin="anonymous"
         async>
 </script>  
-```  
+```
 
+## Feedback {#feedback .unnumbered}
 
-## Feedback {#feedback .unnumbered}  
-
-Your suggestions, bug reports, and ideas are incredibly valuable to us. Whether you're facing an issue, have a feature request, or just want to share your thoughts this is the place to do it.  
+Your suggestions, bug reports, and ideas are incredibly valuable to us. Whether you're facing an issue, have a feature request, or just want to share your thoughts this is the place to do it.
 
 ```{=html}
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelzE39FsQXqQaUb3pgq9XbRhPqSOBZPdWKJ--8hDBNp8lb2w/viewform?usp=header" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>  
 ```
-
-
