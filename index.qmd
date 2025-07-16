@@ -36,7 +36,15 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
 ```
 
 ## Analysis Modules {#analysis .unnumbered}  
-Doing a statistical analysis has never been easier. Simply select the appropriate analysis module listed below to launch the application. Our platform operates on secure cloud infrastructure to ensure high-performance computing for your data analysis. To support sustained access and development, a modest subscription is required per module. These plans are thoughtfully structured to remain affordable for students and researchers. Once subscribed, access the app and upload your dataset and click **Run Analysis** the results are generated instantly, with accuracy and clarity.
+Doing a statistical analysis has never been easier. Simply select the appropriate analysis module listed [below](#analysis-module) to launch the application. Our platform operates on secure cloud infrastructure to ensure high-performance computing for your data analysis. To support sustained access and development, a modest subscription is required per module. These plans are thoughtfully structured to remain affordable for students and researchers. Once subscribed, access the app and upload your dataset and click **Run Analysis** the results are generated instantly, with accuracy and clarity.  
+
+::: {.callout-tip icon=false}
+## <i class="bi bi-eye-fill"></i> Preview Mode  
+Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — no registration needed. Just enter your email and OTP to begin. Use this mode for Explore, teaching, training programmes or hands-on practice. To upload your own data for analysis, a subscription is required. Model datasets are available within Preview Mode.
+
+**Making Statistics Sweet**
+:::  
+ 
 
 
 ### Analysis of Experiments {#analysis-module .unnumbered}
