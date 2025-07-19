@@ -110,12 +110,5 @@
     "title": "RAISINS",
     "section": "Refund Policy",
     "text": "Refund Policy\nStatoberry LLP strives to provide a high-quality experience with RAISINS. Our refund policy is as follows:\n\nFor one-time purchases or subscriptions made in error, please contact us within 7 days of payment.\nRefunds are not issued if a module was purchased in error; however, we will gladly switch access to the correct module upon request.\nRefunds are only considered if the user was unable to access a module for more than one day (24 hrs) due to technical failure.\nInstitutional and multi-user licenses are non-refundable once activated, except in cases of verified technical failure that prevents access.\n\nTo request a refund, email us at support@statoberry.com with your order details and reason for the request. We review all requests individually and aim to process valid claims within 7 working days.\n\nFor questions about any of the above policies, feel free to contact us at support@statoberry.com."
-  },
-  {
-    "objectID": "index.html#interactive-sample-size-explorer",
-    "href": "index.html#interactive-sample-size-explorer",
-    "title": "Welcome to RAISINS",
-    "section": "0.1 📊 Interactive Sample Size Explorer",
-    "text": "0.1 📊 Interactive Sample Size Explorer\n\n```{ojs}\n// Observable JS block\n\nimport {slider, viewof} from \"@jashkenas/inputs\"\n\n// User Inputs\nviewof confidence = slider({min: 80, max: 99, step: 1, value: 95, label: \"Confidence Level (%)\"})\nviewof marginError = slider({min: 1, max: 10, step: 0.1, value: 5, label: \"Margin of Error (%)\"})\nviewof prop = slider({min: 1, max: 99, step: 1, value: 50, label: \"Estimated Proportion (%)\"})\nviewof popSize = slider({min: 50, max: 100000, step: 100, value: 1000, label: \"Population Size\"})\n\n// Calculations\nz = {\n  const zmap = { 80: 1.28, 85: 1.44, 90: 1.64, 95: 1.96, 98: 2.33, 99: 2.58 };\n  return zmap[confidence] || 1.96;\n}\n\ne = marginError / 100\np = prop / 100\nN = popSize\n\nn0 = (z**2 * p * (1 - p)) / (e**2)\nn = n0 * N / (N - 1 + n0)\n\n// Output\nhtml`&lt;b&gt;Required Sample Size (with finite pop):&lt;/b&gt; ${Math.ceil(n)}&lt;br&gt;\n&lt;b&gt;Without FPC (infinite population):&lt;/b&gt; ${Math.ceil(n0)}`\n```\n\n\n\n\n\n\n\nOJS Syntax Error (line 401, column 23)Unexpected token"
   }
 ]
