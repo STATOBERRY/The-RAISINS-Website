@@ -45,6 +45,8 @@ website:
             href: eberhart.qmd
       - text: "Social Sciences"
         menu:
+          - text: "Sample Size Calculator"
+            href: samplesize.qmd
           - text: "Factor Analysis"
             href: factor.qmd
           - text: "Binary Logistic Regression"

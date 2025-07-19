@@ -18,7 +18,7 @@ editor: visual
 RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.
 
 ::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em;"}
-<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS"> <i class="bi bi-info-circle-fill"></i> More Info </a> <a href="citation.qmd" class="btn btn-outline-success"> <i class="bi bi-journal-arrow-up"></i> Cite us </a> <a href="tutorial.qmd" class="btn btn-outline-info"> <i class="bi bi-book-half"></i> Tutorial </a> <a href="policy.qmd" class="btn btn-outline-warning"> <i class="bi bi-shield-lock"></i> Policy </a> <a href="issue.qmd" class="btn btn-outline-secondary"> <i class="bi bi-bug"></i> Report a Bug </a> <a href="discuss.qmd" class="btn btn-outline-primary"> <i class="bi bi-chat-dots"></i> Discuss </a> <a href="#analysis-module" class="btn btn-outline-success"> <i class="bi bi-rocket"></i> Start </a> 
+<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS"> <i class="bi bi-info-circle-fill"></i> More Info </a> <a href="citation.qmd" class="btn btn-outline-success"> <i class="bi bi-journal-arrow-up"></i> Cite us </a> <a href="tutorial.qmd" class="btn btn-outline-info"> <i class="bi bi-book-half"></i> Tutorial </a> <a href="policy.qmd" class="btn btn-outline-warning"> <i class="bi bi-shield-lock"></i> Policy </a> <a href="issue.qmd" class="btn btn-outline-secondary"> <i class="bi bi-bug"></i> Report a Bug </a> <a href="discuss.qmd" class="btn btn-outline-primary"> <i class="bi bi-chat-dots"></i> Discuss </a> <a href="#analysis-module" class="btn btn-outline-success"> <i class="bi bi-rocket"></i> Start </a>
 :::
 
 ```{=html}
@@ -35,17 +35,17 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
 </div>
 ```
 
-## Analysis Modules {#analysis .unnumbered}  
-Doing a statistical analysis has never been easier. Simply select the appropriate analysis module listed [below](#analysis-module) to launch the application. Our platform operates on secure cloud infrastructure to ensure high-performance computing for your data analysis. To support sustained access and development, a modest subscription is required per module. These plans are thoughtfully structured to remain affordable for students and researchers. Once subscribed, access the app and upload your dataset and click **Run Analysis** the results are generated instantly, with accuracy and clarity.  
+## Analysis Modules {#analysis .unnumbered}
 
-::: {.callout-tip icon=false}
-## <i class="bi bi-eye-fill"></i> Preview Mode  
+Doing a statistical analysis has never been easier. Simply select the appropriate analysis module listed [below](#analysis-module) to launch the application. Our platform operates on secure cloud infrastructure to ensure high-performance computing for your data analysis. To support sustained access and development, a modest subscription is required per module. These plans are thoughtfully structured to remain affordable for students and researchers. Once subscribed, access the app and upload your dataset and click **Run Analysis** the results are generated instantly, with accuracy and clarity.
+
+::: {.callout-tip icon="false"}
+## <i class="bi bi-eye-fill"></i> Preview Mode
+
 Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — no registration needed. Just enter your email and OTP to begin. Use this mode for Explore, teaching, training programmes or hands-on practice. To upload your own data for analysis, a subscription is required. Model datasets are available within Preview Mode.
 
 **Making Statistics Sweet**
-:::  
- 
-
+:::
 
 ### Analysis of Experiments {#analysis-module .unnumbered}
 
@@ -152,6 +152,13 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 <div class="container px-4">
   <!-- Design Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
+     <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="samplesize.qmd"
+         title="Calculate sample Size for your study">
+         Sample Size Calculator
+      </a>
+    </div>
     <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
          href="factor.qmd"
@@ -187,14 +194,13 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
     </div>
   </div>
 </div>
-```  
+```
 
-::: {.callout-tip}
+::: callout-tip
 ## Institutional login
 
 At RAISINS, we deeply value academic collaborations and are committed to making statistical analysis easy, affordable, and enjoyable. If you believe your institution could benefit from access to RAISINS, we encourage you to inform the relevant authority to get in touch with us. We offer customised plans, our unique flavours—to match the research needs of your institution.[Click here](plans.qmd) to explore Institutional Licensing for RAISINS.
-:::  
-
+:::
 
 ## 💬 What Our Users Say {.unnumbered}
 
@@ -276,7 +282,7 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
     </div>
   </div>
 </div>
-```  
+```
 
 ```{=html}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -391,4 +397,4 @@ counters.forEach(counter => observer.observe(counter));
   <img src="www/nabardlogo.png" alt="NABARD" height="60" style="margin: 0 1em;">
   <img src="www/ksumlogo.png" alt="WSU" height="60" style="margin: 0 1em;">
 </marquee>
-```  
+```

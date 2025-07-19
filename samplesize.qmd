@@ -1,0 +1,224 @@
+---
+title: ""
+format: html
+editor: visual
+---
+Here you can calculate the sample size required for your survey or study based on your desired confidence level, margin of error, and expected proportion. This tool supports both large (infinite) and finite population scenarios, helping you determine how many responses you need to achieve statistically valid results.  
+
+```{=html}
+<style>
+  html, body {
+    font-size: 1rem;
+    font-family: var(--bs-body-font-family, Arial, sans-serif);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+
+  body {
+    padding: 1rem;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .calculator-box {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  .info-icon {
+    margin-left: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  .explanation {
+    color: #333;
+    margin-top: 5px;
+    display: none;
+    background: #f9f9f9;
+    padding: 8px;
+    border-left: 3px solid #007acc;
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+
+  .input-group input,
+  .input-group select {
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+    margin-top: 4px;
+  }
+
+  #result {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: darkgreen;
+  }
+</style>
+
+<main>
+  <div class="calculator-box">
+    <h2>🎯 Interactive Sample Size Calculator</h2>
+
+    <label>
+      Population Size (N)
+      <button class="info-icon" onclick="toggleExplanation('exp1')">💡</button>
+    </label>
+    <input type="number" id="population" placeholder="enter or blank for unlimited" min="0" oninput="calculate()">
+    <div class="explanation" id="exp1">
+      The (estimated or guess) total number of people or units in the population you're studying. If it's unknown or very large, leave it blank and the calculator will assume an infinite population.
+    </div>
+
+    <label>
+      Margin of Error (%) [E]
+      <button class="info-icon" onclick="toggleExplanation('exp2')">💡</button>
+    </label>
+    <div class="input-group">
+      <input type="range" id="margin" value="5" min="1" max="30" step="0.1" oninput="updateLabels(); calculate()">
+      <span id="marginLabel" style="margin-left: 10px;">5%</span>
+    </div>
+    <div class="explanation" id="exp2">
+      A smaller margin means a larger required sample size. A 5% margin means your result may vary ±5% from the true value.
+    </div>
+
+    <label>
+      Expected Proportion (p)
+      <button class="info-icon" onclick="toggleExplanation('exp3')">💡</button>
+    </label>
+    <div class="input-group">
+      <input type="range" id="proportion" value="0.5" min="0.01" max="1" step="0.01" oninput="updateLabels(); calculate()">
+      <span id="proportionLabel" style="margin-left: 10px;">0.50</span>
+    </div>
+    <div class="explanation" id="exp3">
+      This is your best guess of the proportion of the population with the trait. Use 0.5 if unsure — it gives the largest required sample size.
+    </div>
+
+    <label>
+      Confidence Level (Z)
+      <button class="info-icon" onclick="toggleExplanation('exp4')">💡</button>
+    </label>
+    <select id="confidence" onchange="calculate()">
+      <option value="1.28">80%</option>
+      <option value="1.44">85%</option>
+      <option value="1.64">90%</option>
+      <option value="1.96" selected>95%</option>
+      <option value="2.58">99%</option>
+    </select>
+    <div class="explanation" id="exp4">
+      How confident you want to be in the result. 95% means the result will be within margin of error in 95 of 100 surveys.
+    </div>
+
+    <div id="result"></div>
+
+    <details>
+  <summary>📘 Explanation: How Sample Size is Calculated</summary>
+  <p>
+    Determining the appropriate sample size is a critical step in designing any statistical survey or research study. When you want to estimate a proportion (for example, the percentage of farmers adopting a new technology), the required sample size depends on four main factors: the confidence level, the expected proportion, the acceptable margin of error, and the total population size.
+  </p>
+
+  <h4>🔹 1. Formula for Infinite Population</h4>
+  <p>The basic formula for estimating sample size when the population is assumed to be very large (effectively infinite) is:</p>
+  <p style="font-family: monospace; margin-left: 15px;">
+    n₀ = (Z² × p × (1 − p)) / E²
+  </p>
+  <ul>
+    <li><strong>n₀</strong>: The minimum required sample size assuming an infinite population.</li>
+    <li><strong>Z</strong>: The Z-score (standard normal value) corresponding to the desired confidence level.<br>
+      <em>For example:</em> Z = 1.96 for 95% confidence, Z = 1.64 for 90%, etc.</li>
+    <li><strong>p</strong>: The expected proportion of the population having the characteristic of interest.<br>
+      <em>Use 0.5 if unknown, as it gives the most conservative (largest) sample size.</em></li>
+    <li><strong>E</strong>: The desired margin of error (as a decimal).<br>
+      <em>For example:</em> E = 0.05 for ±5% precision.</li>
+  </ul>
+
+  <h4>🔹 2. Finite Population Correction (FPC)</h4>
+  <p>If your population size <strong>N</strong> is not very large, a correction to adjust the sample size is applied. The corrected formula is:</p>
+  <p style="font-family: monospace; margin-left: 15px;">
+    n = n₀ / [1 + ((n₀ − 1) / N)]
+  </p>  
+  
+  <h4>✅ Key Insights</h4>
+  <ul>
+    <li>A smaller margin of error increases the required sample size.</li>
+    <li>Higher confidence levels require larger samples.</li>
+    <li>If you are unsure about the expected proportion, use p = 0.5 to get the largest (safest) estimate.</li>
+    <li>Finite population correction is important when your total population is relatively small.</li>
+  </ul>
+
+  <p style="font-size: 0.9em; color: #555;">
+    📚 <strong>Reference:</strong> Cochran, W. G. (1977). <em>Sampling Techniques</em> (3rd ed.). New York: John Wiley & Sons.
+  </p>
+</details>
+
+  </div>
+</main>
+
+<script>
+  function updateLabels() {
+    document.getElementById("marginLabel").textContent = document.getElementById("margin").value + "%";
+    document.getElementById("proportionLabel").textContent = parseFloat(document.getElementById("proportion").value).toFixed(2);
+  }
+
+  function calculate() {
+    const N_input = document.getElementById("population").value.trim();
+    const N = N_input === "" || parseFloat(N_input) <= 0 ? null : parseFloat(N_input);
+
+    const E_percent = parseFloat(document.getElementById("margin").value);
+    const p = parseFloat(document.getElementById("proportion").value);
+    const Z = parseFloat(document.getElementById("confidence").value);
+
+    if (isNaN(E_percent) || isNaN(p) || p < 0 || p > 1 || E_percent <= 0) {
+      document.getElementById("result").innerHTML = "❗ Please enter valid inputs.";
+      return;
+    }
+
+    const E = E_percent / 100;
+    const n0 = (Z ** 2 * p * (1 - p)) / (E ** 2);
+    let resultHTML = "";
+
+    if (N === null) {
+      resultHTML = `📏 Required Sample Size (Infinite Population): <span style="color:darkblue; font-size:34px;">${Math.ceil(n0)}</span>`;
+    } else {
+      const n = Math.ceil(n0 / (1 + ((n0 - 1) / N)));
+      resultHTML = `📦 Required Sample Size (Population = ${N}): <span style="color:darkblue; font-size:34px;">${n}</span>`;
+    }
+
+    document.getElementById("result").innerHTML = resultHTML;
+  }
+
+  function toggleExplanation(id) {
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "none" || el.style.display === "") ? "block" : "none";
+  }
+
+  updateLabels();
+  calculate();
+</script>
+
+```  
