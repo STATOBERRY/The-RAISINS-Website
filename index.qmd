@@ -69,12 +69,17 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
     <i class="fab fa-youtube"></i>
   </a>
 </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="RBD.qmd"
-         title="Perform RBD analysis with diagnostics and publication-ready outputs">
+         title="Click to start Analysis of Randomized Block Designs along with plots">
          RBD (Randomized Block Design)
       </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+     href="video.qmd#rcbd-video"
+     title="Watch RCBD video explanation">
+    <i class="fab fa-youtube"></i>
+  </a>
     </div>
       <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"

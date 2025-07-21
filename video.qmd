@@ -13,9 +13,9 @@ editor: visual
   <div class="video-grid">
 
     <!-- Video 1 -->
-    <div class="video-card">
+    <div id="rcbd-video" class="video-card">
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/SkSb51qXYv0" title="RCBD" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/qZhmXSlD-5k" title="RCBD" allowfullscreen></iframe>
       </div>
       <div class="video-info">
         <h3 class="video-title">Randomized Complete Block Design (RBD)</h3>
