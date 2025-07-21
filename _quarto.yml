@@ -39,6 +39,9 @@ website:
             href: splitplot.qmd
           - text: "Strip-Plot Analysis"
             href: stripplot.qmd
+          - text: "Pooled Analysis"
+          - text: "Pooled RBD Analysis"
+            href: pooledRBD.qmd
       - text: "Statistical Genetics"
         menu:
           - text: "Statbility Analysis (E&R)"

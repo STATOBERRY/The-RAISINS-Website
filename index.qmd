@@ -120,6 +120,17 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          Strip-plot Designs
       </a>
     </div>
+    <!-- Pooled Analysis -->
+    <div class="w-100">
+      <h5 class="mt-3 mb-2 text-secondary">Pooled Analysis</h5>
+    </div>
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="pooledRBD.qmd"
+         title="Pooled analysis of RBD, i.e. RBD combined over locations/seasons/years">
+         RBD Pooled Analysis
+      </a>
+    </div>
         <div class="w-100">
       <h5 class="mt-3 mb-2 text-secondary">Non Parametric</h5>
     </div>
