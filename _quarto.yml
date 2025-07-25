@@ -11,6 +11,12 @@ project:
 website:
   title: "RAISINS"
   favicon: www/logo.png
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "**Alert**: Database update in progress; current users unaffected, new payments may be impacted. Contact us for subscription. Normal service resumes by 26/07/25, 9:00 AM."
+    type: warning
+    position: below-navbar
   navbar:
     background: "#634360"
     logo: www/logo.png
