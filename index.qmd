@@ -51,24 +51,24 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 
 ```{=html}
 <div class="container px-4">
-  <!-- Design Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
-  <!-- Single Factor Experiments -->
+
+    <!-- Single Factor Experiments -->
     <div class="w-100">
       <h5 class="mt-3 mb-2 text-secondary">Single Factor Experiments</h5>
     </div>
- <div class="col d-flex">
-  <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
-     href="CRD.qmd"
-     title="Click to start Analysis of Completely Randomized Designs along with plots">
-     CRD (Completely Randomized Design)
-  </a>
-  <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
-     href="video.qmd#crd-video"
-     title="Watch CRD video explanation">
-    <i class="fab fa-youtube"></i>
-  </a>
-</div>
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
+         href="CRD.qmd"
+         title="Click to start Analysis of Completely Randomized Designs along with plots">
+         CRD (Completely Randomized Design)
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#crd-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="RBD.qmd"
@@ -76,69 +76,108 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          RBD (Randomized Block Design)
       </a>
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
-     href="video.qmd#rcbd-video"
-     title="Watch RCBD video explanation">
-    <i class="fab fa-youtube"></i>
-  </a>
+         href="video.qmd#rcbd-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
-      <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="ancovacrd.qmd"
          title="ANCOVA analysis for CRD with covariate adjustment">
          One-Way ANCOVA in CRD
       </a>
-    </div>  
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#ancova-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
     <!-- Two Factor Experiments -->
     <div class="w-100">
       <h5 class="mt-3 mb-2 text-secondary">Two Factor Experiments</h5>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="2FCRD.qmd"
          title="Two-factor factorial design with CRD layout">
          2FCRD (Two Factor Factorial CRD)
       </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#twofactor-crd-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="2FRCBD.qmd"
          title="Two-factor factorial design with RBD layout">
          2FRCBD (Two Factor Factorial RBD)
       </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#twofactor-rbd-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="splitplot.qmd"
          title="Split-plot design with main and subplot analysis">
          Split-plot Designs
       </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#splitplot-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="stripplot.qmd"
          title="Strip-plot design analysis for complex factorial layouts">
          Strip-plot Designs
       </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#stripplot-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
+
     <!-- Pooled Analysis -->
     <div class="w-100">
       <h5 class="mt-3 mb-2 text-secondary">Pooled Analysis</h5>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="pooledRBD.qmd"
          title="Pooled analysis of RBD, i.e. RBD combined over locations/seasons/years">
          RBD Pooled Analysis
       </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#rbdpooled-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
-        <div class="w-100">
+
+    <!-- Non Parametric -->
+    <div class="w-100">
       <h5 class="mt-3 mb-2 text-secondary">Non Parametric</h5>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="kruskal.qmd"
          title="Non-parametric Kruskal-Wallis test for multiple group comparison">
          Kruskal-Wallis Test
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#kruskalwallis-video"
+         title="Watch Quick Vide">
+        <i class="fab fa-youtube"></i>
       </a>
     </div>
   </div>
@@ -149,13 +188,18 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 
 ```{=html}
 <div class="container px-4">
-  <!-- Design Tools -->
+  <!-- Genetic Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="eberhart.qmd"
          title="Eberhart and Russell's stability analysis (1966)">
          Stability Analysis (Eberhart and Russell's Model)
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#stabilityanalysis-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
       </a>
     </div>
   </div>
@@ -166,27 +210,39 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 
 ```{=html}
 <div class="container px-4">
-  <!-- Design Tools -->
+  <!-- Social Science Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
-     <div class="col">
+    <div class="col">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
          href="samplesize.qmd"
-         title="Calculate sample Size for your study">
+         title="Calculate sample size for your study">
          Sample Size Calculator
       </a>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="factor.qmd"
          title="Factor analysis to identify hidden factors">
          Exploratory Factor Analysis
       </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#efa-video"
+         title="Watch Exploratory Factor Analysis video explanation">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="BLR.qmd"
          title="Perform Binary Logistic Regression">
-        Binary Logistic Regression
+         Binary Logistic Regression
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#binarylogistic-video"
+         title="Watch Binary Logistic Regression video explanation">
+        <i class="fab fa-youtube"></i>
       </a>
     </div>
   </div>

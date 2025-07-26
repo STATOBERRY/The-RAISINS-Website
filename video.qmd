@@ -32,68 +32,105 @@ editor: visual
   </div>
 </div>
 
-    <!-- Video 3 -->
-    <div class="video-card">
+<!-- ANCOVA -->
+    <div id="ancova-video" class="video-card">
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/yGDqU7xhAi0" title="2FRBD" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/_wiYns4gvSM" title="One-way ANCOVA" allowfullscreen></iframe>
       </div>
       <div class="video-info">
-        <h3 class="video-title">Two-factor Randomized Block Design (2FRBD)</h3>
+        <h3 class="video-title">One-way ANCOVA</h3>
       </div>
     </div>
-
-    <!-- Video 4 -->
-    <div class="video-card">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/F9phIktj37o" title="2FCRD" allowfullscreen></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">Two-factor Completely Randomized Design (2FCRD)</h3>
-      </div>
-    </div>
-
-    <!-- Video 5 -->
-    <div class="video-card">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/ff8PUHgS61E" title="Split Plot" allowfullscreen></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">Split Plot Design</h3>
-      </div>
-    </div>
-
-    <!-- Video 6 -->
-    <div class="video-card">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/U65Vde1LXxs" title="Strip Plot" allowfullscreen></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">Strip Plot Design</h3>
-      </div>
-    </div>
-
-    <!-- Video 7 -->
-    <div class="video-card">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/SxJX0Zex5iI" title="Kruskal Wallis" allowfullscreen></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">Kruskal Wallis Test</h3>
-      </div>
-    </div>
-
-    <!-- Video 8 -->
-    <div class="video-card">
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/3FtwGue2OhU" title="EFA" allowfullscreen></iframe>
-      </div>
-      <div class="video-info">
-        <h3 class="video-title">EFA (Exploratory Factor Analysis)</h3>
-      </div>
-    </div>
-
+<!-- Two Factor CRD -->
+<div id="twofactor-crd-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/p0QsSZEa8Uo" title="Two Factor CRD" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Two Factor CRD</h3>
   </div>
 </div>
+
+<!-- Two Factor RBD -->
+<div id="twofactor-rbd-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/IQIZ8RvGEWE" title="Two Factor RBD" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Two Factor RBD</h3>
+  </div>
+</div>
+
+<!-- Split Plot -->
+<div id="splitplot-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/irGzKzJhqOc" title="Split Plot" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Split Plot</h3>
+  </div>
+</div>
+
+<!-- Strip Plot -->
+<div id="stripplot-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/TXO7mN2MFJg" title="Strip Plot" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Strip Plot</h3>
+  </div>
+</div>
+
+<!-- RBD Pooled analysis -->
+<div id="rbdpooled-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/jScATkC_txQ" title="RBD Pooled analysis" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">RBD Pooled analysis</h3>
+  </div>
+</div>
+
+<!-- Kruskal-Wallis Test -->
+<div id="kruskalwallis-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/cMykmaqbxww" title="Kruskal-Wallis Test" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Kruskal-Wallis Test</h3>
+  </div>
+</div>
+
+<!-- Stability analysis -->
+<div id="stabilityanalysis-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/BCAsm8TM71I" title="Stability analysis" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Stability analysis</h3>
+  </div>
+</div>
+
+<!-- Exploratory Factor Analysis -->
+<div id="efa-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/2aI9gtvLCSo" title="Exploratory Factor Analysis" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Exploratory Factor Analysis</h3>
+  </div>
+</div>
+
+<!-- Binary Logistic Regression -->
+<div id="binarylogistic-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/mZhZUiYjFP8" title="Binary Logistic Regression" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Binary Logistic Regression</h3>
+  </div>
+</div>
+
 
 <style>
 .video-grid {
