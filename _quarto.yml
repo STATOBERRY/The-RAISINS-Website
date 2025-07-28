@@ -52,6 +52,8 @@ website:
         menu:
           - text: "Statbility Analysis (E&R)"
             href: eberhart.qmd
+          - text: "Compact Family Block Design"
+            href: CFBD.qmd
       - text: "Social Sciences"
         menu:
           - text: "Sample Size Calculator"
