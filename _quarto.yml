@@ -11,12 +11,12 @@ project:
 website:
   title: "RAISINS"
   favicon: www/logo.png
-  announcement:
-    icon: info-circle
-    dismissable: true
-    content: "All our apps are fully functional and ready for you to explore! updated and checked at:26/07/2025 09:43:59"
-    type: success
-    position: below-navbar
+  # announcement:
+  #   icon: info-circle
+  #   dismissable: true
+  #   content: "All our apps are fully functional and ready for you to explore! updated and checked at:26/07/2025 09:43:59"
+  #   type: success
+  #   position: below-navbar
   navbar:
     background: "#634360"
     logo: www/logo.png
