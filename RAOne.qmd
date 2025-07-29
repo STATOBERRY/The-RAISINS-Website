@@ -1,0 +1,59 @@
+---
+title: ""
+format:
+  html:
+    theme: none
+    toc: false
+    page-layout: full
+---
+
+```{=html}
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  #loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+
+  #loader img {
+    width: 30vw;         /* Large size for desktop */
+    max-width: 300px;    /* Limit maximum size */
+    height: auto;
+  }
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+</style>
+
+<!-- Loader -->
+<div id="loader">
+  <img src="https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/RAISINS.gif?alt=media" alt="Loading...">
+</div>
+
+<!-- Iframe -->
+<iframe 
+  src="https://statoberry-shinychat.share.connect.posit.cloud/"
+  onload="document.getElementById('loader').style.display='none';">
+</iframe>
+```
+

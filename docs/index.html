@@ -263,9 +263,6 @@ ul.task-list li input[type="checkbox"] {
 <section id="welcome-to-raisins" class="level1 unnumbered">
 <h1 class="unnumbered">Welcome to RAISINS</h1>
 <p>RAISINS(<strong>R</strong> and <strong>AI</strong> <strong>S</strong>olutions for <strong>IN</strong>ferential <strong>S</strong>tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em;">
-<p><a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS"> <i class="bi bi-info-circle-fill"></i> More Info </a> <a href="./citation.html" class="btn btn-outline-success"> <i class="bi bi-journal-arrow-up"></i> Cite us </a> <a href="./tutorial.html" class="btn btn-outline-info"> <i class="bi bi-book-half"></i> Tutorial </a> <a href="./policy.html" class="btn btn-outline-warning"> <i class="bi bi-shield-lock"></i> Policy </a> <a href="./issue.html" class="btn btn-outline-secondary"> <i class="bi bi-bug"></i> Report a Bug </a> <a href="./discuss.html" class="btn btn-outline-primary"> <i class="bi bi-chat-dots"></i> Discuss </a> <a href="#analysis-module" class="btn btn-outline-success"> <i class="bi bi-rocket"></i> Start </a></p>
-</div>
 <div class="collapse mt-3" id="aboutRAISINS">
   <div class="card card-body border-0 shadow-sm">
     <p>RAISINS is developed by a group of young statisticians at Statoberry LLP, inspired and mentored by the Department of Agricultural Statistics, College of Agriculture, Vellayani, under Kerala Agricultural University. Statoberry LLP is a research-focused startup committed to making statistical computing more accessible, efficient, and impactful.</p>
@@ -680,6 +677,74 @@ counters.forEach(counter => observer.observe(counter));
   <img src="www/nabardlogo.png" alt="NABARD" height="60" style="margin: 0 1em;">
   <img src="www/ksumlogo.png" alt="WSU" height="60" style="margin: 0 1em;">
 </marquee>
+<style>
+  /* Floating Chat Bubble */
+  #chatBubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffdb6e;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4),
+                0 0 15px rgba(255, 219, 110, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10000;
+    animation: bounce 2s infinite;
+    transition: transform 0.2s ease;
+  }
+
+  /* Tooltip */
+  #chatBubble::after {
+    content: "👋 Hey, Im RA-One, ask me!";
+    position: absolute;
+    right: 90px;
+    bottom: 20px;
+    background: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  #chatBubble:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Bounce animation */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-8px); }
+    60% { transform: translateY(-4px); }
+  }
+</style>
+
+<!-- Floating Chat Bubble -->
+<div id="chatBubble">
+  <img src="https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/bot.png?alt=media" alt="Chat" style="width:40px; height:50px;">
+</div>
+
+<script>
+  const chatBubble = document.getElementById('chatBubble');
+
+  // On click, go directly to RAOne.qmd (same window)
+  chatBubble.addEventListener('click', () => {
+    window.location.href = 'RAOne.html';
+  });
+</script>
+
+
+
 
 
 </section>
