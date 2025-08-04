@@ -509,8 +509,8 @@ counters.forEach(counter => observer.observe(counter));
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background: #ffdb6e;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4),
@@ -520,15 +520,16 @@ counters.forEach(counter => observer.observe(counter));
     justify-content: center;
     cursor: pointer;
     z-index: 10000;
-    animation: bounce 2s infinite;
     transition: transform 0.2s ease;
+    touch-action: manipulation; /* prevents pinch zoom conflicts */
+    -webkit-tap-highlight-color: transparent;
   }
 
   /* Tooltip */
   #chatBubble::after {
-    content: "👋 Hey, Im RA-One, ask me!";
+    content: "👋 Hey, I'm RA-One, ask me!";
     position: absolute;
-    right: 90px;
+    right: 80px;
     bottom: 20px;
     background: #333;
     color: #fff;
@@ -547,30 +548,33 @@ counters.forEach(counter => observer.observe(counter));
     transform: translateY(0);
   }
 
-  /* Bounce animation */
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-8px); }
-    60% { transform: translateY(-4px); }
+  /* Icon */
+  #chatBubble img {
+    width: 40px;
+    height: 50px;
+    pointer-events: none; /* ensures image doesn't block bubble click */
   }
 </style>
 
 <!-- Floating Chat Bubble -->
 <div id="chatBubble">
   <img src="https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/bot.png?alt=media" 
-       alt="Chat" 
-       style="width:40px; height:50px;">
+       alt="Chat">
 </div>
 
 <script>
   const chatBubble = document.getElementById('chatBubble');
 
-  // On click, go directly to RAOne.qmd (same window)
-  chatBubble.addEventListener('click', () => {
+  const navigateToRAOne = () => {
     window.location.href = 'RAOne.html';
+  };
+
+  // Support for mobile touch & desktop click
+  chatBubble.addEventListener('click', navigateToRAOne);
+  chatBubble.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    navigateToRAOne();
   });
 </script>
-
-
 
 ``` 
