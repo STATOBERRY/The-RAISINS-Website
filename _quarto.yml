@@ -89,7 +89,7 @@ website:
     left: |
       © 2025 RAISINS by <a href="https://www.statoberry.com/">Statoberry LLP</a><br>
       <img src="www/statologo.png" alt="Statoberry Logo" style="height:25px; padding: 5px 10px 5px 10px; margin-bottom: 5px;">
-    right:
+    center:
       - icon: youtube
         href: https://www.youtube.com/@statoberry
       - icon: facebook
