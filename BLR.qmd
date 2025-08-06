@@ -7,6 +7,7 @@ format:
     page-layout: full
 ---
 
+
 ```{=html}
 <style>
   html, body {
@@ -90,23 +91,29 @@ format:
     display: inline-block;
   }
 </style>
+```
 
-<div id="loader">
-  <img src="https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/general_website%2Fraisinloader.GIF?alt=media" alt="Loading...">
-</div>
+::: {#loader}
+<img src="https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/general_website%2Fraisinloader.GIF?alt=media" alt="Loading..."/>
+:::
 
-<iframe src="https://statoberry-binarylogisticregression.share.connect.posit.cloud/"
-        onload="document.getElementById('loader').style.display='none';">
+<iframe src="https://statoberry-binarylogisticregression.share.connect.posit.cloud/" onload="document.getElementById(&#39;loader&#39;).style.display=&#39;none&#39;;">
+
 </iframe>
 
-<div class="fab-container">
-  <div class="fab-button" onclick="toggleFAB()">⬆️</div>
-  <a href="index.html" class="fab-home" id="fabHome" title="Go to Home">🏠 Home</a>
-</div>
+:::: fab-container
+::: {.fab-button onclick="toggleFAB()"}
+⬆️
+:::
 
+<a href="index.html" class="fab-home" id="fabHome" title="Go to Home">🏠 Home</a>
+::::
+
+```{=html}
 <script>
   function toggleFAB() {
     const homeBtn = document.getElementById("fabHome");
     homeBtn.classList.toggle("show");
   }
 </script>
+```

@@ -100,6 +100,14 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+    <!-- RM ANOVA by HISHAM -->
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="RMATW.qmd"
+         title="RM ANOVA (Two way)">
+         Repeated Measures ANOVA (Two way) <span class="blink-new">New Release: 06/08/2025</span>
+      </a>
+    </div>
 
     <!-- Two Factor Experiments -->
     <div class="w-100">
@@ -226,13 +234,20 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
       </a>
     </div>
     
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="CFBD.qmd"
          title="Compact Family Block Design">
-         Compact Family Block Design <span class="blink-new">New Release: 28/07/2025</span>
+         Compact Family Block Design
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#compactfamilyblock-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
       </a>
     </div>
+
   </div>
 </div>
 ```

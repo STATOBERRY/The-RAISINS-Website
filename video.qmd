@@ -111,6 +111,16 @@ editor: visual
   </div>
 </div>
 
+<!-- Compact family Block Desigb by Hisham -->
+<div id="compactfamilyblock-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/wgXqdli-aPc" title="Compact Family Block Design" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Compact Family Block Design</h3>
+  </div>
+</div>
+
 <!-- Exploratory Factor Analysis -->
 <div id="efa-video" class="video-card">
   <div class="video-container">
