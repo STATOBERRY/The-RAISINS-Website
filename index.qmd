@@ -9,24 +9,17 @@ editor: visual
 
 ```{=html}
 <div style="margin-top: 1rem;">
-  <img src="www/banner.png" alt="RAISINS Banner" style="width: 100%; height: auto; border-radius: 10px;">
+  <img src="www/banner.webp" alt="RAISINS Banner" style="width: 100%; height: auto; border-radius: 10px;">
 </div>
 ```
 
 # Welcome to RAISINS {.unnumbered}
 
-RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.  
+RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.
 
 ::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em;"}
-<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS"> <i class="bi bi-info-circle-fill"></i> More Info </a> 
-<a href="citation.qmd" class="btn btn-outline-success"> <i class="bi bi-journal-arrow-up"></i> Cite us </a> 
-<a href="tutorial.qmd" class="btn btn-outline-info"> <i class="bi bi-book-half"></i> Tutorial </a> 
-<a href="policy.qmd" class="btn btn-outline-warning"> <i class="bi bi-shield-lock"></i> Policy </a> 
-<a href="issue.qmd" class="btn btn-outline-secondary"> <i class="bi bi-bug"></i> Report a Bug </a> 
-<a href="discuss.qmd" class="btn btn-outline-primary"> <i class="bi bi-chat-dots"></i> Discuss </a> 
-<a href="#analysis-module" class="btn btn-outline-success"> <i class="bi bi-rocket"></i> Start </a>
-<a href="RAOne.qmd" class="btn btn-outline-danger"> <i class="bi bi-robot"></i> Ask RA-One </a>
-:::  
+<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS"> <i class="bi bi-info-circle-fill"></i> More Info </a> <a href="citation.qmd" class="btn btn-outline-success"> <i class="bi bi-journal-arrow-up"></i> Cite us </a> <a href="tutorial.qmd" class="btn btn-outline-info"> <i class="bi bi-book-half"></i> Tutorial </a> <a href="policy.qmd" class="btn btn-outline-warning"> <i class="bi bi-shield-lock"></i> Policy </a> <a href="issue.qmd" class="btn btn-outline-secondary"> <i class="bi bi-bug"></i> Report a Bug </a> <a href="discuss.qmd" class="btn btn-outline-primary"> <i class="bi bi-chat-dots"></i> Discuss </a> <a href="#analysis-module" class="btn btn-outline-success"> <i class="bi bi-rocket"></i> Start </a> <a href="RAOne.qmd" class="btn btn-outline-danger"> <i class="bi bi-robot"></i> Ask RA-One </a>
+:::
 
 ```{=html}
 <div class="collapse mt-3" id="aboutRAISINS">
@@ -523,7 +516,7 @@ counters.forEach(counter => observer.observe(counter));
   <img src="www/nabardlogo.png" alt="NABARD" height="60" style="margin: 0 1em;">
   <img src="www/ksumlogo.png" alt="WSU" height="60" style="margin: 0 1em;">
 </marquee>
-```  
+```
 
 ```{=html}
 <style>
@@ -599,5 +592,4 @@ counters.forEach(counter => observer.observe(counter));
     navigateToRAOne();
   });
 </script>
-
-``` 
+```

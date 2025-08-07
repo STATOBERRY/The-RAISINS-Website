@@ -32,8 +32,8 @@ format:
   }
 
   #loader img {
-    width: 30vw;         /* Large size for desktop */
-    max-width: 300px;    /* Limit maximum size */
+    width: 30vw;
+    max-width: 300px;
     height: auto;
   }
 
@@ -42,6 +42,51 @@ format:
     width: 100%;
     height: 100%;
     display: block;
+  }
+
+  /* FAB Styles */
+  .fab-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* changed from right to left */
+    z-index: 999;
+  }
+
+  .fab-button {
+    background-color: #f4fc05;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+
+  .fab-button:hover {
+    background-color: #08c252;
+  }
+
+  .fab-home {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 5px; /* adjusted for left-side */
+    background-color: #ecf0f1;
+    color: #634360;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+  }
+
+  .fab-home.show {
+    display: inline-block;
   }
 </style>
 
@@ -55,5 +100,17 @@ format:
   src="https://statoberry-shinychat.share.connect.posit.cloud/"
   onload="document.getElementById('loader').style.display='none';">
 </iframe>
-```
 
+<!-- Floating Action Button (FAB) -->
+<div class="fab-container">
+  <div class="fab-button" onclick="toggleFAB()">🔙</div>
+  <a href="index.html" class="fab-home" id="fabHome" title="Go to Home">🏠 Home</a>
+</div>
+
+<script>
+  function toggleFAB() {
+    const homeBtn = document.getElementById("fabHome");
+    homeBtn.classList.toggle("show");
+  }
+</script>
+```
