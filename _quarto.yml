@@ -64,6 +64,8 @@ website:
             href: factor.qmd
           - text: "Binary Logistic Regression"
             href: BLR.qmd
+          - text: "Reliability and Validity"
+            href: RELVAL.qmd
       - text: "Custom tools"
         menu:
           - text: "Custom tool for KAU"

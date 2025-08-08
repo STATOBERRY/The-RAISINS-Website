@@ -98,7 +98,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
          href="RMATW.qmd"
          title="RM ANOVA (Two way)">
-         Repeated Measures ANOVA (Two way) <span class="blink-new">New Release: 06/08/2025</span>
+         Repeated Measures ANOVA (Two way)
       </a>
     </div>
 
@@ -284,6 +284,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+    
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="RELVAL.qmd"
+         title="Reliability and Validity">
+         Reliability and Validity <span class="blink-new">New Release: 08/08/2025</span>
+      </a>
+    </div>
+    
   </div>
 </div>
 ```
