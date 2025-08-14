@@ -24,20 +24,20 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<link href="../www/logo.png" rel="icon" type="image/png">
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/tabby.min.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="./www/logo.png" rel="icon" type="image/png">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -46,179 +46,105 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+    font-family: Arial, sans-serif;
+  }
 
+  #loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+    z-index: 10;
+  }
 
+ #loader img {
+  width: 60vw;  /* or 70vw if you want it even bigger */
+  max-width: 600px; /* fallback max size */
+  height: auto;
+}
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background-color: white;
-      font-family: Arial, sans-serif;
-    }
+  iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 
-    #tipBox {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      background-color: #f0f4ff;
-      color: #1a3c66;
-      padding: 1rem 1.5rem;
-      border: 1px solid #c2d3ff;
-      border-radius: 8px;
-      z-index: 20;
-      max-width: 300px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
+  /* FAB Styles */
+  .fab-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
 
-    #tipBox span.close {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: bold;
-    }
+  .fab-button {
+    background-color: #634360;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
 
-    #loadTip {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #fef6e4;
-      color: #6c4c00;
-      padding: 12px 18px;
-      border: 1px solid #f9d976;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      font-size: 14px;
-      max-width: 280px;
-      z-index: 9999;
-      animation: slideUpFade 0.6s ease-out;
-    }
+  .fab-button:hover {
+    background-color: #452d45;
+  }
 
-    #loadTip span.close {
-      position: absolute;
-      top: 6px;
-      right: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      color: #a26c00;
-      font-size: 16px;
-    }
+  .fab-home {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    right: 5px;
+    background-color: #ecf0f1;
+    color: #634360;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+  }
 
-    @keyframes slideUpFade {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    #loader {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding-top: 2rem;
-      z-index: 10;
-    }
-
-    #loader img {
-      width: 40vw;
-      height: auto;
-      max-width: 40%;
-    }
-
-    iframe {
-      border: none;
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-
-    /* FAB Styles */
-    .fab-container {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-    }
-
-    .fab-button {
-      background-color: #fffb94;
-      color: #fff;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 24px;
-      line-height: 50px;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s ease;
-    }
-
-    .fab-button:hover {
-      background-color: #c999a6;
-    }
-
-    .fab-home {
-      display: none;
-      position: absolute;
-      bottom: 60px;
-      right: 5px;
-      background-color: #ecf0f1;
-      color: #634360;
-      padding: 8px 12px;
-      border-radius: 20px;
-      font-size: 14px;
-      text-decoration: none;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-      transition: all 0.3s ease;
-    }
-
-    .fab-home.show {
-      display: inline-block;
-    }
-  </style>
-
-  
-
-  <!-- Loader -->
-  <div id="loader">
-    <img src="https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/paymentloader.gif?alt=media" alt="Loading Payment Page...">
-  </div>
-
-  <!-- App iframe -->
-  <iframe src="https://rzp.io/rzp/3fcrdpay" onload="document.getElementById('loader').style.display='none';"></iframe>
-
-  <!-- Floating Action Button (FAB) -->
-<div class="fab-container">
-  <div class="fab-button" onclick="toggleFAB()">🔙</div>
-  <a href="../2FCRD.html" class="fab-home" id="fabHome" title="Return to Two Factor Factorial CRD App">📊 App</a>
+  .fab-home.show {
+    display: inline-block;
+  }
+</style>
+<div id="loader">
+<p><img src="https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/general_website%2Fraisinloader.GIF?alt=media" alt="Loading..."></p>
 </div>
-
-  <script>
-    function toggleFAB() {
-      const homeBtn = document.getElementById("fabHome");
-      homeBtn.classList.toggle("show");
-    }
-  </script>
-
-
-
+<iframe src="https://statoberry-raisins-3fcrd.share.connect.posit.cloud/" onload="document.getElementById('loader').style.display='none';">
+</iframe>
+<div class="fab-container">
+<div class="fab-button" onclick="toggleFAB()">
+<p>⬆️</p>
+</div>
+<p><a href="index.html" class="fab-home" id="fabHome" title="Go to Home">🏠 Home</a></p>
+</div>
+<script>
+  function toggleFAB() {
+    const homeBtn = document.getElementById("fabHome");
+    homeBtn.classList.toggle("show");
+  }
+</script>
 
 
 <script id="quarto-html-after-body" type="application/javascript">
@@ -649,5 +575,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

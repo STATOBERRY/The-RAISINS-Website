@@ -50,6 +50,9 @@ website:
           - text: "Pooled Analysis"
           - text: "Pooled RBD Analysis"
             href: pooledRBD.qmd
+          - text: "Three Factor Experiments"
+          - text: "Three factor CRD"
+            href: 3FCRD.qmd
       - text: "Statistical Genetics"
         menu:
           - text: "Statbility Analysis (E&R)"
