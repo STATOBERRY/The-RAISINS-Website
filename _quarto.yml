@@ -57,6 +57,8 @@ website:
           - text: "Three Factor Experiments"
           - text: "Three factor CRD"
             href: 3FCRD.qmd
+          - text: "Three factor RCBD"
+            href: 3FRBD.qmd
       - text: "Statistical Genetics"
         menu:
           - text: "Statbility Analysis (E&R)"

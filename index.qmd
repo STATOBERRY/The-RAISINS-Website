@@ -197,6 +197,14 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          3FCRD (Three Factor Factorial CRD) 
       </a>
     </div>
+    
+        <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="3FRBD.qmd"
+         title="Three-factor factorial design with RCBD layout">
+         3FCRD (Three Factor Factorial RCBD) <span class="blink-new">New Release: 21/08/2025</span> 
+      </a>
+    </div>
 
     <!-- Pooled Analysis -->
     <div class="w-100">
