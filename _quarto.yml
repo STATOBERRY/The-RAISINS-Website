@@ -24,6 +24,10 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Data Analysis"
+        menu:
+          - text: "Two sample t-test"
+            href: TTEST.qmd
       - text: "Analysis of Experiments"
         menu:
           - text: "Single Factor Experiments"

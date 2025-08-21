@@ -7,7 +7,6 @@ format:
     page-layout: full
 ---
 
-
 ```{=html}
 <style>
   html, body {
