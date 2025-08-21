@@ -57,7 +57,7 @@ website:
           - text: "Three Factor Experiments"
           - text: "Three factor CRD"
             href: 3FCRD.qmd
-          - text: "Three factor RCBD"
+          - text: "Three factor RBD"
             href: 3FRBD.qmd
       - text: "Statistical Genetics"
         menu:
