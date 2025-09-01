@@ -56,6 +56,8 @@ website:
             href: pooledCRD.qmd
           - text: "Pooled RBD Analysis"
             href: pooledRBD.qmd
+          - text: "Pooled Two factor CRD Analysis"
+            href: P2FCRD.qmd
           - text: "Three Factor Experiments"
           - text: "Three factor CRD"
             href: 3FCRD.qmd

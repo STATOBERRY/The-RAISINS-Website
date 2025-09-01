@@ -241,6 +241,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+    
+    <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="P2FCRD.qmd"
+         title="Pooled analysis of two factor factorial CRD, i.e. Two factor CRD combined over locations/seasons/years">
+         Two factor CRD Pooled Analysis <span class="blink-new">New Release: 01/09/2025</span> 
+      </a>
+      
+      
 
     <!-- Non Parametric -->
     <div class="w-100">
