@@ -119,117 +119,74 @@ We also offer comprehensive **Institutional Licenses** to support collaborative 
 
   <div class="plans-container">
 
-    <div class="plan-card">
-      <div>
-        <div class="plan-emoji">🫐</div>
-        <h3>Blueberry RAISINS — Individual Plan</h3>
-        <div class="plan-details">
-          <p><i class="fa-solid fa-user"></i>Users: 1</p>
-          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
-          <p><i class="fa-regular fa-clock"></i>1000 user hours</p>
-          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
-        </div>
-        <div class="plan-price">₹12,712/-</div>
-        <div class="plan-international">International: $500 USD</div>
-      </div>
-      <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
-    </div>
-
-    <div class="plan-card">
-      <div>
-        <div class="plan-emoji">🍓</div>
-        <h3>Strawberry RAISINS — Department Pack</h3>
-        <div class="plan-details">
-          <p><i class="fa-solid fa-users"></i>Users: 5</p>
-          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
-          <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
-          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
-        </div>
-        <div class="plan-price">₹50,847/-</div>
-        <div class="plan-international">International: $1800 USD</div>
-      </div>
-      <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
-    </div>
-<!-- 🧪 NEW: 10 Users Plan -->
+   <!-- Blueberry RAISINS - Individual Plan -->
 <div class="plan-card">
   <div>
-    <div class="plan-emoji">🧁</div>
-    <h3>Raspberry RAISINS — Lab Pack</h3>
+    <div class="plan-emoji">🫐</div>
+    <h3>Blueberry RAISINS - Individual Plan</h3>
     <div class="plan-details">
-      <p><i class="fa-solid fa-users"></i>Users: 10</p>
-      <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
-      <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
-      <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+      <p><i class="fa-solid fa-user"></i> Users: 1</p>
+      <p><i class="fa-solid fa-unlock-keyhole"></i> Full access to RAISINS modules</p>
+      <p><i class="fa-regular fa-clock"></i> 250 user hours <strong>per module</strong></p>
+      <p><i class="fa-regular fa-calendar"></i> 1 year validity</p>
     </div>
-    <div class="plan-price">₹72,034/-</div>
-    <div class="plan-international">International: $2500 USD</div>
+    <div class="plan-price">₹20,000 (Excl. GST)</div>
+    <div class="plan-international">International: $500 USD</div>
   </div>
   <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
 </div>
 
-<!-- 🧬 NEW: 15 Users Plan -->
+<!-- Strawberry RAISINS - Department Pack -->
 <div class="plan-card">
   <div>
-    <div class="plan-emoji">🍥</div>
-    <h3>Mulberry RAISINS — Small Department</h3>
+    <div class="plan-emoji">🍓</div>
+    <h3>Strawberry RAISINS - Department Pack</h3>
     <div class="plan-details">
-      <p><i class="fa-solid fa-users"></i>Users: 15</p>
-      <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
-      <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
-      <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
+      <p><i class="fa-solid fa-users"></i> Users: 5</p>
+      <p><i class="fa-solid fa-unlock-keyhole"></i> Full access to RAISINS modules</p>
+      <p><i class="fa-regular fa-clock"></i> 250 user hours <strong>per module per user</strong></p>
+      <p><i class="fa-regular fa-calendar"></i> 1 year validity</p>
     </div>
-    <div class="plan-price">₹83,898/-</div>
-    <div class="plan-international">International: $2900 USD</div>
+    <div class="plan-price">₹80,000 (Excl. GST)</div>
+    <div class="plan-international">International: $1800 USD</div>
   </div>
   <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
 </div>
-    <div class="plan-card">
-      <div>
-        <div class="plan-emoji">🍒</div>
-        <h3>Cherry RAISINS — College Basic Bundle</h3>
-        <div class="plan-details">
-          <p><i class="fa-solid fa-users"></i>Users: 25</p>
-          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
-          <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
-          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
-        </div>
-        <div class="plan-price">₹2,54,237/-</div>
-        <div class="plan-international">International: $8800 USD</div>
-      </div>
-      <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
-    </div>
 
-    <div class="plan-card">
-      <div>
-        <div class="plan-emoji">🥝</div>
-        <h3>Kiwi RAISINS — College Extended Bundle</h3>
-        <div class="plan-details">
-          <p><i class="fa-solid fa-users"></i>Users: 50</p>
-          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
-          <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
-          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
-        </div>
-        <div class="plan-price">₹4,23,728/-</div>
-        <div class="plan-international">International: $14,850 USD</div>
-      </div>
-     <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+<!-- Cherry RAISINS - College Basic Bundle -->
+<div class="plan-card">
+  <div>
+    <div class="plan-emoji">🍒</div>
+    <h3>Cherry RAISINS - College Basic Bundle</h3>
+    <div class="plan-details">
+      <p><i class="fa-solid fa-users"></i> Users: 25</p>
+      <p><i class="fa-solid fa-unlock-keyhole"></i> Full access to RAISINS modules</p>
+      <p><i class="fa-regular fa-clock"></i> 250 user hours <strong>per module per user</strong></p>
+      <p><i class="fa-regular fa-calendar"></i> 1 year validity</p>
     </div>
+    <div class="plan-price">₹3,50,000 (Excl. GST)</div>
+    <div class="plan-international">International: $8800 USD</div>
+  </div>
+  <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+</div>
 
-    <div class="plan-card">
-      <div>
-        <div class="plan-emoji">🍇</div>
-        <h3>Blackcurrant RAISINS — University Plan</h3>
-        <div class="plan-details">
-          <p><i class="fa-solid fa-users"></i>Users: 100</p>
-          <p><i class="fa-solid fa-unlock-keyhole"></i>Full access to RAISINS apps</p>
-          <p><i class="fa-regular fa-clock"></i>1000 user hours per user</p>
-          <p><i class="fa-regular fa-calendar"></i>1 year validity</p>
-        </div>
-        <div class="plan-price">₹6,77,966/-</div>
-        <div class="plan-international">International: $24,500 USD</div>
-      </div>
-      <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+<!-- Blackcurrant RAISINS - University Plan -->
+<div class="plan-card">
+  <div>
+    <div class="plan-emoji">🍇</div>
+    <h3>Blackcurrant RAISINS - University Plan</h3>
+    <div class="plan-details">
+      <p><i class="fa-solid fa-users"></i> Users: 100</p>
+      <p><i class="fa-solid fa-unlock-keyhole"></i> Full access to RAISINS modules</p>
+      <p><i class="fa-regular fa-clock"></i> 250 user hours <strong>per module per user</strong></p>
+      <p><i class="fa-regular fa-calendar"></i> 1 year validity</p>
     </div>
+    <div class="plan-price">₹9,50,000 (Excl. GST)</div>
+    <div class="plan-international">International: $24,500 USD</div>
+  </div>
+  <a class="enquiry-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=dialog" target="_blank">Enquire</a>
+</div>
+
 
   </div>
 
