@@ -67,11 +67,17 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 
 <div class="container px-4">
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
+     <!-- t test -->
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="TTEST.qmd"
          title="Two Sample t-test">
-         Two Sample t-test <span class="blink-new">New Release: 21/08/2025</span>
+         Two Sample t-test
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#ttest-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
       </a>
     </div>
   </div>
@@ -100,6 +106,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+    
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="RBD.qmd"
@@ -208,27 +215,39 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
       </a>
     </div>
     
-        <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+        <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="3FRBD.qmd"
          title="Three-factor factorial design with RBD layout">
-         3FRBD (Three Factor Factorial RBD) <span class="blink-new">New Release: 21/08/2025</span> 
+         3FRBD (Three Factor Factorial RBD)
+      </a>
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#threefactor-rbd-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
       </a>
     </div>
 
-    <!-- Pooled Analysis -->
+    <!-- Pooled Analysis CRD -->
     <div class="w-100">
       <h5 class="mt-3 mb-2 text-secondary">Pooled Analysis</h5>
     </div>
     
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="pooledCRD.qmd"
          title="Pooled analysis of CRD, i.e. CRD combined over locations/seasons/years">
-         CRD Pooled Analysis <span class="blink-new">New Release: 25/08/2025</span> 
+         CRD Pooled Analysis 
       </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#crdpooled-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
       
-      
+        <!-- Pooled Analysis RBD-->  
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="pooledRBD.qmd"
@@ -241,12 +260,25 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
         <i class="fab fa-youtube"></i>
       </a>
     </div>
-    
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+<!-- Pooled Analysis 2FCRD-->
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="P2FCRD.qmd"
          title="Pooled analysis of two factor factorial CRD, i.e. Two factor CRD combined over locations/seasons/years">
-         Two factor CRD Pooled Analysis <span class="blink-new">New Release: 01/09/2025</span> 
+         Two factor CRD Pooled Analysis  
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#rbdpooled-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+      
+      <div class="col">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+         href="P2FRBD.qmd"
+         title="Pooled analysis of two factor factorial RBD, i.e. Two factor RBD combined over locations/seasons/years">
+         Two factor RBD Pooled Analysis <span class="blink-new">New Release: 30/09/2025</span> 
       </a>
       
       
