@@ -69,6 +69,8 @@ website:
         menu:
           - text: "Statbility Analysis (E&R)"
             href: eberhart.qmd
+          - text: "Path Analysis (RBD)"
+            href: PATHRBD.qmd
           - text: "Compact Family Block Design"
             href: CFBD.qmd
       - text: "Social Sciences"
