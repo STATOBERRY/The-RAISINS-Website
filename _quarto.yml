@@ -28,6 +28,8 @@ website:
         menu:
           - text: "Two sample t-test"
             href: TTEST.qmd
+          - text: "Regression Analysis"
+            href: REG.qmd
       - text: "Analysis of Experiments"
         menu:
           - text: "Single Factor Experiments"

@@ -80,6 +80,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+    
+         <!-- Regression -->
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
+         href="REG.qmd"
+         title="Regression Anlaysis">
+         Regression Anlaysis<span class="blink-new">New Release: 08/10/2025</span>
+      </a>
+    </div>
   </div>
 </div>
 ```
