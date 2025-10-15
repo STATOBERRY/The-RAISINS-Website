@@ -62,6 +62,8 @@ website:
             href: P2FCRD.qmd
           - text: "Pooled Two factor RBD Analysis"
             href: P2FRBD.qmd
+          - text: "Pooled Split-plot Analysis"
+            href: PSPLIT.qmd
           - text: "Three Factor Experiments"
           - text: "Three factor CRD"
             href: 3FCRD.qmd
