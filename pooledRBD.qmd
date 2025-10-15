@@ -158,11 +158,6 @@ format:
 </head>
 <body>
 
-  <!-- <!-- Tip Box --> -->
-  <!-- <div id="tipBox"> -->
-  <!--   <span class="close" onclick="document.getElementById('tipBox').style.display='none';">&times;</span> -->
-  <!--   🛎️ <strong>Tip:</strong> To zoom in and adjust the app window for better visibility and hide sidebar, press <strong>Ctrl</strong> and <strong>+</strong>. Use <strong>Ctrl</strong> and <strong>-</strong> to zoom out. -->
-  <!-- </div> -->
 
   <!-- Loader -->
   <div id="loader">
