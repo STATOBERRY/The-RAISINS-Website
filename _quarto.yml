@@ -30,6 +30,8 @@ website:
             href: TTEST.qmd
           - text: "Regression Analysis"
             href: REG.qmd
+          - text: "Cluster Analysis"
+            href: CLUSTER.qmd
       - text: "Analysis of Experiments"
         menu:
           - text: "Single Factor Experiments"
