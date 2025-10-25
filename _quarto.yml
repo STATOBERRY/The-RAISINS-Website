@@ -71,6 +71,8 @@ website:
             href: 3FCRD.qmd
           - text: "Three factor RBD"
             href: 3FRBD.qmd
+          - text: "Split-Split-Plot Analysis"
+            href: SSPLIT.qmd
       - text: "Statistical Genetics"
         menu:
           - text: "Statbility Analysis (E&R)"
