@@ -25,77 +25,15 @@ website:
       - text: "Home"
         href: index.qmd
       - text: "Data Analysis"
-        menu:
-          - text: "Two sample t-test"
-            href: TTEST.qmd
-          - text: "Regression Analysis"
-            href: REG.qmd
-          - text: "Cluster Analysis"
-            href: CLUSTER.qmd
+        href: index.qmd#dataAnalysis
       - text: "Analysis of Experiments"
-        menu:
-          - text: "Single Factor Experiments"
-          - text: "CRD Analysis"
-            href: CRD.qmd
-          - text: "RBD Analysis"
-            href: RBD.qmd 
-          - text: "ANCOVA in CRD"
-            href: ancovacrd.qmd
-          - text: "RM ANOVA (Two way)"
-            href: RMATW.qmd 
-          - text: "Non parametric tests"
-          - text: "Kruskal Wallis Test"
-            href: kruskal.qmd
-          - text: "Two Factor Experiments"
-          - text: "Two factor CRD"
-            href: 2FCRD.qmd
-          - text: "Two factor RBD"
-            href: 2FRCBD.qmd
-          - text: "Split-Plot Analysis"
-            href: splitplot.qmd
-          - text: "Strip-Plot Analysis"
-            href: stripplot.qmd
-          - text: "Pooled Analysis"
-          - text: "Pooled CRD Analysis"
-            href: pooledCRD.qmd
-          - text: "Pooled RBD Analysis"
-            href: pooledRBD.qmd
-          - text: "Pooled Two factor CRD Analysis"
-            href: P2FCRD.qmd
-          - text: "Pooled Two factor RBD Analysis"
-            href: P2FRBD.qmd
-          - text: "Pooled Split-plot Analysis"
-            href: PSPLIT.qmd
-          - text: "Three Factor Experiments"
-          - text: "Three factor CRD"
-            href: 3FCRD.qmd
-          - text: "Three factor RBD"
-            href: 3FRBD.qmd
-          - text: "Split-Split-Plot Analysis"
-            href: SSPLIT.qmd
+        href: index.qmd#analysis-module
       - text: "Statistical Genetics"
-        menu:
-          - text: "Statbility Analysis (E&R)"
-            href: eberhart.qmd
-          - text: "Path Analysis (RBD)"
-            href: PATHRBD.qmd
-          - text: "Compact Family Block Design"
-            href: CFBD.qmd
+        href: index.qmd#statgen
       - text: "Social Sciences"
-        menu:
-          - text: "Sample Size Calculator"
-            href: samplesize.qmd
-          - text: "Factor Analysis"
-            href: factor.qmd
-          - text: "Binary Logistic Regression"
-            href: BLR.qmd
-          - text: "Reliability and Validity"
-            href: RELVAL.qmd
+        href: index.qmd#social
       - text: "Custom tools"
-        menu:
-          - text: "Custom tool for KAU"
-          - text: "CABBAGE"
-            href: cabbage.qmd
+        href: index.qmd#customTool
       - text: "Others"
         menu:
           - text: "Tutorial"
@@ -137,8 +75,8 @@ format:
       light:
         - cosmo
       dark:
-        - slate
-    css: styles.css 
+        - sandstone
+    css: styles.css
     toc: true
     toc-depth: 2
     number-sections: true

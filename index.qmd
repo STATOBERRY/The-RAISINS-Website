@@ -15,11 +15,218 @@ editor: visual
 
 # Welcome to RAISINS {.unnumbered}
 
-RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs.
+RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs. **Before RAISINS, researchers spent at least four days completing their data analysis..now, you can do it in just four seconds!**
 
-::: {style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em;"}
-<a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#aboutRAISINS" role="button" aria-expanded="false" aria-controls="aboutRAISINS"> <i class="bi bi-info-circle-fill"></i> More Info </a> <a href="citation.qmd" class="btn btn-outline-success"> <i class="bi bi-journal-arrow-up"></i> Cite us </a> <a href="tutorial.qmd" class="btn btn-outline-info"> <i class="bi bi-book-half"></i> Tutorial </a> <a href="policy.qmd" class="btn btn-outline-warning"> <i class="bi bi-shield-lock"></i> Policy </a> <a href="issue.qmd" class="btn btn-outline-secondary"> <i class="bi bi-bug"></i> Report a Bug </a> <a href="discuss.qmd" class="btn btn-outline-primary"> <i class="bi bi-chat-dots"></i> Discuss </a> <a href="#analysis-module" class="btn btn-outline-success"> <i class="bi bi-rocket"></i> Start </a> <a href="RAOne.qmd" class="btn btn-outline-danger"> <i class="bi bi-robot"></i> Ask RA-One </a>
-:::
+```{=html}
+<!-- ==== RAISINS quick link strip (with animated rocket) ==== -->
+<nav class="raisins-strip container" aria-label="RAISINS quick links">
+  <div class="strip-wrapper">
+
+    <!-- 1) Start (primary action) -->
+    <a href="#dataAnalysis" class="btn btn-sm start-btn" aria-label="Start analysis module">
+      <i class="bi bi-rocket-takeoff"></i> Start
+    </a>
+
+    <!-- 2) Tutorial -->
+    <a href="tutorial.qmd" class="btn btn-sm btn-outline-info">
+      <i class="bi bi-book-half"></i> Tutorial
+    </a>
+
+    <!-- 3) Cite us -->
+    <a href="citation.qmd" class="btn btn-sm btn-outline-success">
+      <i class="bi bi-journal-arrow-up"></i> Cite us
+    </a>
+
+    <!-- 4) Policy -->
+    <a href="policy.qmd" class="btn btn-sm btn-outline-warning">
+      <i class="bi bi-shield-lock"></i> Policy
+    </a>
+
+    <!-- 5) Discuss -->
+    <a href="discuss.qmd" class="btn btn-sm btn-outline-primary">
+      <i class="bi bi-chat-dots"></i> Discuss
+    </a>
+
+    <!-- 6) Report a bug -->
+    <a href="issue.qmd" class="btn btn-sm btn-outline-secondary">
+      <i class="bi bi-bug"></i> Report a bug
+    </a>
+
+    <!-- 7) More info -->
+    <a class="btn btn-sm btn-outline-dark"
+       data-bs-toggle="collapse" href="#aboutRAISINS" role="button"
+       aria-expanded="false" aria-controls="aboutRAISINS">
+      <i class="bi bi-info-circle-fill"></i> More info
+    </a>  
+    
+    <!-- 8) Pricing -->
+    <a href="plans.qmd" class="btn btn-sm btn-outline-dark">
+      <i class="bi bi-cash-coin"></i> Pricing
+    </a>
+
+    <!-- 9) Ask RA-One -->
+    <a href="RAOne.qmd" class="btn btn-sm btn-outline-danger">
+      <i class="bi bi-robot"></i> Ask RA-One
+    </a>
+
+  </div>
+</nav>
+
+<style>
+:root{
+  --r-blue: #3b77bc;
+  --r-navy: #1f345c;
+  --r-brown:#8b6a3a;
+  --r-line: #e7e2d4;
+  --r-info: #117a8b;
+  --r-warn: #ffb703;
+  --r-danger:#d63333;
+  --r-muted:#495057;
+}
+
+/* container panel */
+.raisins-strip{
+  background:#fff;
+  border-top:1px solid var(--r-line);
+  border-bottom:1px solid var(--r-line);
+  padding:.8rem 1rem;
+  margin:1rem auto;
+  max-width:1100px;
+  border-radius:12px;
+  box-shadow:inset 0 1px 3px rgba(0,0,0,.04);
+}
+
+/* flexible row */
+.strip-wrapper{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.6rem;
+}
+
+/* button base */
+.strip-wrapper .btn{
+  white-space:nowrap;
+  border-radius:10px;
+  font-weight:600;
+  line-height:1.2;
+  transition:transform .22s ease, box-shadow .22s ease, background-color .22s ease, color .22s ease, border-color .22s ease;
+  box-shadow:0 1px 3px rgba(0,0,0,.06);
+  flex:0 1 auto;
+  min-width:130px;
+  padding:.55rem .8rem;
+}
+
+/* hover + active */
+.strip-wrapper .btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 3px 10px rgba(0,0,0,.12);
+}
+.strip-wrapper .btn:active{
+  transform:translateY(0);
+  box-shadow:0 2px 6px rgba(0,0,0,.10);
+}
+
+/* hover contrast colors */
+.btn-outline-dark:hover{ background:var(--r-navy); color:#047018; }
+.btn-outline-success:hover{ background:var(--r-blue); color:#047018; }
+.btn-outline-info:hover{ background:var(--r-info); color:#047018; }
+.btn-outline-warning:hover{ background:var(--r-warn); color:#000; }
+.btn-outline-secondary:hover{ background:var(--r-muted); color:#047018; }
+.btn-outline-primary:hover{ background:var(--r-brown); color:#047018; }
+.btn-outline-danger:hover{ background:var(--r-danger); color:#047018; }
+
+/* focus visible */
+.strip-wrapper .btn:focus-visible{
+  outline:3px solid rgba(59,119,188,.45);
+  outline-offset:2px;
+}
+
+/* START button base */
+.start-btn{
+  background:linear-gradient(135deg, var(--r-blue), var(--r-navy));
+  color:#fff;
+  border:none;
+  font-weight:800;
+  letter-spacing:.2px;
+  box-shadow:0 0 8px rgba(59,119,188,.35), 0 6px 18px rgba(31,52,92,.22);
+  transition:all 0.3s ease;
+}
+.start-btn:hover{
+  background:linear-gradient(135deg, #ffcc33, #ffb703);
+  color:#000;
+  transform:translateY(-2px);
+}
+
+/* Rocket animation */
+.start-btn .bi-rocket-takeoff{
+  display:inline-block;
+  margin-right:.35rem;
+  transform-origin: 50% 60%;
+  animation: rocketFloat 2.4s ease-in-out infinite;
+}
+.start-btn:hover .bi-rocket-takeoff{
+  animation: rocketLaunch 0.9s ease-in-out forwards, rocketFlame 0.12s ease-in-out infinite;
+  filter: drop-shadow(0 0 6px rgba(255,215,0,.6));
+}
+
+@keyframes rocketFloat{
+  0%   { transform: translateY(0) rotate(-6deg); }
+  50%  { transform: translateY(-3px) rotate(-2deg); }
+  100% { transform: translateY(0) rotate(-6deg); }
+}
+
+@keyframes rocketLaunch{
+  0%   { transform: translateY(0) rotate(-8deg) scale(1); }
+  60%  { transform: translateY(-8px) rotate(-3deg) scale(1.03); }
+  100% { transform: translateY(-12px) rotate(0deg) scale(1.05); }
+}
+
+@keyframes rocketFlame{
+  0%,100% { transform: translateY(-12px) scale(1.05); }
+  50%     { transform: translateY(-13px) scale(1.06); }
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .start-btn .bi-rocket-takeoff{ animation:none !important; }
+}
+
+/* responsive layout */
+@media (max-width: 768px){
+  .strip-wrapper .btn{
+    font-size:.92rem;
+    min-width:calc(50% - .6rem);
+    flex:1 1 calc(50% - .6rem);
+  }
+  .start-btn{
+    flex:1 1 100%;
+    min-width:100%;
+    font-size:1rem;
+    padding:.65rem 1rem;
+  }
+}
+@media (max-width: 420px){
+  .strip-wrapper .btn{
+    min-width:100%;
+    flex:1 1 100%;
+  }
+}
+
+/* dark mode for Quarto */
+.quarto-dark .raisins-strip{
+  background:#101418;
+  border-color:#1d2530;
+  box-shadow:none;
+}
+.quarto-dark .btn-outline-dark{ color:#e6edf3; border-color:#2b3a4d; }
+.quarto-dark .btn-outline-dark:hover{ background:#223149; color:#fff; }
+.quarto-dark .btn-outline-secondary{ color:#cbd5df; border-color:#2b3a4d; }
+.quarto-dark .btn-outline-secondary:hover{ background:#2b3a4d; color:#fff; }
+</style>
+
+```  
+
 
 ```{=html}
 <div class="collapse mt-3" id="aboutRAISINS">
@@ -35,6 +242,316 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
 </div>
 ```
 
+```{=html} 
+<!-- ==== RAISINS Giftbox Offer (floating + confetti + tagline) ==== -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+
+<div class="giftbox-offer" aria-label="Special Offer">
+  <details class="giftbox-wrapper" id="raisinsOffer">
+    <summary class="giftbox-summary" aria-label="Open offer">
+      <div class="giftbox">
+        <div class="lid"></div>
+        <div class="box"></div>
+        <div class="ribbon-vertical"></div>
+        <div class="ribbon-horizontal"></div>
+        <span class="tag">Offer</span>
+      </div>
+    </summary>
+
+    <div class="offer-content">
+      <h3>🎁 RAISINS - Unlimited Plan</h3>
+      <p><strong>Full year access</strong> to all modules and upcoming modules.</p>
+      
+      <div class="price">
+        <span class="old">₹20,000</span>
+        <span class="arrow">→</span>
+        <span class="new">₹12,000</span>
+      </div>
+      <p class="save">🔥 Save ₹8,000 - Limited-time offer!</p>
+
+      <p class="installments">
+        <i class="bi bi-credit-card-2-front"></i> Buy in credits from us!<br>
+        <span class="tagline">💡 Flexible payments - so nothing stops your research.</span>
+      </p>
+
+      <ul class="offer-points">
+        <li><i class="bi bi-check2-circle"></i> Access all modules and future updates</li>
+        <li><i class="bi bi-check2-circle"></i> 12 months full technical support</li>
+        <li><i class="bi bi-check2-circle"></i> Access RAISINS from anywhere in the world</li>
+        <li><i class="bi bi-check2-circle"></i> International purchases available</li>
+      </ul>
+
+     <p class="contact">
+  📧 <strong>Just email us at</strong> 
+  <a href="mailto:statistician@statoberry.com">statistician@statoberry.com</a>  or <a href="mailto:support@statoberry.com">support@statoberry.com</a> 
+  with offer code <strong>RAISINS2025END</strong>.<br>
+  📞 <strong>Or WhatsApp us at</strong> 
+  <a href="https://wa.me/919947599837" target="_blank">+91&nbsp;99475&nbsp;99837</a>, 
+  <a href="https://wa.me/919746919099" target="_blank">+91&nbsp;97469&nbsp;19099</a><br>
+  We will contact you back and activate your <strong>12-month unlimited access</strong>.
+</p>
+    </div>
+  </details>
+
+  <!-- Confetti canvas -->
+  <canvas id="confettiCanvas"></canvas>
+</div>
+
+<style>
+:root{
+  --gold:#ffcc33;
+  --amber:#ffb703;
+  --navy:#1f345c;
+  --blue:#3b77bc;
+  --green:#0b8a42;
+  --red:#d63333;
+}
+
+/* center layout */
+.giftbox-offer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  text-align:center;
+  margin:1.5rem 0;
+  position:relative;
+}
+
+/* remove details marker */
+.giftbox-summary::-webkit-details-marker{display:none;}
+.giftbox-summary{
+  cursor:pointer;
+  position:relative;
+  display:inline-block;
+}
+
+/* hover hint */
+.giftbox-summary:hover::after{
+  content:"open me only if you are a dedicated researcher";
+  position:absolute;
+  top:105%;
+  left:50%;
+  transform:translateX(-50%);
+  background:#111;
+  color:#fff;
+  padding:.45rem .6rem;
+  border-radius:6px;
+  font-size:.85rem;
+  white-space:nowrap;
+  box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+.giftbox-summary:hover::before{
+  content:"";
+  position:absolute;
+  top:calc(105% - 6px);
+  left:50%;
+  transform:translateX(-50%) rotate(45deg);
+  width:10px;height:10px;
+  background:#111;
+}
+
+/* giftbox */
+.giftbox{
+  position:relative;
+  width:80px;
+  height:70px;
+  animation:giggle 2.2s ease-in-out infinite;
+}
+.giftbox .box{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:65%;
+  background:linear-gradient(180deg,var(--blue),var(--navy));
+  border-radius:8px;
+}
+.giftbox .lid{
+  position:absolute;
+  top:0;
+  left:-5%;
+  width:110%;
+  height:25px;
+  background:linear-gradient(180deg,var(--gold),var(--amber));
+  border-radius:8px;
+  transform-origin:left center;
+  transition:transform .25s ease;
+}
+.giftbox .ribbon-vertical{
+  position:absolute;
+  top:0;bottom:0;left:50%;
+  width:12px;
+  transform:translateX(-50%);
+  background:rgba(255,255,255,.85);
+  border-radius:6px;
+}
+.giftbox .ribbon-horizontal{
+  position:absolute;
+  bottom:26px;left:0;right:0;
+  height:10px;
+  background:rgba(255,255,255,.8);
+  border-radius:6px;
+}
+.giftbox .tag{
+  position:absolute;
+  top:-10px;right:-8px;
+  background:var(--red);
+  color:#fff;
+  font-size:.7rem;
+  padding:.2rem .4rem;
+  border-radius:6px;
+  box-shadow:0 2px 6px rgba(0,0,0,.18);
+}
+
+/* giggle animation */
+@keyframes giggle{
+  0%,100%{transform:rotate(-2deg);}
+  50%{transform:rotate(2deg);}
+}
+
+/* open = tilt lid */
+.giftbox-wrapper[open] .giftbox .lid{
+  transform:rotate(-15deg);
+}
+
+/* offer text */
+.offer-content{
+  margin-top:.9rem;
+  font-family:'Segoe UI',sans-serif;
+  color:#222;
+}
+.offer-content h3{
+  font-size:1.1rem;
+  margin-bottom:.2rem;
+  color:var(--navy);
+}
+.price{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:.5rem;
+  margin-top:.5rem;
+  font-weight:700;
+}
+.price .old{
+  text-decoration:line-through;
+  color:#999;
+}
+.price .arrow{ color:#888; }
+.price .new{
+  color:var(--green);
+  font-size:1.2rem;
+}
+.save{
+  color:var(--red);
+  font-weight:600;
+  margin-top:.2rem;
+}
+.installments{
+  color:var(--blue);
+  font-weight:600;
+  margin-top:.25rem;
+  font-size:.95rem;
+}
+.installments i{
+  color:var(--gold);
+  margin-right:.3rem;
+}
+.tagline{
+  font-size:.88rem;
+  color:#444;
+  font-style:italic;
+  display:block;
+  margin-top:.2rem;
+}
+.offer-points{
+  list-style:none;
+  padding-left:0;
+  margin:.6rem 0 .8rem 0;
+}
+.offer-points li{
+  margin:.25rem 0;
+  color:#333;
+  font-size:.95rem;
+}
+.offer-points i{
+  color:var(--green);
+  margin-right:.3rem;
+}
+.contact{
+  font-size:.9rem;
+  color:#1f1f1f;
+  margin-top:.8rem;
+}
+.contact a{
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:600;
+}
+.contact a:hover{ text-decoration:underline; }
+
+/* confetti canvas */
+#confettiCanvas{
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  pointer-events:none;
+  display:none;
+}
+
+/* responsive */
+@media(max-width:500px){
+  .giftbox{transform:scale(.9);}
+  .offer-content h3{font-size:1rem;}
+}
+</style>
+
+<script>
+/* confetti burst when opened */
+document.addEventListener("DOMContentLoaded", () => {
+  const details = document.getElementById("raisinsOffer");
+  const canvas = document.getElementById("confettiCanvas");
+  const ctx = canvas.getContext("2d");
+
+  function resizeCanvas(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  function confettiBurst(){
+    canvas.style.display = "block";
+    const particles = Array.from({length:120}, () => ({
+      x: Math.random()*canvas.width,
+      y: Math.random()*-20,
+      r: 4 + Math.random()*4,
+      c: `hsl(${Math.random()*360},100%,60%)`,
+      v: 2 + Math.random()*3
+    }));
+    let frame = 0;
+    const interval = setInterval(()=>{
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      particles.forEach(p=>{
+        ctx.beginPath();
+        ctx.arc(p.x,p.y,p.r,0,2*Math.PI);
+        ctx.fillStyle=p.c;
+        ctx.fill();
+        p.y+=p.v;
+      });
+      frame++;
+      if(frame>100){ clearInterval(interval); ctx.clearRect(0,0,canvas.width,canvas.height); canvas.style.display="none"; }
+    },30);
+  }
+
+  details.addEventListener("toggle", ()=>{
+    if(details.open){ confettiBurst(); }
+  });
+});
+</script>
+
+```  
+
 ## Analysis Modules {#analysis .unnumbered}
 
 Doing a statistical analysis has never been easier. Simply select the appropriate analysis module listed [below](#analysis-module) to launch the application. Our platform operates on secure cloud infrastructure to ensure high-performance computing for your data analysis. To support sustained access and development, a modest subscription is required per module. These plans are thoughtfully structured to remain affordable for students and researchers. Once subscribed, access the app and upload your dataset and click **Run Analysis** the results are generated instantly, with accuracy and clarity.
@@ -46,65 +563,94 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 
 **Making Statistics Sweet**
 :::
-### Data Analysis {.unnumbered}
+### Data Analysis {#dataAnalysis .unnumbered}
 
 ```{=html}
 <style>
-  .blink-new {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #0b1f10;
-    background: #02b030; /* badge */
-    padding: 2px 6px;
-    margin-left: 8px;
-    border-radius: 4px;
-    animation: blinker 1s linear infinite;
-  }
-  @keyframes blinker {
-    50% { opacity: 0; }
-  }
+/* overall layout */
+.container .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  background-color: #fff;
+}
+
+/* stronger hover for interactivity */
+.container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* primary button gradient on hover */
+.btn-outline-primary:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#3b77bc,#1f345c);
+  border-color: #1f345c;
+}
+
+/* red YouTube button style */
+.btn-outline-danger:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#e55353,#b30000);
+  border-color: #b30000;
+}
+
+/* focus ring */
+.btn:focus-visible {
+  outline: 3px solid rgba(59,119,188,0.4);
+  outline-offset: 2px;
+}
+
+/* badge animation (unchanged) */
+.blink-new {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #0b1f10;
+  background: #02b030;
+  padding: 2px 6px;
+  margin-left: 8px;
+  border-radius: 4px;
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker { 50% { opacity: 0; } }
 </style>
 
 <div class="container px-4">
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
-     <!-- t test -->
+
+    <!-- t test -->
     <div class="col d-flex">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
-         href="TTEST.qmd"
-         title="Two Sample t-test">
+      <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
+         href="TTEST.qmd" title="Two Sample t-test">
          Two Sample t-test
       </a>
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
-         href="video.qmd#ttest-video"
-         title="Watch Quick Video">
+      <a class="btn btn-outline-danger small py-2 px-2 mb-2 ms-1"
+         href="video.qmd#ttest-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
-    
-         <!-- Regression -->
+
+    <!-- regression -->
     <div class="col d-flex">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
-         href="REG.qmd"
-         title="Regression Anlaysis">
-         Regression Anlaysis
+      <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
+         href="REG.qmd" title="Regression Analysis">
+         Regression Analysis
       </a>
-      </a>
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
-         href="video.qmd#regression-video"
-         title="Watch Quick Video">
+      <a class="btn btn-outline-danger small py-2 px-2 mb-2 ms-1"
+         href="video.qmd#regression-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
-    <!-- Cluster anlaysis -->
+
+    <!-- cluster analysis -->
     <div class="col d-flex">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
-         href="CLUSTER.qmd"
-         title="Cluster Anlaysis">
-         Cluster Anlaysis<span class="blink-new">New Release: 16/10/2025</span>
+      <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
+         href="CLUSTER.qmd" title="Cluster Analysis">
+         Cluster Analysis<span class="blink-new">New Release: 16/10/2025</span>
       </a>
     </div>
-    
-    
+
   </div>
 </div>
 ```
@@ -354,7 +900,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 </div>
 ```
 
-### Statistical Genetics {.unnumbered}
+### Statistical Genetics {#statgen .unnumbered}
 
 ```{=html}
 <style>
@@ -419,7 +965,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 </div>
 ```
 
-### Social Science Tools {.unnumbered}
+### Social Science Tools {#social .unnumbered}
 
 ```{=html}
 <div class="container px-4">
@@ -476,7 +1022,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 </div>
 ```
 
-### Custom Tools {.unnumbered}
+### Custom Tools {#customTool .unnumbered}
 
 #### Tools for KAU {.unnumbered}
 
