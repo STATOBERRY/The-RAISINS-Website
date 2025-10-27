@@ -1384,6 +1384,110 @@ counters.forEach(counter => observer.observe(counter));
     navigateToRAOne();
   });
 </script>
+<!-- ==== RAISINS compact badge (with instructions, inner glow, crisp CTA) ==== -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<div id="rb" role="note" aria-live="polite">
+  <button class="rb-x" aria-label="Hide notice">×</button>
+  <i class="bi bi-lightning-charge-fill" aria-hidden="true"></i>
+  <div class="rb-text">
+    <span class="headline">
+      <strong>₹200/month</strong> • <em>Free preview mode</em>
+    </span>
+    <span class="instructions">
+      Click on the analysis you want → make subscription → <strong>Sweet statistics!</strong><br>
+      <small>All subscriptions are made inside each module.</small>
+    </span>
+  </div>
+  <a href="#dataAnalysis" class="rb-go" aria-label="Open modules">Let's Start</a>
+</div>
+
+<style>
+:root{
+  --navy:#1f345c; --blue:#3b77bc; --gold:#ffcc33; --amber:#ffb703; --line:#e7e2d4;
+}
+
+/* floating pill */
+#rb{
+  position:fixed; left:50%; bottom:18px; transform:translateX(-50%);
+  z-index:9998;
+  display:flex; align-items:center; gap:.55rem;
+  max-width:90vw;
+  font:600 .92rem/1.25 system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+  color:#102033;
+  border:1px solid var(--line);
+  border-radius:1.25rem;
+  padding:.5rem .8rem;
+  background:linear-gradient(135deg,#ffffff 0%,#fffdf2 30%,#fff3cc 50%,#fffdf2 70%,#ffffff 100%);
+  background-size:200% 200%;
+  animation:rbSheen 6s ease-in-out infinite;
+  box-shadow:inset 0 0 6px rgba(255,183,3,0.3);
+}
+
+/* soft internal movement */
+@keyframes rbSheen{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* icon */
+#rb .bi{ color:var(--amber); font-size:1.05rem; }
+
+/* text block */
+#rb .rb-text{ display:flex; flex-direction:column; gap:.15rem; }
+#rb .headline em{ font-style:normal; color:var(--blue); }
+#rb .instructions{
+  font-weight:500; font-size:.85rem; color:#333; line-height:1.25;
+}
+#rb .instructions small{ color:#555; font-size:.78rem; }
+
+/* CTA */
+#rb .rb-go{
+  text-decoration:none;
+  background:linear-gradient(135deg,var(--navy),#2a4c86);
+  color:#fff; border:1px solid rgba(255,255,255,.2);
+  border-radius:999px;
+  padding:.38rem .65rem;
+  font-weight:800; font-size:.86rem;
+  display:flex; align-items:center; gap:.3rem;
+  transition:all .2s ease;
+}
+#rb .rb-go::after{content:"↗"; font-weight:800; opacity:.85;}
+#rb .rb-go:hover{filter:brightness(1.08); transform:translateY(-1px);}
+
+/* close button */
+#rb .rb-x{
+  appearance:none; border:0; background:transparent; color:#555;
+  font-size:1rem; line-height:1; cursor:pointer; padding:.1rem .2rem;
+}
+#rb .rb-x:hover{ color:#000; }
+
+/* responsive */
+@media (max-width:600px){
+  #rb{ flex-direction:column; align-items:flex-start; bottom:72px; padding:.6rem .8rem; border-radius:1rem; }
+  #rb .rb-go{ align-self:center; margin-top:.35rem; }
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion:reduce){#rb{animation:none;}}
+
+/* dark mode */
+.quarto-dark #rb{
+  color:#dbe6f3; border-color:#253146;
+  background:linear-gradient(135deg,#0f1320 0%,#0f1624 30%,#0f1b2d 50%,#0f1624 70%,#0f1320 100%);
+  box-shadow:inset 0 0 8px rgba(255,215,0,.2);
+}
+.quarto-dark #rb .rb-go{border-color:rgba(0,0,0,.2);}
+</style>
+
+<script>
+(function(){
+  const b=document.getElementById('rb'), x=b.querySelector('.rb-x');
+  if(sessionStorage.getItem('rb-hide')==='1') b.style.display='none';
+  x.addEventListener('click',()=>{b.style.display='none';sessionStorage.setItem('rb-hide','1');});
+})();
+</script>
 
 
 </section>
