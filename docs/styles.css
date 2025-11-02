@@ -57,4 +57,5 @@
 /* Keep submenu open when hovered */
 .navbar-nav li.dropdown:hover > .dropdown-toggle {
   color: #f1bdff!important; /* Adjust if needed */
-}
+}  
+

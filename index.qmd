@@ -1191,7 +1191,7 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
   <div class="counter-box" data-aos="fade-up">
     <div class="icon"><i class="fas fa-users"></i></div>
     <div class="text-group">
-      <div class="number" data-target="1000">0</div>
+      <div class="number" data-target="2500">0</div>
       <div class="label">Users</div>
     </div>
   </div>
@@ -1199,7 +1199,7 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
   <div class="counter-box" data-aos="fade-up" data-aos-delay="100">
     <div class="icon"><i class="fas fa-university"></i></div>
     <div class="text-group">
-      <div class="number" data-target="2">0</div>
+      <div class="number" data-target="4">0</div>
       <div class="label">Institutions</div>
     </div>
   </div>
@@ -1207,7 +1207,7 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
   <div class="counter-box" data-aos="fade-up" data-aos-delay="200">
     <div class="icon"><i class="fas fa-clock"></i></div>
     <div class="text-group">
-      <div class="number" data-target="10000">0</div>
+      <div class="number" data-target="20000">0</div>
       <div class="label">User Hours</div>
     </div>
   </div>
