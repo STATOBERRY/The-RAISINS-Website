@@ -11,6 +11,7 @@ project:
 website:
   title: "RAISINS"
   favicon: www/logo.png
+  site-url: https://www.raisins.live/
   # announcement:
   #   icon: info-circle
   #   dismissable: true
