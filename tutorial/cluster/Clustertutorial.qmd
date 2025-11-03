@@ -52,7 +52,6 @@ metadata:
 categories: [Multivariate,Social-science,Agri-research,Plant-breeding, Fruit-science]
 date: 2025-11-01
 reading-time: 10  
-
 ---
 
 ```{=html}
@@ -67,8 +66,7 @@ reading-time: 10
     margin-top: 0.2em;
   }
 </style>  
-
-```  
+```
 
 *Below is a compact, practical guide you can use as a tutorial to perform Hierarchical Cluster Analysis in RAISINS.*
 
@@ -226,7 +224,7 @@ A vertical dendrogram is a classic, user-friendly way to display hierarchical cl
 A horizontal dendrogram is a tree-like diagram used to visualize hierarchical clustering results where the structure extends horizontally rather than vertically. In this layout, the individual observations or samples appear along the vertical axis, and the branches stretch left to right, representing how clusters merge step-by-step based on dissimilarity or distance.](Horizontal_Dendrogram.webp){#fig-3 width="100%"}
 
 ![**Ward's Linkage (k = 2)**\
-Ward's linkage is a hierarchical clustering method focused on minimizing the increase in total within-cluster variance (or error sum of squares) when merging clusters. It is widely used because it tends to produce compact, spherical clusters, making it popular in many applications like biological data, market segmentation, and more.](Ward's_Linkage.webp){#fig-4 width="100%"}
+Ward's linkage is a hierarchical clustering method focused on minimizing the increase in total within-cluster variance (or error sum of squares) when merging clusters. It is widely used because it tends to produce compact, spherical clusters, making it popular in many applications like biological data, market segmentation, and more.](Wards_Linkage.webp){#fig-4 width="100%"}
 :::
 
 ::: {layout-ncol="2"}

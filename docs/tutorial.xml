@@ -9,7 +9,7 @@
 <link>https://www.raisins.live/tutorial.html</link>
 <atom:link href="https://www.raisins.live/tutorial.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.39</generator>
+<generator>quarto-1.6.42</generator>
 <lastBuildDate>Fri, 31 Oct 2025 18:30:00 GMT</lastBuildDate>
 <item>
   <title>Hierarchical Cluster Analysis</title>
@@ -33,7 +33,6 @@
     margin-top: 0.2em;
   }
 </style>  
-
 <p><em>Below is a compact, practical guide you can use as a tutorial to perform Hierarchical Cluster Analysis in RAISINS.</em></p>
 <section id="getting-started-in-raisins" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="getting-started-in-raisins"><span class="header-section-number">1</span> Getting Started in RAISINS</h2>
@@ -266,7 +265,7 @@ A horizontal dendrogram is a tree-like diagram used to visualize hierarchical cl
 <div id="fig-4" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="Ward's_Linkage.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure&nbsp;9: Ward’s Linkage (k = 2) Ward’s linkage is a hierarchical clustering method focused on minimizing the increase in total within-cluster variance (or error sum of squares) when merging clusters. It is widely used because it tends to produce compact, spherical clusters, making it popular in many applications like biological data, market segmentation, and more."><img src="https://www.raisins.live/tutorial/cluster/Ward's_Linkage.webp" class="img-fluid figure-img" style="width:100.0%"></a>
+<a href="Wards_Linkage.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure&nbsp;9: Ward’s Linkage (k = 2) Ward’s linkage is a hierarchical clustering method focused on minimizing the increase in total within-cluster variance (or error sum of squares) when merging clusters. It is widely used because it tends to produce compact, spherical clusters, making it popular in many applications like biological data, market segmentation, and more."><img src="https://www.raisins.live/tutorial/cluster/Wards_Linkage.webp" class="img-fluid figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;9: <strong>Ward’s Linkage (k = 2)</strong><br>
