@@ -504,6 +504,11 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
   .giftbox{transform:scale(.9);}
   .offer-content h3{font-size:1rem;}
 }
+
+.giftbox-offer, .giftbox-wrapper, .giftbox-summary {
+  z-index: 500 !important;
+}
+
 </style>
 
 <script>
@@ -625,6 +630,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          href="TTEST.qmd" title="Two Sample t-test">
          Two Sample t-test
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/ttest.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-2 px-2 mb-2 ms-1"
          href="video.qmd#ttest-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
@@ -637,25 +651,42 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          href="REG.qmd" title="Regression Analysis">
          Regression Analysis
       </a>
+      
+        <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/regression.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-2 px-2 mb-2 ms-1"
          href="video.qmd#regression-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
 
-    <!-- cluster analysis -->
+   <!-- cluster analysis -->
+<!-- cluster analysis -->
 <div class="col d-flex">
   <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
      href="CLUSTER.qmd" title="Cluster Analysis">
      Cluster Analysis
   </a>
-
+  <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/cluster.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
   <!-- Tutorial button -->
   <a class="btn btn-outline-success small py-2 px-2 mb-2 ms-1"
      href="tutorial/cluster/Clustertutorial.html" title="Read Tutorial">
     <i class="fas fa-book"></i>
   </a>
-
   <!-- YouTube video button -->
   <a class="btn btn-outline-danger small py-2 px-2 mb-2 ms-1"
      href="video.qmd#cluster-video" title="Watch Quick Video">
@@ -684,6 +715,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Click to start Analysis of Completely Randomized Designs along with plots">
          CRD (Completely Randomized Design)
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/crd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#crd-video"
          title="Watch Quick Video">
@@ -697,6 +737,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Click to start Analysis of Randomized Block Designs along with plots">
          RBD (Randomized Block Design)
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/rbd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#rcbd-video"
          title="Watch Quick Video">
@@ -709,6 +758,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="ANCOVA analysis for CRD with covariate adjustment">
          One-Way ANCOVA in CRD
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/ancova.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#ancova-video"
          title="Watch Quick Video">
@@ -722,6 +780,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="RM ANOVA (Two way)">
          Repeated Measures ANOVA (Two way)
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/rmatw.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#rmanova-video"
          title="Watch Quick Video">
@@ -739,6 +806,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Two-factor factorial design with CRD layout">
          2FCRD (Two Factor Factorial CRD)
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/twofcrd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#twofactor-crd-video"
          title="Watch Quick Video">
@@ -751,6 +827,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Two-factor factorial design with RBD layout">
          2FRCBD (Two Factor Factorial RBD)
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/twofrbd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#twofactor-rbd-video"
          title="Watch Quick Video">
@@ -763,6 +848,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Split-plot design with main and subplot analysis">
          Split-plot Designs
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/split.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#splitplot-video"
          title="Watch Quick Video">
@@ -775,6 +869,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Strip-plot design analysis for complex factorial layouts">
          Strip-plot Designs
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/strip.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#stripplot-video"
          title="Watch Quick Video">
@@ -793,6 +896,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Three-factor factorial design with CRD layout">
          3FCRD (Three Factor Factorial CRD) 
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/threefcrd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#threefactor-crd-video"
          title="Watch Quick Video">
@@ -806,7 +918,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Three-factor factorial design with RBD layout">
          3FRBD (Three Factor Factorial RBD)
       </a>
-      </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/threefrbd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#threefactor-rbd-video"
          title="Watch Quick Video">
@@ -820,7 +940,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Split-Split Plot Design Analysis">
          Split-Split Plot Analysis
       </a>
-      </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/splitsplit.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#splitsplitplot-video"
          title="Watch Quick Video">
@@ -839,6 +967,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Pooled analysis of CRD, i.e. CRD combined over locations/seasons/years">
          CRD Pooled Analysis 
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/pooledcrd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#crdpooled-video"
          title="Watch Quick Video">
@@ -853,6 +990,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Pooled analysis of RBD, i.e. RBD combined over locations/seasons/years">
          RBD Pooled Analysis
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/pooledrbd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#rbdpooled-video"
          title="Watch Quick Video">
@@ -866,6 +1012,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Pooled analysis of two factor factorial CRD, i.e. Two factor CRD combined over locations/seasons/years">
          Two factor CRD Pooled Analysis  
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/pooled2fcrd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#2fcrdpooled-video"
          title="Watch Quick Video">
@@ -880,6 +1035,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Pooled analysis of two factor factorial RBD, i.e. Two factor RBD combined over locations/seasons/years">
          Two factor RBD Pooled Analysis 
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/pooled2frbd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#2frbdpooled-video"
          title="Watch Quick Video">
@@ -896,6 +1060,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Pooled Split-plot analysis">
          Pooled Split-plot analysis
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/pooledsplit.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#splitpooled-video"
          title="Watch Quick Vide">
@@ -914,6 +1087,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Non-parametric Kruskal-Wallis test for multiple group comparison">
          Kruskal-Wallis Test
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/kwt.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#kruskalwallis-video"
          title="Watch Quick Vide">
@@ -952,6 +1134,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Eberhart and Russell's stability analysis (1966)">
          Stability Analysis (Eberhart and Russell's Model)
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/ersa.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#stabilityanalysis-video"
          title="Watch Quick Video">
@@ -965,6 +1156,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Path Analysis (Randomized Complete Block Design)">
          Path Analysis (RBD)
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/path.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#pathanalysis-video"
          title="Watch Quick Video">
@@ -978,6 +1178,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Compact Family Block Design">
          Compact Family Block Design
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/cfbd.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#compactfamilyblock-video"
          title="Watch Quick Video">
@@ -995,12 +1204,16 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 <div class="container px-4">
   <!-- Social Science Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
-    <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+        <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="samplesize.qmd"
          title="Calculate sample size for your study">
          Sample Size Calculator
       </a>
+      <button class="btn btn-outline-success small py-2 px-2 mb-2 ms-1" disabled>
+  <i class="fas fa-gift me-1"></i> Free
+</button>
+
     </div>
     
     <div class="col d-flex">
@@ -1009,6 +1222,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Factor analysis to identify hidden factors">
          Exploratory Factor Analysis
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/efa.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#efa-video"
          title="Watch Quick Video">
@@ -1022,6 +1244,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Perform Binary Logistic Regression">
          Binary Logistic Regression
       </a>
+              <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/blr.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#binarylogistic-video"
          title="Watch Quick Video">
@@ -1035,6 +1266,15 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
          title="Reliability and Validity">
          Reliability and Validity
       </a>
+      <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/relval.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
       <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
          href="video.qmd#relval-video"
          title="Watch Quick Video">
@@ -1055,11 +1295,21 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
   <!-- KAU Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
     <div class="col">
-      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 w-100"
+      <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="cabbage.qmd"
          title="Citation and Bibliography Builder for Academic General Editing">
          CABBAGE for KAU referencing style
       </a>
+      <!-- Subscription plans button -->
+  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+          data-bs-toggle="modal"
+          data-bs-target="#htmlModal"
+          data-src="subplans/cabbage.html"
+          data-title="Plans & Pricing">
+    <i class="fas fa-crown me-1"></i> Plans
+  </button>
+    <!-- YouTube video button -->
     </div>
   </div>
 </div>
@@ -1351,6 +1601,102 @@ counters.forEach(counter => observer.observe(counter));
   });
 </script>
 ```  
+
+```{=html}
+<!-- Shared Modal (non-blocking, reusable) -->
+<div class="modal" id="htmlModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header bg-light">
+        <h5 class="modal-title">
+          <i class="fas fa-crown text-warning me-2"></i> Subscription Plan
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0" style="height:80vh;">
+        <iframe id="htmlFrame" style="width:100%;height:100%;border:none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<style>
+/* Completely disable Bootstrap backdrop and fade */
+.modal-backdrop {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/* Allow page interaction while modal is open */
+body.modal-open {
+  overflow: visible !important;
+  pointer-events: auto !important;
+  padding-right: 0 !important;
+}
+
+/* Make modal appear above all elements */
+.modal {
+  z-index: 5000 !important;
+  pointer-events: auto !important;
+}
+
+/* Subtle slide animation */
+.modal-dialog {
+  transition: transform 0.2s ease-in-out;
+  transform: translateY(-10px);
+}
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+
+/* Keep giftbox and chat bubble below modal */
+.giftbox-offer, #chatBubble {
+  z-index: 1000 !important;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modalEl = document.getElementById('htmlModal');
+  const iframe = document.getElementById('htmlFrame');
+  let modal;
+
+  // Initialize Bootstrap Modal without backdrop
+  modal = new bootstrap.Modal(modalEl, {
+    backdrop: false,
+    keyboard: true,
+    focus: true
+  });
+
+  // Handle button clicks
+  document.querySelectorAll('[data-bs-target="#htmlModal"]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const src = btn.getAttribute('data-src');
+      const title = btn.getAttribute('data-title') || 'Details';
+      modalEl.querySelector('.modal-title').innerHTML =
+        '<i class="fas fa-crown text-warning me-2"></i>' + title;
+      iframe.src = src;
+      modal.show();
+    });
+  });
+
+  // Close modal on outside click
+  modalEl.addEventListener('click', e => {
+    if (e.target === modalEl) modal.hide();
+  });
+
+  // Clear iframe on close
+  modalEl.addEventListener('hidden.bs.modal', () => {
+    iframe.src = '';
+  });
+});
+</script>
+
+
+
+```
+
 
 <!-- ```{=html}  -->
 <!-- <!-- ==== RAISINS compact badge (auto-scales on mobile + closes on click) ==== --> -->
