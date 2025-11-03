@@ -32,6 +32,16 @@ editor: visual
   </div>
 </div>
 
+<!-- Cluster -->
+<div id="cluster-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/hwRkZglESKc" title="Cluster Analysis" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Cluster Analysis</h3>
+  </div>
+</div>
+
         <!-- Video 1 -->
     <div id="rcbd-video" class="video-card">
       <div class="video-container">
