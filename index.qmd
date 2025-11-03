@@ -818,7 +818,13 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="SSPLIT.qmd"
          title="Split-Split Plot Design Analysis">
-         Split-Split Plot Analysis <span class="blink-new">New Release: 25/10/2025</span>
+         Split-Split Plot Analysis
+      </a>
+      </a>
+      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#splitsplitplot-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
       </a>
     </div>
 

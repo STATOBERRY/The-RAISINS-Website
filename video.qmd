@@ -194,6 +194,18 @@ editor: visual
   </div>
 </div>
 
+
+<!-- Split split Plot -->
+<div id="splitsplitplot-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/3-ru0tRCIVQ" title="Split-Split Plot" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Split-Split Plot</h3>
+  </div>
+</div>
+
+
 <!-- Kruskal-Wallis Test -->
 <div id="kruskalwallis-video" class="video-card">
   <div class="video-container">
