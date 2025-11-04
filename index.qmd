@@ -224,9 +224,7 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
 .quarto-dark .btn-outline-secondary{ color:#cbd5df; border-color:#2b3a4d; }
 .quarto-dark .btn-outline-secondary:hover{ background:#2b3a4d; color:#fff; }
 </style>
-
-```  
-
+```
 
 ```{=html}
 <div class="collapse mt-3" id="aboutRAISINS">
@@ -242,7 +240,7 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
 </div>
 ```
 
-```{=html} 
+```{=html}
 <!-- ==== RAISINS Giftbox Offer (floating + confetti + tagline) ==== -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
 
@@ -554,8 +552,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-
-```  
+```
 
 ## Analysis Modules {#analysis .unnumbered}
 
@@ -568,6 +565,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 
 **Making Statistics Sweet**
 :::
+
 ### Data Analysis {#dataAnalysis .unnumbered}
 
 ```{=html}
@@ -727,7 +725,6 @@ document.addEventListener('DOMContentLoaded', function () {
   tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el); });
 });
 </script>
-
 ```
 
 ### Analysis of Experiments {#analysis-module .unnumbered}
@@ -1815,7 +1812,7 @@ counters.forEach(counter => observer.observe(counter));
     navigateToRAOne();
   });
 </script>
-```  
+```
 
 ```{=html}
 <!-- Shared Modal (non-blocking, reusable) -->
@@ -1908,5 +1905,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-
-
