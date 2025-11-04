@@ -544,7 +544,7 @@ ul.task-list li input[type="checkbox"] {
 
     <div class="offer-content">
       <h3 class="anchored">🎁 RAISINS - Unlimited Plan</h3>
-      <p><strong>Full year access</strong> to all modules and upcoming modules.</p>
+      <p>While all modules can be accessed indvidually for ₹199/- we are giving a <strong>Full year access</strong> to all modules and upcoming modules.</p>
       
       <div class="price">
         <span class="old">₹20,000</span>
@@ -858,8 +858,9 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 <section id="dataAnalysis" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="dataAnalysis">Data Analysis</h3>
+<!-- restore: styles + layout + tooltips -->
 <style>
-/* overall layout */
+/* general buttons */
 .container .btn {
   border-radius: 8px;
   font-weight: 600;
@@ -868,24 +869,43 @@ document.addEventListener("DOMContentLoaded", () => {
   background-color: #fff;
 }
 
-/* stronger hover for interactivity */
+/* lift effect */
 .container .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
 
-/* primary button gradient on hover */
+/* primary (module link) hover */
 .btn-outline-primary:hover {
   color: #fff;
   background: linear-gradient(90deg,#3b77bc,#1f345c);
   border-color: #1f345c;
 }
 
-/* red YouTube button style */
-.btn-outline-danger:hover {
+/* plans (cart) hover: gold */
+.btn-outline-warning:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#f4c542,#b8860b);
+  border-color: #b8860b;
+}
+
+/* youtube: black border default → red on hover */
+.btn-outline-youtube {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.btn-outline-youtube:hover {
   color: #fff;
   background: linear-gradient(90deg,#e55353,#b30000);
   border-color: #b30000;
+}
+
+/* success/tutorial hover (optional) */
+.btn-outline-success:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#2fb163,#0b7a3a);
+  border-color: #0b7a3a;
 }
 
 /* focus ring */
@@ -894,7 +914,7 @@ document.addEventListener("DOMContentLoaded", () => {
   outline-offset: 2px;
 }
 
-/* badge animation (unchanged) */
+/* optional: tiny "new" badge animation */
 .blink-new {
   font-size: 0.7rem;
   font-weight: bold;
@@ -916,12 +936,14 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1" href="./TTEST.html" title="Two Sample t-test">
          Two Sample t-test
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/ttest.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-2 px-2 mb-2 ms-1" href="./video.html#ttest-video" title="Watch Quick Video">
+
+      <!-- plans (icon only, solid cart) -->
+      <button class="btn btn-sm btn-outline-warning py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/ttest.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+
+      <!-- youtube (black → red hover) -->
+      <a class="btn btn-sm btn-outline-youtube py-2 px-2 mb-2 ms-1" href="./video.html#ttest-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -931,43 +953,94 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1" href="./REG.html" title="Regression Analysis">
          Regression Analysis
       </a>
-      
-        <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/regression.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-2 px-2 mb-2 ms-1" href="./video.html#regression-video" title="Watch Quick Video">
+
+      <button class="btn btn-sm btn-outline-warning py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/regression.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+
+      <a class="btn btn-sm btn-outline-youtube py-2 px-2 mb-2 ms-1" href="./video.html#regression-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
 
-   <!-- cluster analysis -->
-<!-- cluster analysis -->
-<div class="col d-flex">
-  <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1" href="./CLUSTER.html" title="Cluster Analysis">
-     Cluster Analysis
-  </a>
-  <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/cluster.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-  <!-- Tutorial button -->
-  <a class="btn btn-outline-success small py-2 px-2 mb-2 ms-1" href="tutorial/cluster/Clustertutorial.html" title="Read Tutorial">
-    <i class="fas fa-book"></i>
-  </a>
-  <!-- YouTube video button -->
-  <a class="btn btn-outline-danger small py-2 px-2 mb-2 ms-1" href="./video.html#cluster-video" title="Watch Quick Video">
-    <i class="fab fa-youtube"></i>
-  </a>
-</div>
+    <!-- cluster analysis -->
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1" href="./CLUSTER.html" title="Cluster Analysis">
+         Cluster Analysis
+      </a>
 
+      <button class="btn btn-sm btn-outline-warning py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/cluster.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+
+      <a class="btn btn-sm btn-outline-success py-2 px-2 mb-2 ms-1" href="tutorial/cluster/Clustertutorial.html" title="Read Tutorial">
+        <i class="fas fa-book"></i>
+      </a>
+
+      <a class="btn btn-sm btn-outline-youtube py-2 px-2 mb-2 ms-1" href="./video.html#cluster-video" title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
 
   </div>
 </div>
+
+<!-- bootstrap tooltip activation -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  tooltipTriggerList.map(function (el) { return new bootstrap.Tooltip(el); });
+});
+</script>
+
 </section>
 <section id="analysis-module" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="analysis-module">Analysis of Experiments</h3>
+<!-- styles (same as t-test block) -->
+<style>
+/* general button style */
+.container .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  background-color: #fff;
+}
+/* lift on hover */
+.container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+/* module links */
+.btn-outline-primary:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#3b77bc,#1f345c);
+  border-color: #1f345c;
+}
+/* plans button (gold) */
+.btn-outline-warning:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#f4c542,#b8860b);
+  border-color: #b8860b;
+}
+/* youtube: black border default → red on hover */
+.btn-outline-youtube {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.btn-outline-youtube:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#e55353,#b30000);
+  border-color: #b30000;
+}
+/* focus ring */
+.btn:focus-visible {
+  outline: 3px solid rgba(59,119,188,0.4);
+  outline-offset: 2px;
+}
+</style>
+
 <div class="container px-4">
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
 
@@ -979,12 +1052,12 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./CRD.html" title="Click to start Analysis of Completely Randomized Designs along with plots">
          CRD (Completely Randomized Design)
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/crd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#crd-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/crd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#crd-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -993,39 +1066,41 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./RBD.html" title="Click to start Analysis of Randomized Block Designs along with plots">
          RBD (Randomized Block Design)
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/rbd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#rcbd-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/rbd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#rcbd-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./ancovacrd.html" title="ANCOVA analysis for CRD with covariate adjustment">
          One-Way ANCOVA in CRD
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/ancova.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#ancova-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/ancova.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#ancova-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+
     <!-- RM ANOVA by HISHAM -->
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./RMATW.html" title="RM ANOVA (Two way)">
          Repeated Measures ANOVA (Two way)
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/rmatw.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#rmanova-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/rmatw.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#rmanova-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -1038,51 +1113,54 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./2FCRD.html" title="Two-factor factorial design with CRD layout">
          2FCRD (Two Factor Factorial CRD)
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/twofcrd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#twofactor-crd-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/twofcrd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#twofactor-crd-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./2FRCBD.html" title="Two-factor factorial design with RBD layout">
          2FRCBD (Two Factor Factorial RBD)
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/twofrbd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#twofactor-rbd-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/twofrbd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#twofactor-rbd-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./splitplot.html" title="Split-plot design with main and subplot analysis">
          Split-plot Designs
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/split.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#splitplot-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/split.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#splitplot-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./stripplot.html" title="Strip-plot design analysis for complex factorial layouts">
          Strip-plot Designs
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/strip.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#stripplot-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/strip.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#stripplot-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -1092,44 +1170,44 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="w-100">
       <h5 class="mt-3 mb-2 text-secondary anchored">Three Factor Experiments</h5>
     </div>
-        <div class="col d-flex">
+    <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./3FCRD.html" title="Three-factor factorial design with CRD layout">
          3FCRD (Three Factor Factorial CRD) 
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/threefcrd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#threefactor-crd-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/threefcrd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#threefactor-crd-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
     
-        <div class="col d-flex">
+    <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./3FRBD.html" title="Three-factor factorial design with RBD layout">
          3FRBD (Three Factor Factorial RBD)
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/threefrbd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#threefactor-rbd-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/threefrbd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#threefactor-rbd-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
     
-            <div class="col d-flex">
+    <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./SSPLIT.html" title="Split-Split Plot Design Analysis">
          Split-Split Plot Analysis
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/splitsplit.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#splitsplitplot-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/splitsplit.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#splitsplitplot-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -1143,73 +1221,72 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./pooledCRD.html" title="Pooled analysis of CRD, i.e. CRD combined over locations/seasons/years">
          CRD Pooled Analysis 
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooledcrd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#crdpooled-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooledcrd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#crdpooled-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
       
-        <!-- Pooled Analysis RBD-->  
+    <!-- Pooled Analysis RBD-->  
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./pooledRBD.html" title="Pooled analysis of RBD, i.e. RBD combined over locations/seasons/years">
          RBD Pooled Analysis
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooledrbd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#rbdpooled-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooledrbd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#rbdpooled-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
-<!-- Pooled Analysis 2FCRD-->
+
+    <!-- Pooled Analysis 2FCRD-->
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./P2FCRD.html" title="Pooled analysis of two factor factorial CRD, i.e. Two factor CRD combined over locations/seasons/years">
          Two factor CRD Pooled Analysis  
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooled2fcrd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#2fcrdpooled-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooled2fcrd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#2fcrdpooled-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
       
-<!-- Pooled Analysis 2FRBD-->
-      <div class="col d-flex">
+    <!-- Pooled Analysis 2FRBD-->
+    <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./P2FRBD.html" title="Pooled analysis of two factor factorial RBD, i.e. Two factor RBD combined over locations/seasons/years">
          Two factor RBD Pooled Analysis 
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooled2frbd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#2frbdpooled-video" title="Watch Quick Video">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooled2frbd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#2frbdpooled-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
-    
-      
 
     <!-- Pooled Analysis SPLIT-->
-      <div class="col d-flex">
+    <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./PSPLIT.html" title="Pooled Split-plot analysis">
          Pooled Split-plot analysis
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooledsplit.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#splitpooled-video" title="Watch Quick Vide">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/pooledsplit.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#splitpooled-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -1223,34 +1300,65 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./kruskal.html" title="Non-parametric Kruskal-Wallis test for multiple group comparison">
          Kruskal-Wallis Test
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/kwt.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#kruskalwallis-video" title="Watch Quick Vide">
+      <!-- plans -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/kwt.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#kruskalwallis-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
   </div>
 </div>
+
+<!-- (optional) enable Bootstrap tooltips if not already enabled -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('button[title="Plans & Pricing"]'));
+  tooltipTriggerList.map(function (el) { try { return new bootstrap.Tooltip(el); } catch(e) { return null; } });
+});
+</script>
 </section>
 <section id="statgen" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="statgen">Statistical Genetics</h3>
+<!-- styles (cart stays gold on hover, YouTube = black border → red on hover) -->
 <style>
-  .blink-new {
-    font-size: 0.7rem;
-    font-weight: bold;
-    color: #0b1f10;
-    background: #02b030; /* red badge */
-    padding: 2px 6px;
-    margin-left: 8px;
-    border-radius: 4px;
-    animation: blinker 1s linear infinite;
-  }
-  @keyframes blinker {
-    50% { opacity: 0; }
-  }
+.container .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  background-color: #fff;
+}
+.container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+/* main link hover */
+.btn-outline-primary:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#3b77bc,#1f345c);
+  border-color: #1f345c;
+}
+/* plans (gold) */
+.btn-outline-warning:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#f4c542,#b8860b);
+  border-color: #b8860b;
+}
+/* YouTube: black border by default → red on hover */
+.btn-outline-youtube {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.btn-outline-youtube:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#e55353,#b30000);
+  border-color: #b30000;
+}
+.btn:focus-visible { outline: 3px solid rgba(59,119,188,0.4); outline-offset: 2px; }
 </style>
 
 <div class="container px-4">
@@ -1260,12 +1368,12 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./eberhart.html" title="Eberhart and Russell's stability analysis (1966)">
          Stability Analysis (Eberhart and Russell's Model)
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/ersa.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#stabilityanalysis-video" title="Watch Quick Video">
+      <!-- plans (icon only) -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/ersa.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube (black → red hover) -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#stabilityanalysis-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -1274,12 +1382,12 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./PATHRBD.html" title="Path Analysis (Randomized Complete Block Design)">
          Path Analysis (RBD)
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/path.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#pathanalysis-video" title="Watch Quick Video">
+      <!-- plans (icon only) -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/path.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube (black → red hover) -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#pathanalysis-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
@@ -1288,99 +1396,179 @@ document.addEventListener("DOMContentLoaded", () => {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./CFBD.html" title="Compact Family Block Design">
          Compact Family Block Design
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/cfbd.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#compactfamilyblock-video" title="Watch Quick Video">
+      <!-- plans (icon only) -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/cfbd.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <!-- youtube (black → red hover) -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#compactfamilyblock-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
 
   </div>
 </div>
+
+<!-- optional: enable tooltips -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var els = [].slice.call(document.querySelectorAll('button[title="Plans & Pricing"]'));
+  els.map(function (el) { try { new bootstrap.Tooltip(el); } catch(e){} });
+});
+</script>
 </section>
 <section id="social" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="social">Social Science Tools</h3>
+<!-- styles -->
+<style>
+.container .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  background-color: #fff;
+}
+.container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#3b77bc,#1f345c);
+  border-color: #1f345c;
+}
+.btn-outline-warning:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#f4c542,#b8860b);
+  border-color: #b8860b;
+}
+.btn-outline-youtube {
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+}
+.btn-outline-youtube:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#e55353,#b30000);
+  border-color: #b30000;
+}
+.btn:focus-visible {
+  outline: 3px solid rgba(59,119,188,0.4);
+  outline-offset: 2px;
+}
+</style>
+
 <div class="container px-4">
   <!-- Social Science Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
-        <div class="col d-flex">
+    <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./samplesize.html" title="Calculate sample size for your study">
          Sample Size Calculator
       </a>
       <button class="btn btn-outline-success small py-2 px-2 mb-2 ms-1" disabled="">
-  <i class="fas fa-gift me-1"></i> Free
-</button>
-
+        <i class="fas fa-gift"></i> Free
+      </button>
     </div>
-    
+
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./factor.html" title="Factor analysis to identify hidden factors">
          Exploratory Factor Analysis
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/efa.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#efa-video" title="Watch Quick Video">
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/efa.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#efa-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
-    
+
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./BLR.html" title="Perform Binary Logistic Regression">
          Binary Logistic Regression
       </a>
-              <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/blr.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#binarylogistic-video" title="Watch Quick Video">
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/blr.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#binarylogistic-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
-    
+
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./RELVAL.html" title="Reliability and Validity">
          Reliability and Validity
       </a>
-      <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/relval.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
-      <a class="btn btn-outline-danger small py-1 px-2 mb-2 ms-1" href="./video.html#relval-video" title="Watch Quick Video">
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/relval.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1" href="./video.html#relval-video" title="Watch Quick Video">
         <i class="fab fa-youtube"></i>
       </a>
     </div>
-    
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('button[title="Plans & Pricing"]'));
+  tooltipTriggerList.map(function (el) { try { new bootstrap.Tooltip(el); } catch(e){} });
+});
+</script>
 </section>
 <section id="customTool" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="customTool">Custom Tools</h3>
 <section id="tools-for-kau" class="level4 unnumbered">
 <h4 class="unnumbered anchored" data-anchor-id="tools-for-kau">Tools for KAU</h4>
+<!-- styles -->
+<style>
+.container .btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  background-color: #fff;
+}
+.container .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#3b77bc,#1f345c);
+  border-color: #1f345c;
+}
+.btn-outline-warning:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#f4c542,#b8860b);
+  border-color: #b8860b;
+}
+.btn:focus-visible {
+  outline: 3px solid rgba(59,119,188,0.4);
+  outline-offset: 2px;
+}
+</style>
+
 <div class="container px-4">
   <!-- KAU Tools -->
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
-    <div class="col">
-      <div class="col d-flex">
+    <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1" href="./cabbage.html" title="Citation and Bibliography Builder for Academic General Editing">
          CABBAGE for KAU referencing style
       </a>
-      <!-- Subscription plans button -->
-  <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/cabbage.html" data-title="Plans &amp; Pricing">
-    <i class="fas fa-crown me-1"></i> Plans
-  </button>
-    <!-- YouTube video button -->
+      <!-- plans (cart icon only) -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1" data-bs-toggle="modal" data-bs-target="#htmlModal" data-src="subplans/cabbage.html" data-title="Plans &amp; Pricing" title="Plans &amp; Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('button[title="Plans & Pricing"]'));
+  tooltipTriggerList.map(function (el) { try { new bootstrap.Tooltip(el); } catch(e){} });
+});
+</script>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1394,7 +1582,7 @@ Institutional login
 <p>At RAISINS, we deeply value academic collaborations and are committed to making statistical analysis easy, affordable, and enjoyable. If you believe your institution could benefit from access to RAISINS, we encourage you to inform the relevant authority to get in touch with us. We offer customised plans, our unique flavours—to match the research needs of your institution.<a href="./plans.html">Click here</a> to explore Institutional Licensing for RAISINS.</p>
 </div>
 </div>
-</div></section>
+</section>
 </section>
 </section>
 <section id="what-our-users-say" class="level2 unnumbered">
