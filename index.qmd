@@ -22,52 +22,52 @@ RAISINS(**R** and **AI** **S**olutions for **IN**ferential **S**tatistics) is an
 <nav class="raisins-strip container" aria-label="RAISINS quick links">
   <div class="strip-wrapper">
 
-    <!-- 1) Start (primary action) -->
-    <a href="#dataAnalysis" class="btn btn-sm start-btn" aria-label="Start analysis module">
-      <i class="bi bi-rocket-takeoff"></i> Start
-    </a>
+<!-- A. Core Actions -->
+<a href="#dataAnalysis" class="btn btn-sm start-btn" aria-label="Start analysis module">
+  <i class="bi bi-rocket-takeoff"></i> Start
+</a>
 
-    <!-- 2) Tutorial -->
-    <a href="tutorial.qmd" class="btn btn-sm btn-outline-info">
-      <i class="bi bi-book-half"></i> Tutorial
-    </a>
+<a href="RAOne.qmd" class="btn btn-sm btn-outline-danger">
+  <i class="bi bi-robot"></i> Ask RA-One
+</a>
 
-    <!-- 3) Cite us -->
-    <a href="citation.qmd" class="btn btn-sm btn-outline-success">
-      <i class="bi bi-journal-arrow-up"></i> Cite us
-    </a>
+<a href="tutorial.qmd" class="btn btn-sm btn-outline-info">
+  <i class="bi bi-book-half"></i> Tutorial
+</a>
 
-    <!-- 4) Policy -->
-    <a href="policy.qmd" class="btn btn-sm btn-outline-warning">
-      <i class="bi bi-shield-lock"></i> Policy
-    </a>
+<!-- B. Research & Collaboration -->
+<a href="citation.qmd" class="btn btn-sm btn-outline-success">
+  <i class="bi bi-journal-arrow-up"></i> Cite us
+</a>
 
-    <!-- 5) Discuss -->
-    <a href="discuss.qmd" class="btn btn-sm btn-outline-primary">
-      <i class="bi bi-chat-dots"></i> Discuss
-    </a>
+<a href="discuss.qmd" class="btn btn-sm btn-outline-primary">
+  <i class="bi bi-chat-dots"></i> Discuss
+</a>
 
-    <!-- 6) Report a bug -->
-    <a href="issue.qmd" class="btn btn-sm btn-outline-secondary">
-      <i class="bi bi-bug"></i> Report a bug
-    </a>
+<!-- C. Info & Support -->
+<a href="plans.qmd" class="btn btn-sm btn-outline-dark">
+  <i class="bi bi-cash-coin"></i> Pricing
+</a>
 
-    <!-- 7) More info -->
-    <a class="btn btn-sm btn-outline-dark"
-       data-bs-toggle="collapse" href="#aboutRAISINS" role="button"
-       aria-expanded="false" aria-controls="aboutRAISINS">
-      <i class="bi bi-info-circle-fill"></i> More info
-    </a>  
-    
-    <!-- 8) Pricing -->
-    <a href="plans.qmd" class="btn btn-sm btn-outline-dark">
-      <i class="bi bi-cash-coin"></i> Pricing
-    </a>
+<a href="policy.qmd" class="btn btn-sm btn-outline-warning">
+  <i class="bi bi-shield-lock"></i> Policy
+</a>
 
-    <!-- 9) Ask RA-One -->
-    <a href="RAOne.qmd" class="btn btn-sm btn-outline-danger">
-      <i class="bi bi-robot"></i> Ask RA-One
-    </a>
+<a href="issue.qmd" class="btn btn-sm btn-outline-secondary">
+  <i class="bi bi-bug"></i> Report a bug
+</a>
+
+<a href="discuss.qmd#feedback" class="btn btn-sm btn-outline-secondary">
+  <i class="bi bi-chat-heart"></i> Feedback
+</a>
+
+<!-- D. About -->
+<a class="btn btn-sm btn-outline-dark"
+   data-bs-toggle="collapse" href="#aboutRAISINS" role="button"
+   aria-expanded="false" aria-controls="aboutRAISINS">
+  <i class="bi bi-info-circle-fill"></i> More info
+</a>
+
 
   </div>
 </nav>
