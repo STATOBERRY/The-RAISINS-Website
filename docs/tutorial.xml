@@ -9,7 +9,7 @@
 <link>https://www.raisins.live/tutorial.html</link>
 <atom:link href="https://www.raisins.live/tutorial.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.7.32</generator>
+<generator>quarto-1.6.42</generator>
 <lastBuildDate>Fri, 31 Oct 2025 18:30:00 GMT</lastBuildDate>
 <item>
   <title>Hierarchical Cluster Analysis</title>
@@ -210,6 +210,9 @@ Step-by-Step: How to read a Dendrogram ?
 </details>
 <p>We’ve ensured that every possible plot type related to the Hierarchical Cluster analysis is readily available. Color-Coded Clusters dendrogram performed with the complete linkage method and euclidean distance metric, identified through elbow method, resulting in 2 clusters is available by default and each dendrogram comes with a gear icon at the top-left corner, allowing you to customize its appearance. You can also download these plots in high-quality PNG (300 dpi), TIFF or PDF formats for use in reports or presentations.(See Figure&nbsp;5)</p>
 <p>Explore Figure&nbsp;6, Figure&nbsp;7, Figure&nbsp;8, Figure&nbsp;9, Figure&nbsp;10, Figure&nbsp;11, Figure&nbsp;12, Figure&nbsp;13 where each dendrogram available in RAISINS is <strong>visually illustrated and accompanied by a clear, insightful description below</strong>, helping you easily understand the structure and meaning of each clustering pattern.</p>
+<div>
+
+</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -239,6 +242,9 @@ A vertical dendrogram is a classic, user-friendly way to display hierarchical cl
 </div>
 </div>
 </div>
+</div>
+<div>
+
 </div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
@@ -270,6 +276,9 @@ Ward’s linkage is a hierarchical clustering method focused on minimizing the i
 </div>
 </div>
 </div>
+<div>
+
+</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -299,6 +308,9 @@ A Circular Dendrogram is a radial, space-efficient alternative to the classical 
 </div>
 </div>
 </div>
+</div>
+<div>
+
 </div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
@@ -614,6 +626,9 @@ Lets understand the different optimal k Methods
 </div>
 </div>
 </details>
+<div>
+
+</div>
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
@@ -874,6 +889,9 @@ Difference between HCPC and classical HCA
 </ul>
 </details>
 <p>In the RAISINS platform after uploading your data <code>select the labels</code> then <code>select the clustering variables</code> of your choice, then click on <code>Run Analysis</code> and go to <code>HCPC</code> to generate Factor map, Chord diagram and Chord diagram - Cluster means which are downloadable in PNG, TIFF or PDF formats with interpretation and tables. The tables can be either copied or downloaded in <code>.xlsx</code> or <code>.csv</code> formats for use in reports or presentations.</p>
+<div>
+
+</div>
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">

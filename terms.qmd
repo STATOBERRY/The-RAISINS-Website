@@ -1,0 +1,49 @@
+---
+title: ""
+format: 
+   html:
+    toc: true
+editor: visual
+---
+
+## Introduction
+
+Welcome to Statoberry LLP. By accessing and using our website, you agree to comply with and be bound by the following terms and conditions. If you disagree with any part of these terms, please do not use our services.
+
+## Services Provided
+
+Statoberry LLP offers data analysis services, database management systems, website building, and other related services. Our services are provided as-is, and we reserve the right to make changes or discontinue services without prior notice.
+
+## User Obligations
+
+By using our website, you agree not to:
+
+-   Use our services for any unlawful or fraudulent activities.
+
+-   Infringe on the rights of other users.
+
+-   Upload or transmit any harmful or malicious software.
+
+## Intellectual Property
+
+All content on this site, including text, graphics, logos, and software, is the property of Statoberry LLP or its content suppliers. Unauthorized use of the content may result in legal action.
+
+## Limitation of Liability
+
+Statoberry LLP will not be liable for any damages resulting from the use or inability to use our services. This includes, without limitation, incidental and consequential damages.
+
+## Termination
+
+We reserve the right to terminate your access to our website and services if you breach these terms.
+
+## Governing Law
+
+These terms shall be governed by and construed in accordance with the laws of India.
+
+## Changes to Terms
+
+We may modify these terms at any time. Users will be informed of significant changes, and continued use of the site constitutes acceptance of the new terms.
+
+## Contact Us
+
+If you have any questions about these terms, please contact us at statistician\@statoberry.com.
