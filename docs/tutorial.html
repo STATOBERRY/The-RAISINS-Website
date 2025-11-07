@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial RAISINS – RAISINS</title>
+<title>tutorial – RAISINS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -391,37 +391,209 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QWdyaS1yZXNlYXJjaA==">Agri-research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RnJ1aXQtc2NpZW5jZQ==">Fruit-science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2VuZXJhbA==">General <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R2V0dGluZy1zdGFydGVk">Getting-started <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVsdGl2YXJpYXRl">Multivariate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGxhbnQtYnJlZWRpbmc=">Plant-breeding <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFsLXNjaWVuY2U=">Social-science <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R2V0dGluZy1zdGFydGVk">Getting-started <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TXVsdGl2YXJpYXRl">Multivariate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U29jaWFsLXNjaWVuY2U=">Social-science <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Tutorial RAISINS</h1>
-</div>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page-left">
 
-    
-  
-    
+
+<!-- RAISINS Learning Hub Intro (compact + mobile friendly) -->
+<section class="raisins-hero is-compact" aria-label="Welcome to RAISINS Learning Hub">
+  <div class="rh-bg"></div>
+  <div class="rh-pattern"></div>
+
+  <div class="rh-wrap">
+    <span class="rh-chip">welcome</span>
+    <h1 class="rh-title">RAISINS learning hub</h1>
+    <p class="rh-sub">
+      your comprehensive space for mastering data analysis with RAISINS-interactive guides, real examples,
+      and clear, step-by-step guidance that make statistics simpler and more accessible.
+    </p>
+
+    <ul class="rh-highlights" role="list">
+      <li>step-by-step</li>
+      <li>interactive</li>
+      <li>smooth reading</li>
+      <li>statistics, sweeter</li>
+    </ul>
   </div>
-  
+</section>
 
+<style>
+/* tune spacing via css vars */
+.raisins-hero {
+  --rh-pad-y: 2.2rem;
+  --rh-pad-x: 1rem;
+  --rh-radius: 16px;
+  --rh-maxw: 880px;
+  --rh-title-size: clamp(1.35rem, 3.2vw, 2rem);
+  --rh-sub-size: clamp(.95rem, 1.3vw, 1.05rem);
+  --rh-chip-size: .7rem;
+  --rh-gap: .5rem;
 
-</header>
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--rh-radius);
+  padding: var(--rh-pad-y) var(--rh-pad-x);
+  margin: .75rem 0 1.25rem;
+  isolation: isolate;
+  box-shadow: 0 6px 22px rgba(0,0,0,.06);
+}
 
+/* optional extra-slim mode */
+.raisins-hero.is-compact {
+  --rh-pad-y: 1.6rem;
+  --rh-radius: 14px;
+  --rh-title-size: clamp(1.25rem, 2.8vw, 1.8rem);
+  --rh-sub-size: clamp(.92rem, 1.1vw, 1rem);
+}
 
+/* animated background (subtler) */
+.raisins-hero .rh-bg {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(900px 480px at 10% 10%, rgba(99, 102, 241,.18), transparent 60%),
+    radial-gradient(700px 420px at 90% 20%, rgba(16, 185, 129,.18), transparent 55%),
+    linear-gradient(135deg, #f8f9fc 0%, #ffffff 60%);
+  z-index: -2;
+  animation: rh-shift 18s ease-in-out infinite alternate;
+}
+
+/* soft floating dots (smaller) */
+.raisins-hero .rh-pattern::before,
+.raisins-hero .rh-pattern::after {
+  content: "";
+  position: absolute;
+  width: 180px; height: 180px;
+  top: -32px; right: -32px;
+  background: radial-gradient(circle at 30% 30%, rgba(0,0,0,.07), transparent 60%);
+  filter: blur(10px);
+  border-radius: 50%;
+  animation: rh-float 12s ease-in-out infinite;
+  z-index: -1;
+}
+.raisins-hero .rh-pattern::after {
+  top: auto; bottom: -40px; right: auto; left: -32px;
+  width: 210px; height: 210px;
+  animation-duration: 14s;
+}
+
+/* content */
+.raisins-hero .rh-wrap {
+  max-width: var(--rh-maxw);
+  margin: 0 auto;
+  text-align: left;
+}
+
+.raisins-hero .rh-chip {
+  display: inline-block;
+  font-size: var(--rh-chip-size);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  background: #0b5a56;
+  color: #fff;
+  padding: .3rem .55rem;
+  border-radius: 999px;
+  box-shadow: 0 3px 10px rgba(11, 90, 86, .22);
+  animation: rh-pop .8s ease both .1s;
+}
+
+.raisins-hero .rh-title {
+  margin: .6rem 0 .3rem;
+  font-size: var(--rh-title-size);
+  line-height: 1.15;
+  color: #1f345c;
+  letter-spacing: -.015em;
+  animation: rh-rise .8s cubic-bezier(.2,.7,.2,1) both .05s;
+}
+
+.raisins-hero .rh-sub {
+  margin: .15rem 0 .9rem;
+  font-size: var(--rh-sub-size);
+  color: #3b4250;
+  max-width: 62ch;
+  animation: rh-fade .8s ease both .18s;
+}
+
+/* highlights */
+.raisins-hero .rh-highlights {
+  display: flex;
+  gap: var(--rh-gap);
+  flex-wrap: wrap;
+  padding: 0; margin: .25rem 0 0;
+  list-style: none;
+  animation: rh-fade .8s ease both .28s;
+}
+.raisins-hero .rh-highlights li {
+  font-size: .88rem;
+  padding: .38rem .6rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.85);
+  border: 1px solid rgba(31,52,92,.12);
+  color: #0b5a56;
+  backdrop-filter: blur(4px);
+}
+
+/* animations */
+@keyframes rh-rise { from { transform: translateY(8px); opacity: 0 } to { transform: translateY(0); opacity: 1 } }
+@keyframes rh-fade { from { opacity: 0 } to { opacity: 1 } }
+@keyframes rh-pop { 0% { transform: scale(.96); opacity: 0 } 100% { transform: scale(1); opacity: 1 } }
+@keyframes rh-float { 0% { transform: translateY(0) } 50% { transform: translateY(6px) } 100% { transform: translateY(0) } }
+@keyframes rh-shift { 0% { background-position: 0% 0% } 100% { background-position: 100% 100% } }
+
+/* dark mode */
+:root[data-theme="dark"] .raisins-hero .rh-bg {
+  background:
+    radial-gradient(900px 480px at 10% 10%, rgba(99, 102, 241,.16), transparent 60%),
+    radial-gradient(700px 420px at 90% 20%, rgba(16, 185, 129,.14), transparent 55%),
+    linear-gradient(135deg, #0b1324 0%, #121a2b 70%);
+}
+:root[data-theme="dark"] .raisins-hero { box-shadow: 0 8px 26px rgba(0,0,0,.32); }
+:root[data-theme="dark"] .raisins-hero .rh-title { color: #e8eefc; }
+:root[data-theme="dark"] .raisins-hero .rh-sub { color: #c6cfde; }
+:root[data-theme="dark"] .raisins-hero .rh-highlights li {
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.1);
+  color: #9fe4d7;
+}
+
+/* mobile tweaks */
+@media (max-width: 680px) {
+  .raisins-hero {
+    --rh-pad-y: 1.2rem;
+    --rh-pad-x: .9rem;
+    --rh-title-size: 1.25rem;
+    --rh-sub-size: .95rem;
+    margin: .5rem 0 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,.05);
+  }
+  .raisins-hero .rh-pattern::before,
+  .raisins-hero .rh-pattern::after {
+    width: 150px; height: 150px;
+    filter: blur(8px);
+  }
+  .raisins-hero .rh-highlights li {
+    font-size: .85rem;
+    padding: .32rem .55rem;
+  }
+}
+
+/* motion safety */
+@media (prefers-reduced-motion: reduce) {
+  .raisins-hero * { animation: none !important; transition: none !important; }
+}
+</style>
+<!-- :::{#tutorial}   -->
+<!-- :::   -->
 
 
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-tutorial">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R2VuZXJhbCUyQ0dldHRpbmctc3RhcnRlZA==" data-listing-date-sort="1761935400000" data-listing-file-modified-sort="1762494433152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2775">
+<div class="quarto-post image-right" data-index="0" data-categories="R2V0dGluZy1zdGFydGVk" data-listing-date-sort="1762453800000" data-listing-file-modified-sort="1762496507609" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2775">
 <div class="thumbnail"><a href="./tutorial/Intro/raisinsIntro.html" class="no-external">
 
 <img loading="lazy" src="./tutorial/Intro/getstarted.webp" class="thumbnail-image">
@@ -433,8 +605,6 @@ window.Quarto = {
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('R2VuZXJhbA=='); return false;">General</div>
-
 <div class="listing-category" onclick="window.quartoListingCategory('R2V0dGluZy1zdGFydGVk'); return false;">Getting-started</div>
 
 </div>
@@ -445,7 +615,7 @@ window.Quarto = {
 <div class="metadata">
 <a href="./tutorial/Intro/raisinsIntro.html" class="no-external">
 <div class="listing-date">
-Nov 1, 2025
+Nov 7, 2025
 </div>
 <div class="listing-author">
 Dr.&nbsp;Pratheesh P Gopinath, Hisham M
@@ -454,7 +624,7 @@ Dr.&nbsp;Pratheesh P Gopinath, Hisham M
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="TXVsdGl2YXJpYXRlJTJDU29jaWFsLXNjaWVuY2UlMkNBZ3JpLXJlc2VhcmNoJTJDUGxhbnQtYnJlZWRpbmclMkNGcnVpdC1zY2llbmNl" data-listing-date-sort="1761935400000" data-listing-file-modified-sort="1762232333257" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26" data-listing-word-count-sort="5088">
+<div class="quarto-post image-right" data-index="1" data-categories="TXVsdGl2YXJpYXRlJTJDU29jaWFsLXNjaWVuY2U=" data-listing-date-sort="1761935400000" data-listing-file-modified-sort="1762496546624" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="26" data-listing-word-count-sort="5088">
 <div class="thumbnail"><a href="./tutorial/cluster/Clustertutorial.html" class="no-external">
 
 <img loading="lazy" src="./tutorial/cluster/clustertutorial.webp" class="thumbnail-image">
@@ -470,12 +640,6 @@ Dr.&nbsp;Pratheesh P Gopinath, Hisham M
 
 <div class="listing-category" onclick="window.quartoListingCategory('U29jaWFsLXNjaWVuY2U='); return false;">Social-science</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('QWdyaS1yZXNlYXJjaA=='); return false;">Agri-research</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGxhbnQtYnJlZWRpbmc='); return false;">Plant-breeding</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RnJ1aXQtc2NpZW5jZQ=='); return false;">Fruit-science</div>
-
 </div>
 <div class="delink listing-description"><a href="./tutorial/cluster/Clustertutorial.html" class="no-external">
 </a><p><a href="./tutorial/cluster/Clustertutorial.html" class="no-external">Hierarchical Cluster Analysis (HCA) widely used in Agricultural research … </a><a href="./tutorial/cluster/Clustertutorial.html" style="color: grey; text-decoration: none;">Read more …</a></p>
@@ -487,7 +651,7 @@ Dr.&nbsp;Pratheesh P Gopinath, Hisham M
 Nov 1, 2025
 </div>
 <div class="listing-author">
-Jithin Chandran, Pratheesh P Gopinath*, Akhila P. S.
+Jithin Chandran, Pratheesh P Gopinath, Akhila P. S.
 </div>
 <div class="listing-reading-time">26 min</div>
 </a>

@@ -8,7 +8,7 @@ author:
     email: developer@statoberry.com
     note: Developer
     
-  - name: Pratheesh P Gopinath*
+  - name: Pratheesh P Gopinath
     affiliations:
       - name: Kerala Agricultural University
     email: pratheesh.pg@kau.in
@@ -49,7 +49,7 @@ description: |
 metadata:
   description: null
    
-categories: [Multivariate,Social-science,Agri-research,Plant-breeding, Fruit-science]
+categories: [Multivariate,Social-science]
 date: 2025-11-01
 reading-time: 10  
 ---

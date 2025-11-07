@@ -63,8 +63,8 @@ description: |
 metadata:
   description: null
    
-categories: [General, Getting-started]
-date: 2025-11-01
+categories: [Getting-started]
+date: 2025-11-07
 reading-time: 10  
 ---
 
