@@ -14,7 +14,7 @@
 <item>
   <title>Getting Started</title>
   <dc:creator>Dr. Pratheesh P Gopinath</dc:creator>
-  <dc:creator>Hisham M*</dc:creator>
+  <dc:creator>Hisham M</dc:creator>
   <link>https://www.raisins.live/tutorial/Intro/raisinsIntro.html</link>
   <description><![CDATA[ 
 
@@ -32,7 +32,7 @@
 <section id="gettingStarted" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="gettingStarted"><span class="header-section-number">2</span> <span style="background-color:#D2FFB0; padding:4px 8px; border-radius:6px;">Getting started</span></h2>
 <ol type="1">
-<li><p><strong>Go to</strong> <a href="https://www.raisins.live/">https://www.raisins.live/</a></p></li>
+<li><p><strong>Go to</strong> <a href="https://www.raisins.live/" class="uri">https://www.raisins.live/</a></p></li>
 <li><p><strong>Click on Start</strong> in the home page of RAISINS as shown in Figure&nbsp;1 or simply scroll down</p></li>
 </ol>
 <div id="fig-raisinsweb" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
@@ -65,7 +65,7 @@ Figure&nbsp;2: Analysis modules are listed section-wise in RAISINS
 </figure>
 </div>
 <ol start="4" type="1">
-<li><strong>Clicking on any analysis module</strong> will open up a window like that shown in Figure&nbsp;4. Each module has three login options.<br>
+<li><strong>Clicking on any analysis module</strong> will open up a window like that shown in Figure&nbsp;3. Each module has three login options.<br>
 <span style="background-color:#a5cffa; padding:2px 6px; border-radius:4px;"><strong>Preview Mode</strong></span>: Before subscribing to any module, you can explore RAISINS using the preview mode. Simply enter your email ID, and an OTP will be sent to your inbox. Use this OTP to log in and test any module with the built-in sample datasets. For your convenience, the OTP generated for your account remains valid until it refreshes at 12 a.m. and 12 p.m. (IST). This means you can revisit and explore multiple modules within that time window using the same OTP, without needing to generate a new one. Preview mode is an excellent feature for teaching, demonstrations, and learning how RAISINS works before making a subscription.<br>
 <span style="background-color:#76ad6d; padding:2px 6px; border-radius:4px;"><strong>Get Started</strong></span>: This is the primary login option for users who have subscribed to any RAISINS module. Simply log in using your registered email ID and the password you created during registration. Once logged in, you can upload your own datasets, and begin your analysis seamlessly.<br>
 <span style="background-color:#b991c4; padding:2px 6px; border-radius:4px;"><strong>Institutional Login</strong></span>: If you are subscribed to all RAISINS modules through the Unlimited Plan or have access via an institutional license, you can log in using this option. An OTP will be sent to your registered email ID, which you can use to log in. Like in preview mode the OTP generated for your account remains valid until it refreshes at 12 a.m. and 12 p.m. (IST) and can be used to access all the modules included in your institutional plan.</li>
@@ -108,20 +108,20 @@ Figure&nbsp;3: RAISINS module window
 <li><p>Click Browse and upload your dataset.</p></li>
 <li><p>Click <code>Run Analysis</code> and RAISINS will handle the rest!</p></li>
 </ul>
-<div id="fig-modulewindow" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-modulewindow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="method.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: RAISINS workflow"><img src="https://www.raisins.live/tutorial/Intro/method.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-modulewindow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4: RAISINS workflow
-</figcaption>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="method.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="RAISINS workflow"><img src="https://www.raisins.live/tutorial/Intro/method.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="RAISINS workflow"></a></p>
 </figure>
 </div>
-<p>A sample module(application) window is shown in Figure&nbsp;5 and Figure&nbsp;6.</p>
+<figcaption>RAISINS workflow</figcaption>
+</figure>
+</div>
+<p>A sample module(application) window is shown in Figure&nbsp;4 and Figure&nbsp;5.</p>
 <section id="four-main-tabs" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="four-main-tabs"><span class="header-section-number">3.1</span> Four main tabs</h3>
-<p>From Figure&nbsp;5, you can see how an application in <strong>RAISINS</strong> appears. Every application follows a similar structure with four main tabs, each serving a distinct purpose. The four tabs are:</p>
+<p>From Figure&nbsp;4, you can see how an application in <strong>RAISINS</strong> appears. Every application follows a similar structure with four main tabs, each serving a distinct purpose. The four tabs are:</p>
 <p><span style="background-color:#7b68ee; color:white; border-radius:50%; padding:4px 10px; font-weight:bold; box-shadow:1px 1px 3px rgba(0,0,0,0.2);">1</span> <strong>Analysis:</strong><br>
 This is the main workspace where the analysis is performed. You can upload your data file here, select the required variables or columns, and click <strong>Run Analysis</strong> to instantly view the results.</p>
 <p><span style="background-color:#7b68ee; color:white; border-radius:50%; padding:4px 10px; font-weight:bold; box-shadow:1px 1px 3px rgba(0,0,0,0.2);">2</span> <strong>Create Data:</strong><br>
@@ -133,10 +133,10 @@ This tab provides details about your subscription and usage statistics. You can 
 <div id="fig-appwin1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-appwin1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="appwin1.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;5: Inside a module in RAISINS"><img src="https://www.raisins.live/tutorial/Intro/appwin1.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+<a href="appwin1.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;4: Inside a module in RAISINS"><img src="https://www.raisins.live/tutorial/Intro/appwin1.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-appwin1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;5: Inside a module in RAISINS
+Figure&nbsp;4: Inside a module in RAISINS
 </figcaption>
 </figure>
 </div>
@@ -146,7 +146,7 @@ Figure&nbsp;5: Inside a module in RAISINS
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>All modules in <strong>RAISINS</strong> follow a similar workflow. Just upload your file in the prescribed format and click <strong>Run Analysis</strong>, as shown in Figure&nbsp;6.<br>
+<p>All modules in <strong>RAISINS</strong> follow a similar workflow. Just upload your file in the prescribed format and click <strong>Run Analysis</strong>, as shown in Figure&nbsp;5.<br>
 👉 You only need to be careful while arranging your data. You can refer to the model datasets in <code>Datasets</code> tab of each application or use the <code>Create Data</code> tab.<br>
 See Section&nbsp;4 for key points to remember when preparing your file for upload.</p>
 </div>
@@ -155,10 +155,10 @@ See Section&nbsp;4 for key points to remember when preparing your file for uploa
 <div id="fig-appwin2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-appwin2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="appwin2.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;6: Click on Run Analysis after uploading the file"><img src="https://www.raisins.live/tutorial/Intro/appwin2.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+<a href="appwin2.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;5: Click on Run Analysis after uploading the file"><img src="https://www.raisins.live/tutorial/Intro/appwin2.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-appwin2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;6: Click on Run Analysis after uploading the file
+Figure&nbsp;5: Click on Run Analysis after uploading the file
 </figcaption>
 </figure>
 </div>
@@ -203,64 +203,39 @@ Figure&nbsp;6: Click on Run Analysis after uploading the file
 <section id="column-naming-dos-and-donts" class="level3" data-number="4.3">
 <h3 data-number="4.3" class="anchored" data-anchor-id="column-naming-dos-and-donts"><span class="header-section-number">4.3</span> Column naming: do’s and don’ts</h3>
 <div style="overflow-x:auto;">
-<table style="border-collapse: collapse; width: 100%; border: 1px solid #ccc;">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 32%">
+<col style="width: 38%">
+<col style="width: 27%">
+</colgroup>
 <thead>
-<tr style="background-color:#f8f9fa;">
-<th style="border:1px solid #ccc; padding:6px; text-align:left;">
-✅ Do
-</th>
-<th style="border:1px solid #ccc; padding:6px; text-align:left;">
-❌ Don’t
-</th>
-<th style="border:1px solid #ccc; padding:6px; text-align:left;">
-💡 Why
-</th>
+<tr class="header">
+<th style="text-align: left;">✅ Do</th>
+<th style="text-align: left;">❌ Don’t</th>
+<th style="text-align: left;">💡 Why</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="border:1px solid #ccc; padding:6px;">
-Use short, clear names: <code>yield</code>, <code>treatment</code>, <code>rep</code>
-</td>
-<td style="border:1px solid #ccc; padding:6px;">
-Long or vague names: <code>this_is_my_final_corrected_yield_value</code>
-</td>
-<td style="border:1px solid #ccc; padding:6px;">
-Short names read better in tables and plots
-</td>
+<tr class="odd">
+<td style="text-align: left;">Use short, clear names: <code>yield</code>, <code>treatment</code>, <code>rep</code></td>
+<td style="text-align: left;">Long or vague names: <code>this_is_my_final_corrected_yield_value</code></td>
+<td style="text-align: left;">Short names read better in tables and plots</td>
 </tr>
-<tr>
-<td style="border:1px solid #ccc; padding:6px;">
-Separate words with <code>_</code> or <code>.</code>: <code>plant_height</code>
-</td>
-<td style="border:1px solid #ccc; padding:6px;">
-Use spaces: <code>plant height</code>
-</td>
-<td style="border:1px solid #ccc; padding:6px;">
-Spaces can break code and labels
-</td>
+<tr class="even">
+<td style="text-align: left;">Separate words with <code>_</code> or <code>.</code>: <code>plant_height</code></td>
+<td style="text-align: left;">Use spaces: <code>plant height</code></td>
+<td style="text-align: left;">Spaces can break code and labels</td>
 </tr>
-<tr>
-<td style="border:1px solid #ccc; padding:6px;">
-Use letters first: <code>r1_yield</code>
-</td>
-<td style="border:1px solid #ccc; padding:6px;">
-Start with a number: <code>1yield</code>
-</td>
-<td style="border:1px solid #ccc; padding:6px;">
-Column names shouldn’t start with digits
-</td>
+<tr class="odd">
+<td style="text-align: left;">Use letters first: <code>r1_yield</code></td>
+<td style="text-align: left;">Start with a number: <code>1yield</code></td>
+<td style="text-align: left;">Column names shouldn’t start with digits</td>
 </tr>
-<tr>
-<td style="border:1px solid #ccc; padding:6px;">
-Avoid symbols: <code>perc_mortality</code>
-</td>
-<td style="border:1px solid #ccc; padding:6px;">
-Use symbols: <code>percentage mortality (%)</code>
-</td>
-<td style="border:1px solid #ccc; padding:6px;">
-Symbols like <code>%</code>, <code>#</code> cause parsing issues
-</td>
+<tr class="even">
+<td style="text-align: left;">Avoid symbols: <code>perc_mortality</code></td>
+<td style="text-align: left;">Use symbols: <code>percentage mortality (%)</code></td>
+<td style="text-align: left;">Symbols like <code>%</code>, <code>#</code> cause parsing issues</td>
 </tr>
 </tbody>
 </table>
@@ -283,10 +258,10 @@ Symbols like <code>%</code>, <code>#</code> cause parsing issues
 <div id="fig-datamodel" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-datamodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="datamodel.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;7: Minimal example data file"><img src="https://www.raisins.live/tutorial/Intro/datamodel.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+<a href="datamodel.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;6: Minimal example data file"><img src="https://www.raisins.live/tutorial/Intro/datamodel.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-datamodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;7: Minimal example data file
+Figure&nbsp;6: Minimal example data file
 </figcaption>
 </figure>
 </div>
@@ -295,7 +270,7 @@ Figure&nbsp;7: Minimal example data file
 <section id="sec-plogin" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="sec-plogin"><span class="header-section-number">5</span> <span style="background-color:#cce6ff; padding:4px 8px; border-radius:6px;">Preview login</span></h2>
 <p>This is an excellent feature we have introduced in RAISINS. It allows anyone to freely explore any module without registration, promoting open access and enabling global peer review, thereby enhancing transparency and credibility.</p>
-<p>When you click on a module,in the login window that opens up- simply select the <code>Preview Mode</code> button as shown in Figure&nbsp;4. In Figure&nbsp;8, you can see how to access the preview mode using an OTP. As illustrated in Figure&nbsp;8 (a), if you already generated an OTP in another module, note that it refreshes only at 12 a.m. and 12 p.m. each day. In such cases, you can use the button <code>I Already Have OTP</code> to proceed. Which will take you to the screen shown in Figure&nbsp;8 (b), where you have to enter the OTP and get inside the app.</p>
+<p>When you click on a module,in the login window that opens up- simply select the <code>Preview Mode</code> button as shown in Figure&nbsp;3. In Figure&nbsp;7, you can see how to access the preview mode using an OTP. As illustrated in Figure&nbsp;7 (a), if you already generated an OTP in another module, note that it refreshes only at 12 a.m. and 12 p.m. each day. In such cases, you can use the button <code>I Already Have OTP</code> to proceed. Which will take you to the screen shown in Figure&nbsp;7 (b), where you have to enter the OTP and get inside the app.</p>
 <div id="fig-preview" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-preview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -304,7 +279,7 @@ Figure&nbsp;7: Minimal example data file
 <div id="fig-pa" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-pa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="previewlogin.webp" class="lightbox" data-gallery="fig-preview" title="Figure&nbsp;8&nbsp;(a): Enter your mail id to receive OTP"><img src="https://www.raisins.live/tutorial/Intro/previewlogin.webp" class="img-fluid figure-img" data-ref-parent="fig-preview"></a>
+<a href="previewlogin.webp" class="lightbox" data-gallery="fig-preview" title="Figure&nbsp;7&nbsp;(a): Enter your mail id to receive OTP"><img src="https://www.raisins.live/tutorial/Intro/previewlogin.webp" class="img-fluid figure-img" data-ref-parent="fig-preview"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (a) Enter your mail id to receive OTP
@@ -316,7 +291,7 @@ Figure&nbsp;7: Minimal example data file
 <div id="fig-pb" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-pb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="loginpagepr.webp" class="lightbox" data-gallery="fig-preview" title="Figure&nbsp;8&nbsp;(b): Enter the OTP to acces the app"><img src="https://www.raisins.live/tutorial/Intro/loginpagepr.webp" class="img-fluid figure-img" data-ref-parent="fig-preview"></a>
+<a href="loginpagepr.webp" class="lightbox" data-gallery="fig-preview" title="Figure&nbsp;7&nbsp;(b): Enter the OTP to acces the app"><img src="https://www.raisins.live/tutorial/Intro/loginpagepr.webp" class="img-fluid figure-img" data-ref-parent="fig-preview"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (b) Enter the OTP to acces the app
@@ -327,31 +302,31 @@ Figure&nbsp;7: Minimal example data file
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;8: Preview mode in RAISINS
+Figure&nbsp;7: Preview mode in RAISINS
 </figcaption>
 </figure>
 </div>
-<p>Once inside the app, you can explore all the available features, analyses, and plots using the inbuilt datasets. This allows you to fully experience how each module functions. However, please note that uploading your own dataset is not permitted in preview mode. A sample view of the preview mode interface is shown in Figure&nbsp;9.</p>
+<p>Once inside the app, you can explore all the available features, analyses, and plots using the inbuilt datasets. This allows you to fully experience how each module functions. However, please note that uploading your own dataset is not permitted in preview mode. A sample view of the preview mode interface is shown in Figure&nbsp;8.</p>
 <div id="fig-pwinside" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-pwinside-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="entrypreview.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;9: Inside preview mode"><img src="https://www.raisins.live/tutorial/Intro/entrypreview.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+<a href="entrypreview.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;8: Inside preview mode"><img src="https://www.raisins.live/tutorial/Intro/entrypreview.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pwinside-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;9: Inside preview mode
+Figure&nbsp;8: Inside preview mode
 </figcaption>
 </figure>
 </div>
 </section>
 <section id="sec-Instlogin" class="level2" data-number="6">
 <h2 data-number="6" class="anchored" data-anchor-id="sec-Instlogin"><span class="header-section-number">6</span> <span style="background-color:#fff3e6; padding:4px 8px; border-radius:6px;">Institutional login</span></h2>
-<p>This login feature is available to users who have subscribed to all RAISINS modules through the Individual Plan (unlimited plan), any customized plan, or whose institution is registered with us. You can access any module or only those modules included in your plan by clicking the <code>Institutional Login</code> button in the login window of the selected module, as shown in Figure&nbsp;4.</p>
+<p>This login feature is available to users who have subscribed to all RAISINS modules through the Individual Plan (unlimited plan), any customized plan, or whose institution is registered with us. You can access any module or only those modules included in your plan by clicking the <code>Institutional Login</code> button in the login window of the selected module, as shown in Figure&nbsp;3.</p>
 <p>An OTP will be sent to your registered email address for authentication. Similar to the preview mode, all OTPs are refreshed only at 12 a.m. and 12 p.m., allowing you to reuse the same OTP for logging into other modules within that time frame.</p>
 <p>You can view the available subscription plans for RAISINS <a href="https://www.raisins.live/plans.html">here</a></p>
 </section>
 <section id="sec-modlogin" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="sec-modlogin"><span class="header-section-number">7</span> <span style="background-color:#e6fbff; padding:4px 8px; border-radius:6px;">Module login</span></h2>
-<p>RAISINS allows users to access each module independently through subscribing that particular module only. A feature designed with students in mind. If you have subscribed to a single module, you can start using it directly by clicking the <code>Get Started</code> button, as shown in Figure&nbsp;4.</p>
+<p>RAISINS allows users to access each module independently through subscribing that particular module only. A feature designed with students in mind. If you have subscribed to a single module, you can start using it directly by clicking the <code>Get Started</code> button, as shown in Figure&nbsp;3.</p>
 </section>
 <section id="sec-RAone1" class="level2" data-number="8">
 <h2 data-number="8" class="anchored" data-anchor-id="sec-RAone1"><span class="header-section-number">8</span> <span style="background-color:#fccfe1; padding:4px 8px; border-radius:6px;">AI Assistant (RA-One)</span></h2>
@@ -360,15 +335,11 @@ Figure&nbsp;9: Inside preview mode
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-raone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-raone" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-raone" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-raone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="raone.webp" class="lightbox" data-gallery="fig-raone" title="Figure&nbsp;10&nbsp;(a): Accessing RA-One"><img src="https://www.raisins.live/tutorial/Intro/raone.webp" class="img-fluid figure-img" data-ref-parent="fig-raone"></a>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-raone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(a) Accessing RA-One
-</figcaption>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="raone.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Accessing RA-One"><img src="https://www.raisins.live/tutorial/Intro/raone.webp" class="img-fluid figure-img"></a></p>
+<figcaption>Accessing RA-One</figcaption>
 </figure>
 </div>
 </div>
@@ -376,10 +347,10 @@ Figure&nbsp;9: Inside preview mode
 <div id="fig-raoneinter" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-raoneinter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="raoneinter.webp" class="lightbox" data-gallery="fig-raone" title="Figure&nbsp;10&nbsp;(b): RA-One bot interface"><img src="https://www.raisins.live/tutorial/Intro/raoneinter.webp" class="img-fluid figure-img" data-ref-parent="fig-raone"></a>
+<a href="raoneinter.webp" class="lightbox" data-gallery="fig-raone" title="Figure&nbsp;9&nbsp;(a): RA-One bot interface"><img src="https://www.raisins.live/tutorial/Intro/raoneinter.webp" class="img-fluid figure-img" data-ref-parent="fig-raone"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-raoneinter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(b) RA-One bot interface
+(a) RA-One bot interface
 </figcaption>
 </figure>
 </div>
@@ -387,7 +358,7 @@ Figure&nbsp;9: Inside preview mode
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-raone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;10: RA-One: AI powered assistant in RAISINS
+Figure&nbsp;9: RA-One: AI powered assistant in RAISINS
 </figcaption>
 </figure>
 </div>
@@ -408,7 +379,7 @@ Figure&nbsp;10: RA-One: AI powered assistant in RAISINS
 </section>
 <section id="sec-issue" class="level2" data-number="10">
 <h2 data-number="10" class="anchored" data-anchor-id="sec-issue"><span class="header-section-number">10</span> <span style="background-color:#dedec1; padding:4px 8px; border-radius:6px;">Issues and support</span></h2>
-<p>We are always here to help you with any data-related queries or issues you may face while using RAISINS. You can reach us directly through the <a href="https://www.raisins.live/contact.html">contact us</a> in <strong><a href="https://www.raisins.live">RAISINS website</a></strong> or by emailing us at <strong><a href="mailto:support@statoberry.com">support@statoberry.com</a></strong>.</p>
+<p>We are always here to help you with any data-related queries or issues you may face while using RAISINS. You can reach us directly through the <a href="https://www.raisins.live/contact.html">contact us</a> in <a href="https://www.raisins.live"><strong>RAISINS website</strong></a> or by emailing us at <a href="mailto:support@statoberry.com"><strong>support@statoberry.com</strong></a>.</p>
 <p>If you encounter any bugs, you can also report them directly through our <strong>GitHub repository</strong> using the <strong>“Report a Bug”</strong> button available on the homepage (for users with a GitHub account) or notify us by mail.</p>
 <p>We usually respond within <strong>one hour during office hours (Monday to Friday)</strong> to any issue raised. You can also contact us via <strong>WhatsApp</strong> using the number provided on our <a href="https://www.raisins.live/contact.html">contact us</a> page.</p>
 <blockquote class="blockquote">
