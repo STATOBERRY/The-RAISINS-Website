@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Pratheesh P Gopinath">
+<meta name="author" content="Hisham M*">
+<meta name="dcterms.date" content="2025-11-01">
+<meta name="description" content="Here we introduces users to the RAISINS platform and guides them through the essential steps to get started. It explains where to begin, how to start an analysis, upload data, and follow the data preparation guidelines…. Read more …">
+
+<title>Getting Started – RAISINS</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../www/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-0e48f89391d41c08dfacc4aa26f39ced.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(introbanner.webp);
+background-size: cover;
+      }
+</style>
+<style>
+  /* Hide unwanted description */
+  #title-block-header .quarto-description,
+  #title-block-header .description,
+  header.quarto-title-block .quarto-description,
+  header.quarto-title-block .description,
+  header.quarto-title-block p.lead {
+    display: none !important;
+  }
+
+  /* Banner styling - disable zoom effect */
+  .quarto-title-block .quarto-title-banner {
+    background-attachment: scroll !important; /* stops parallax zoom */
+    background-size: cover !important;        /* keep proper image fill */
+    background-position: center center !important;
+    height: 300px;
+    transition: none !important;              /* no smooth scaling */
+    transform: none !important;               /* lock scale */
+  }
+
+  /* Hide title and categories if needed */
+  header.quarto-title-block .quarto-title,
+  header.quarto-title-block .quarto-categories {
+    display: none !important;
+  }
+</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../www/logo.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">RAISINS</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#dataAnalysis"> 
+<span class="menu-text">Data Analysis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#analysis-module"> 
+<span class="menu-text">Analysis of Experiments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#statgen"> 
+<span class="menu-text">Statistical Genetics</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#social"> 
+<span class="menu-text">Social Sciences</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html#customTool"> 
+<span class="menu-text">Custom tools</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-others" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Others</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-others">    
+        <li>
+    <a class="dropdown-item" href="../../tutorial.html">
+ <span class="dropdown-text">Tutorial</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../video.html">
+ <span class="dropdown-text">Quick videos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../citation.html">
+ <span class="dropdown-text">Citation Info</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../discuss.html">
+ <span class="dropdown-text">Discussion &amp; Feedback</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../plans.html">
+ <span class="dropdown-text">Institutional Plans</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> <i class="bi bi-telephone" role="img">
+</i> 
+<span class="menu-text">Contact us</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Getting Started</h1>
+                  <div>
+        <div class="description">
+          <p>Here we introduces users to the RAISINS platform and guides them through the essential steps to get started. It explains where to begin, how to start an analysis, upload data, and follow the data preparation guidelines…. <a href="../../tutorial/cluster/Clustertutorial.html" style="color: grey; text-decoration: none;">Read more …</a></p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">General</div>
+                <div class="quarto-category">Getting-started</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author column-page-left">
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-heading">Affiliations</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://kau.in/people/sub-lt-dr-pratheesh-p-gopinath">Dr.&nbsp;Pratheesh P Gopinath</a> <a href="mailto:pratheesh.pg@kau.in" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              Kerala Agricultural University
+            </p>
+        </div>
+      <div class="quarto-title-meta-contents">
+      <p class="author">Hisham M* <a href="mailto:statistician@statoberry.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              Statoberry LLP
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta column-page-left">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 1, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  <div>
+    <div class="abstract">
+      <div class="block-title">Abstract</div>
+      <p>Here we introduces users to the RAISINS platform and guides them through the essential steps to get started. It explains where to begin, how to start an analysis, upload data, and follow the data preparation guidelines. Powered by AI, RAISINS is built on the combined strengths of R and Python, integrating the best of both worlds to deliver seamless, high-performance analytics. Designed with simplicity at its core, RAISINS is entirely online no installation is required and can be accessed from any device, anywhere. To perform an analysis, simply log in, choose the module you need, upload your dataset, and click Run Analysis. Within seconds, RAISINS produces publication-ready tables, plots, and AI-assisted interpretations, making statistical analysis accurate, efficient, and effortless.</p>
+    </div>
+  </div>
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#raisins" id="toc-raisins" class="nav-link active" data-scroll-target="#raisins"><span class="header-section-number">1</span> <span style="background-color:#fff8dc; padding:4px 8px; border-radius:6px;">RAISINS!</span></a></li>
+  <li><a href="#gettingStarted" id="toc-gettingStarted" class="nav-link" data-scroll-target="#gettingStarted"><span class="header-section-number">2</span> <span style="background-color:#D2FFB0; padding:4px 8px; border-radius:6px;">Getting started</span></a></li>
+  <li><a href="#sec-appWork" id="toc-sec-appWork" class="nav-link" data-scroll-target="#sec-appWork"><span class="header-section-number">3</span> <span style="background-color:#ccffee; padding:4px 8px; border-radius:6px;">How each module works!</span></a>
+  <ul class="collapse">
+  <li><a href="#four-main-tabs" id="toc-four-main-tabs" class="nav-link" data-scroll-target="#four-main-tabs"><span class="header-section-number">3.1</span> Four main tabs</a></li>
+  </ul></li>
+  <li><a href="#sec-prepfile" id="toc-sec-prepfile" class="nav-link" data-scroll-target="#sec-prepfile"><span class="header-section-number">4</span> <span style="background-color:#ebd6ff; padding:4px 8px; border-radius:6px;">Preparing your file</span></a>
+  <ul class="collapse">
+  <li><a href="#preparing-your-data" id="toc-preparing-your-data" class="nav-link" data-scroll-target="#preparing-your-data"><span class="header-section-number">4.1</span> Preparing your data</a></li>
+  <li><a href="#rules-to-follow" id="toc-rules-to-follow" class="nav-link" data-scroll-target="#rules-to-follow"><span class="header-section-number">4.2</span> Rules to follow</a></li>
+  <li><a href="#column-naming-dos-and-donts" id="toc-column-naming-dos-and-donts" class="nav-link" data-scroll-target="#column-naming-dos-and-donts"><span class="header-section-number">4.3</span> Column naming: do’s and don’ts</a></li>
+  <li><a href="#a-few-column-name-examples-to-note" id="toc-a-few-column-name-examples-to-note" class="nav-link" data-scroll-target="#a-few-column-name-examples-to-note"><span class="header-section-number">4.4</span> A few column name examples to note</a></li>
+  <li><a href="#minimal-csv-example" id="toc-minimal-csv-example" class="nav-link" data-scroll-target="#minimal-csv-example"><span class="header-section-number">4.5</span> Minimal CSV example</a></li>
+  </ul></li>
+  <li><a href="#sec-plogin" id="toc-sec-plogin" class="nav-link" data-scroll-target="#sec-plogin"><span class="header-section-number">5</span> <span style="background-color:#cce6ff; padding:4px 8px; border-radius:6px;">Preview login</span></a></li>
+  <li><a href="#sec-Instlogin" id="toc-sec-Instlogin" class="nav-link" data-scroll-target="#sec-Instlogin"><span class="header-section-number">6</span> <span style="background-color:#fff3e6; padding:4px 8px; border-radius:6px;">Institutional login</span></a></li>
+  <li><a href="#sec-modlogin" id="toc-sec-modlogin" class="nav-link" data-scroll-target="#sec-modlogin"><span class="header-section-number">7</span> <span style="background-color:#e6fbff; padding:4px 8px; border-radius:6px;">Module login</span></a></li>
+  <li><a href="#sec-RAone1" id="toc-sec-RAone1" class="nav-link" data-scroll-target="#sec-RAone1"><span class="header-section-number">8</span> <span style="background-color:#fccfe1; padding:4px 8px; border-radius:6px;">AI Assistant (RA-One)</span></a></li>
+  <li><a href="#sec-privacy" id="toc-sec-privacy" class="nav-link" data-scroll-target="#sec-privacy"><span class="header-section-number">9</span> <span style="background-color:#ffe6eb; padding:4px 8px; border-radius:6px;">Data privacy</span></a></li>
+  <li><a href="#sec-issue" id="toc-sec-issue" class="nav-link" data-scroll-target="#sec-issue"><span class="header-section-number">10</span> <span style="background-color:#dedec1; padding:4px 8px; border-radius:6px;">Issues and support</span></a></li>
+  <li><a href="#sec-multiaccess" id="toc-sec-multiaccess" class="nav-link" data-scroll-target="#sec-multiaccess"><span class="header-section-number">11</span> <span style="background-color:#f5defc; padding:4px 8px; border-radius:6px;">Multiple access control</span></a></li>
+  <li><a href="#sec-conclusion" id="toc-sec-conclusion" class="nav-link" data-scroll-target="#sec-conclusion"><span class="header-section-number">12</span> <span style="background-color:#fcffdb; padding:4px 8px; border-radius:6px;">Conclusion</span></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+<section id="raisins" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="raisins"><span class="header-section-number">1</span> <span style="background-color:#fff8dc; padding:4px 8px; border-radius:6px;">RAISINS!</span></h2>
+<p>It all began with a simple idea: to make data analysis accessible, accurate, and stress-free for the agricultural research community. Back in 2020, we introduced <strong>GRAPES</strong> (General R-based Analysis Platform Empowered by Statistics) <a href="https://www.kaugrapes.com">www.kaugrapes.com</a> a humble, R shiny -based tool designed for the students and researchers of Kerala Agricultural University. Little did we know then, it would grow into a trusted companion for more than 200,000 users worldwide and earn citations in over 150 indexed journals.</p>
+<p>But growth brings new challenges. GRAPES, originally tailored for local use, struggled to keep pace with the scale and expectations of a global audience. We knew we needed to build something more robust, something that could not just meet, but anticipate the needs of modern agricultural research.</p>
+<p>That dream took shape in 2024, when a spirited team of young statisticians came together to form <a href="https://www.statoberry.com/">STATOBERRY LLP</a>, under the mentorship of Dr.&nbsp;Pratheesh P. Gopinath, Head of the Department of Agricultural Statistics, College of Agriculture, Vellayani. From this dynamic collaboration emerged online web application for reseacrh data analysis in agriculture <strong>RAISINS</strong>-<strong>R</strong> and <strong>AI</strong> <strong>S</strong>olutions in <strong>IN</strong>ferential <strong>S</strong>tatistics. RAISINS can be accessed at <a href="https://www.raisins.live/">www.raisins.live</a></p>
+<p><a href="https://www.raisins.live/">RAISINS</a> is not just another software. It is a complete ecosystem that brings together the power of R, Python, and AI in a seamless, point-and-click interface. Whether you’re working on design of experiments, social science surveys, or advanced statistical genetics, RAISINS simplifies the process, automates best practices, and delivers publication-ready results without requiring you to write a single line of code.</p>
+</section>
+<section id="gettingStarted" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="gettingStarted"><span class="header-section-number">2</span> <span style="background-color:#D2FFB0; padding:4px 8px; border-radius:6px;">Getting started</span></h2>
+<ol type="1">
+<li><p><strong>Go to</strong> <a href="https://www.raisins.live/">https://www.raisins.live/</a></p></li>
+<li><p><strong>Click on Start</strong> in the home page of RAISINS as shown in <a href="#fig-raisinsweb" class="quarto-xref">Figure&nbsp;1</a> or simply scroll down</p></li>
+</ol>
+<div id="fig-raisinsweb" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-raisinsweb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="raisinsweb.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: RAISINS Home page"><img src="raisinsweb.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-raisinsweb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: RAISINS Home page
+</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>You will be taken to the list of available modules in RAISINS under the <a href="https://www.raisins.live/#dataAnalysis">Data Analysis</a> section, as shown in <a href="#fig-raisinsweb2" class="quarto-xref">Figure&nbsp;2</a>. Click on any module to get started. Each module is self-contained and covers every aspect of its respective analysis from data input to interpretation. All RAISINS modules follow a consistent layout and workflow, making it easy for users to navigate and perform different analyses without having to learn each one separately.</li>
+</ol>
+<details>
+<summary>
+What is a module?
+</summary>
+<p>In <strong>RAISINS</strong>, each complete analytical tool or statistical application such as <em>t-test</em>, <em>Regression Analysis</em>, or <em>CRD</em> is presented as a separate, self-contained application, which can be accessed indvidually. These individual applications are referred to as <strong>modules</strong>.</p>
+</details>
+<div id="fig-raisinsweb2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-raisinsweb2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="rasinsweb2.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: Analysis modules are listed section-wise in RAISINS"><img src="rasinsweb2.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-raisinsweb2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Analysis modules are listed section-wise in RAISINS
+</figcaption>
+</figure>
+</div>
+<ol start="4" type="1">
+<li><strong>Clicking on any analysis module</strong> will open up a window like that shown in <a href="#fig-modulewindow" class="quarto-xref">Figure&nbsp;4</a>. Each module has three login options.<br>
+<span style="background-color:#a5cffa; padding:2px 6px; border-radius:4px;"><strong>Preview Mode</strong></span>: Before subscribing to any module, you can explore RAISINS using the preview mode. Simply enter your email ID, and an OTP will be sent to your inbox. Use this OTP to log in and test any module with the built-in sample datasets. For your convenience, the OTP generated for your account remains valid until it refreshes at 12 a.m. and 12 p.m. (IST). This means you can revisit and explore multiple modules within that time window using the same OTP, without needing to generate a new one. Preview mode is an excellent feature for teaching, demonstrations, and learning how RAISINS works before making a subscription.<br>
+<span style="background-color:#76ad6d; padding:2px 6px; border-radius:4px;"><strong>Get Started</strong></span>: This is the primary login option for users who have subscribed to any RAISINS module. Simply log in using your registered email ID and the password you created during registration. Once logged in, you can upload your own datasets, and begin your analysis seamlessly.<br>
+<span style="background-color:#b991c4; padding:2px 6px; border-radius:4px;"><strong>Institutional Login</strong></span>: If you are subscribed to all RAISINS modules through the Unlimited Plan or have access via an institutional license, you can log in using this option. An OTP will be sent to your registered email ID, which you can use to log in. Like in preview mode the OTP generated for your account remains valid until it refreshes at 12 a.m. and 12 p.m. (IST) and can be used to access all the modules included in your institutional plan.</li>
+</ol>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span style="background-color:#d9d44c; padding:2px 6px; border-radius:4px;">All OTPs generated in <strong>RAISINS</strong> are refreshed only at <strong>12 a.m.</strong> and <strong>12 p.m. (IST)</strong></span> You don’t need to generate a new OTP each time — the same OTP can be used to access any module until the next refresh, for both Preview Mode and Institutional Login.</p>
+</div>
+</div>
+</div>
+<div id="fig-modulewindow" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-modulewindow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="modulewindow.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: RAISINS module window"><img src="modulewindow.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-modulewindow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: RAISINS module window
+</figcaption>
+</figure>
+</div>
+<ol start="5" type="1">
+<li><strong>If you are a beginner</strong>, you might sometimes feel unsure about which analysis tool to choose or what tool is best for your data and research. That’s exactly where a statistician’s guidance becomes valuable and RAISINS offers you three simple ways to get it.
+<ul>
+<li><strong>Ask our AI Statistician, RA-One (RAISINS Assistant One):</strong> a free, intelligent assistant that helps you choose the right analysis and guides you through each step. See the instructions for accessing RA-One here 👉 <a href="#sec-RAone1" class="quarto-xref">Section&nbsp;8</a></li>
+<li><strong>Join our <a href="https://www.raisins.live/discuss.html">Discussion Corner</a>:</strong> if you have a GitHub account, you can post your queries and interact with the RAISINS team and other users in an open, collaborative forum.<br>
+</li>
+<li><strong>Email us directly at <a href="mailto:support@statoberry.com">support@statoberry.com</a>:</strong> our team will respond personally and help you with your analysis-related questions. In this option we will get back to you in a maximum of 3 working days.</li>
+</ul></li>
+</ol>
+</section>
+<section id="sec-appWork" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sec-appWork"><span class="header-section-number">3</span> <span style="background-color:#ccffee; padding:4px 8px; border-radius:6px;">How each module works!</span></h2>
+<p>The workflow of all modules or applications within RAISINS follows a uniform and intuitive pattern. This consistency is intentional as it ensures that users can move between different tools with ease and without confusion. The process is straightforward:</p>
+<ul>
+<li><p>Arrange your data file in the prescribed format (see <a href="#sec-prepfile" class="quarto-xref">Section&nbsp;4</a>).</p></li>
+<li><p>Click Browse and upload your dataset.</p></li>
+<li><p>Click <code>Run Analysis</code> and RAISINS will handle the rest!</p></li>
+</ul>
+<div id="fig-modulewindow" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-modulewindow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="method.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: RAISINS workflow"><img src="method.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-modulewindow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: RAISINS workflow
+</figcaption>
+</figure>
+</div>
+<p>A sample module(application) window is shown in <a href="#fig-appwin1" class="quarto-xref">Figure&nbsp;5</a> and <a href="#fig-appwin2" class="quarto-xref">Figure&nbsp;6</a>.</p>
+<section id="four-main-tabs" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="four-main-tabs"><span class="header-section-number">3.1</span> Four main tabs</h3>
+<p>From <a href="#fig-appwin1" class="quarto-xref">Figure&nbsp;5</a>, you can see how an application in <strong>RAISINS</strong> appears. Every application follows a similar structure with four main tabs, each serving a distinct purpose. The four tabs are:</p>
+<p><span style="background-color:#7b68ee; color:white; border-radius:50%; padding:4px 10px; font-weight:bold; box-shadow:1px 1px 3px rgba(0,0,0,0.2);">1</span> <strong>Analysis:</strong><br>
+This is the main workspace where the analysis is performed. You can upload your data file here, select the required variables or columns, and click <strong>Run Analysis</strong> to instantly view the results.</p>
+<p><span style="background-color:#7b68ee; color:white; border-radius:50%; padding:4px 10px; font-weight:bold; box-shadow:1px 1px 3px rgba(0,0,0,0.2);">2</span> <strong>Create Data:</strong><br>
+This tab allows you to generate the required data format by providing the specified parameters. You can download the file in <code>.xlsx</code> or <code>.csv</code> format and use it for analysis. This feature is especially helpful if you’re unsure about the correct data structure.</p>
+<p><span style="background-color:#7b68ee; color:white; border-radius:50%; padding:4px 10px; font-weight:bold; box-shadow:1px 1px 3px rgba(0,0,0,0.2);">3</span> <strong>Datasets:</strong><br>
+Each module includes built-in model datasets that you can use for testing. You can also download these datasets to understand how your own data should be arranged before uploading.</p>
+<p><span style="background-color:#7b68ee; color:white; border-radius:50%; padding:4px 10px; font-weight:bold; box-shadow:1px 1px 3px rgba(0,0,0,0.2);">4</span> <strong>User:</strong><br>
+This tab provides details about your subscription and usage statistics. You can also view or download invoices related to your RAISINS access here.</p>
+<div id="fig-appwin1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-appwin1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="appwin1.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;5: Inside a module in RAISINS"><img src="appwin1.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-appwin1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Inside a module in RAISINS
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>All modules in <strong>RAISINS</strong> follow a similar workflow. Just upload your file in the prescribed format and click <strong>Run Analysis</strong>, as shown in <a href="#fig-appwin2" class="quarto-xref">Figure&nbsp;6</a>.<br>
+👉 You only need to be careful while arranging your data. You can refer to the model datasets in <code>Datasets</code> tab of each application or use the <code>Create Data</code> tab.<br>
+See <a href="#sec-prepfile" class="quarto-xref">Section&nbsp;4</a> for key points to remember when preparing your file for upload.</p>
+</div>
+</div>
+</div>
+<div id="fig-appwin2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-appwin2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="appwin2.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;6: Click on Run Analysis after uploading the file"><img src="appwin2.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-appwin2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Click on Run Analysis after uploading the file
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-prepfile" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="sec-prepfile"><span class="header-section-number">4</span> <span style="background-color:#ebd6ff; padding:4px 8px; border-radius:6px;">Preparing your file</span></h2>
+<p>In RAISINS you can upload file in xls, xlsx or csv format. But we recommend a csv format as it will be much lighter.</p>
+<section id="preparing-your-data" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="preparing-your-data"><span class="header-section-number">4.1</span> Preparing your data</h3>
+<p>You can create a file for upload in two simple ways:</p>
+<ol type="1">
+<li><strong>Microsoft Excel (.xlsx)</strong>: create a <strong>single sheet</strong> with a clear header row and save as <code>.xlsx</code> or export to <code>.csv</code>.<br>
+</li>
+<li><strong>Create data (recommended for beginners)</strong>: inside each RAISINS module, open the <strong>Create data</strong> tab and enter the requested inputs in the sidebar.<br>
+<em>Example:</em> In the <strong>CRD</strong> module, provide the number of treatments, replications, and characters. RAISINS will generate a ready-to-fill <code>.csv</code> template that you can download, enter values, and upload for analysis.</li>
+</ol>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Detailed instructions on how to prepare data files are given inside each module and also in its corresponding tutorial. If you’re unsure about the required structure, download a <strong>model dataset</strong> from the <strong>Datasets</strong> tab in that module and mirror its layout.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="rules-to-follow" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="rules-to-follow"><span class="header-section-number">4.2</span> Rules to follow</h3>
+<ul>
+<li>Use a <strong>single header row</strong> with clean column names.<br>
+</li>
+<li>Data should begin in <strong>cell A1</strong>, with <strong>no blank rows</strong> above the header.<br>
+</li>
+<li>One <strong>variable per column</strong>, one <strong>record per row</strong>.<br>
+</li>
+<li>Save as <strong>.csv</strong> or <strong>.xlsx</strong> (both supported).</li>
+</ul>
+<hr>
+</section>
+<section id="column-naming-dos-and-donts" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="column-naming-dos-and-donts"><span class="header-section-number">4.3</span> Column naming: do’s and don’ts</h3>
+<div style="overflow-x:auto;">
+<table style="border-collapse: collapse; width: 100%; border: 1px solid #ccc;">
+<thead>
+<tr style="background-color:#f8f9fa;">
+<th style="border:1px solid #ccc; padding:6px; text-align:left;">
+✅ Do
+</th>
+<th style="border:1px solid #ccc; padding:6px; text-align:left;">
+❌ Don’t
+</th>
+<th style="border:1px solid #ccc; padding:6px; text-align:left;">
+💡 Why
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border:1px solid #ccc; padding:6px;">
+Use short, clear names: <code>yield</code>, <code>treatment</code>, <code>rep</code>
+</td>
+<td style="border:1px solid #ccc; padding:6px;">
+Long or vague names: <code>this_is_my_final_corrected_yield_value</code>
+</td>
+<td style="border:1px solid #ccc; padding:6px;">
+Short names read better in tables and plots
+</td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:6px;">
+Separate words with <code>_</code> or <code>.</code>: <code>plant_height</code>
+</td>
+<td style="border:1px solid #ccc; padding:6px;">
+Use spaces: <code>plant height</code>
+</td>
+<td style="border:1px solid #ccc; padding:6px;">
+Spaces can break code and labels
+</td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:6px;">
+Use letters first: <code>r1_yield</code>
+</td>
+<td style="border:1px solid #ccc; padding:6px;">
+Start with a number: <code>1yield</code>
+</td>
+<td style="border:1px solid #ccc; padding:6px;">
+Column names shouldn’t start with digits
+</td>
+</tr>
+<tr>
+<td style="border:1px solid #ccc; padding:6px;">
+Avoid symbols: <code>perc_mortality</code>
+</td>
+<td style="border:1px solid #ccc; padding:6px;">
+Use symbols: <code>percentage mortality (%)</code>
+</td>
+<td style="border:1px solid #ccc; padding:6px;">
+Symbols like <code>%</code>, <code>#</code> cause parsing issues
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+</section>
+<section id="a-few-column-name-examples-to-note" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="a-few-column-name-examples-to-note"><span class="header-section-number">4.4</span> A few column name examples to note</h3>
+<ul>
+<li><code>percentage mortality (%)</code> → <code>perc_mortality</code><br>
+</li>
+<li><code>Plant height (cm)</code> → <code>plant_height_cm</code><br>
+</li>
+<li><code>T1 Yield</code> → <code>t1_yield</code></li>
+</ul>
+<hr>
+</section>
+<section id="minimal-csv-example" class="level3" data-number="4.5">
+<h3 data-number="4.5" class="anchored" data-anchor-id="minimal-csv-example"><span class="header-section-number">4.5</span> Minimal CSV example</h3>
+<div id="fig-datamodel" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-datamodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="datamodel.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;7: Minimal example data file"><img src="datamodel.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-datamodel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Minimal example data file
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-plogin" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="sec-plogin"><span class="header-section-number">5</span> <span style="background-color:#cce6ff; padding:4px 8px; border-radius:6px;">Preview login</span></h2>
+<p>This is an excellent feature we have introduced in RAISINS. It allows anyone to freely explore any module without registration, promoting open access and enabling global peer review, thereby enhancing transparency and credibility.</p>
+<p>When you click on a module,in the login window that opens up- simply select the <code>Preview Mode</code> button as shown in <a href="#fig-modulewindow" class="quarto-xref">Figure&nbsp;4</a>. In <a href="#fig-preview" class="quarto-xref">Figure&nbsp;8</a>, you can see how to access the preview mode using an OTP. As illustrated in <a href="#fig-pa" class="quarto-xref">Figure&nbsp;8 (a)</a>, if you already generated an OTP in another module, note that it refreshes only at 12 a.m. and 12 p.m. each day. In such cases, you can use the button <code>I Already Have OTP</code> to proceed. Which will take you to the screen shown in <a href="#fig-pb" class="quarto-xref">Figure&nbsp;8 (b)</a>, where you have to enter the OTP and get inside the app.</p>
+<div id="fig-preview" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-preview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-preview" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-pa" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-pa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="previewlogin.webp" class="lightbox" data-gallery="fig-preview" title="Figure&nbsp;8&nbsp;(a): Enter your mail id to receive OTP"><img src="previewlogin.webp" class="img-fluid figure-img" data-ref-parent="fig-preview"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Enter your mail id to receive OTP
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-preview" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-pb" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-pb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="loginpagepr.webp" class="lightbox" data-gallery="fig-preview" title="Figure&nbsp;8&nbsp;(b): Enter the OTP to acces the app"><img src="loginpagepr.webp" class="img-fluid figure-img" data-ref-parent="fig-preview"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-pb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Enter the OTP to acces the app
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-preview-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Preview mode in RAISINS
+</figcaption>
+</figure>
+</div>
+<p>Once inside the app, you can explore all the available features, analyses, and plots using the inbuilt datasets. This allows you to fully experience how each module functions. However, please note that uploading your own dataset is not permitted in preview mode. A sample view of the preview mode interface is shown in <a href="#fig-pwinside" class="quarto-xref">Figure&nbsp;9</a>.</p>
+<div id="fig-pwinside" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pwinside-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="entrypreview.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure&nbsp;9: Inside preview mode"><img src="entrypreview.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pwinside-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Inside preview mode
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-Instlogin" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="sec-Instlogin"><span class="header-section-number">6</span> <span style="background-color:#fff3e6; padding:4px 8px; border-radius:6px;">Institutional login</span></h2>
+<p>This login feature is available to users who have subscribed to all RAISINS modules through the Individual Plan (unlimited plan), any customized plan, or whose institution is registered with us. You can access any module or only those modules included in your plan by clicking the <code>Institutional Login</code> button in the login window of the selected module, as shown in <a href="#fig-modulewindow" class="quarto-xref">Figure&nbsp;4</a>.</p>
+<p>An OTP will be sent to your registered email address for authentication. Similar to the preview mode, all OTPs are refreshed only at 12 a.m. and 12 p.m., allowing you to reuse the same OTP for logging into other modules within that time frame.</p>
+<p>You can view the available subscription plans for RAISINS <a href="https://www.raisins.live/plans.html">here</a></p>
+</section>
+<section id="sec-modlogin" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="sec-modlogin"><span class="header-section-number">7</span> <span style="background-color:#e6fbff; padding:4px 8px; border-radius:6px;">Module login</span></h2>
+<p>RAISINS allows users to access each module independently through subscribing that particular module only. A feature designed with students in mind. If you have subscribed to a single module, you can start using it directly by clicking the <code>Get Started</code> button, as shown in <a href="#fig-modulewindow" class="quarto-xref">Figure&nbsp;4</a>.</p>
+</section>
+<section id="sec-RAone1" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="sec-RAone1"><span class="header-section-number">8</span> <span style="background-color:#fccfe1; padding:4px 8px; border-radius:6px;">AI Assistant (RA-One)</span></h2>
+<p>RAISINS features a 24 × 7 AI statistical assistant named RAISINS Assistant-One (RA-One), which is freely accessible to all users. Powered by GPT-4.5 Turbo and further enhanced through Retrieval-Augmented Generation (RAG), RA-One functions like a trained master’s-level statistician. He can clarify your statistical doubts, guide your analysis, and even recommend the most suitable RAISINS module or tool for your dataset.</p>
+<div id="fig-raone" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-raone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-raone" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-raone" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-raone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="raone.webp" class="lightbox" data-gallery="fig-raone" title="Figure&nbsp;10&nbsp;(a): Accessing RA-One"><img src="raone.webp" class="img-fluid figure-img" data-ref-parent="fig-raone"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-raone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Accessing RA-One
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-raone" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-raoneinter" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-raoneinter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="raoneinter.webp" class="lightbox" data-gallery="fig-raone" title="Figure&nbsp;10&nbsp;(b): RA-One bot interface"><img src="raoneinter.webp" class="img-fluid figure-img" data-ref-parent="fig-raone"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-raoneinter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) RA-One bot interface
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-raone-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: RA-One: AI powered assistant in RAISINS
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-privacy" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="sec-privacy"><span class="header-section-number">9</span> <span style="background-color:#ffe6eb; padding:4px 8px; border-radius:6px;">Data privacy</span></h2>
+<p>At RAISINS, data privacy and security are of utmost importance. We do not store or retain any data that users upload for analysis. Each session in RAISINS runs on a temporary cloud instance, meaning that all uploaded data, results, and computations exist only for the duration of your active session. Once you log out, the instance is automatically terminated, and all associated data is permanently deleted. This ensures complete confidentiality and eliminates any risk of unauthorized access.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>we recommend that you download your analysis results, plots, and graphs immediately after completing your analysis session as we don’t store anything.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-issue" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="sec-issue"><span class="header-section-number">10</span> <span style="background-color:#dedec1; padding:4px 8px; border-radius:6px;">Issues and support</span></h2>
+<p>We are always here to help you with any data-related queries or issues you may face while using RAISINS. You can reach us directly through the <a href="https://www.raisins.live/contact.html">contact us</a> in <strong><a href="https://www.raisins.live">RAISINS website</a></strong> or by emailing us at <strong><a href="mailto:support@statoberry.com">support@statoberry.com</a></strong>.</p>
+<p>If you encounter any bugs, you can also report them directly through our <strong>GitHub repository</strong> using the <strong>“Report a Bug”</strong> button available on the homepage (for users with a GitHub account) or notify us by mail.</p>
+<p>We usually respond within <strong>one hour during office hours (Monday to Friday)</strong> to any issue raised. You can also contact us via <strong>WhatsApp</strong> using the number provided on our <a href="https://www.raisins.live/contact.html">contact us</a> page.</p>
+<blockquote class="blockquote">
+<p>During holidays, our response time might be a bit longer but we’ll still do our best to get back to you as soon as possible.</p>
+</blockquote>
+</section>
+<section id="sec-multiaccess" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="sec-multiaccess"><span class="header-section-number">11</span> <span style="background-color:#f5defc; padding:4px 8px; border-radius:6px;">Multiple access control</span></h2>
+<p>Please note that, for your security, RAISINS does not allow simultaneous access from multiple devices using the same account. If your account is detected as being used on more than one device at the same time, the system will automatically identify it and send a notification alert. So please keep your credentials safe.</p>
+</section>
+<section id="sec-conclusion" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="sec-conclusion"><span class="header-section-number">12</span> <span style="background-color:#fcffdb; padding:4px 8px; border-radius:6px;">Conclusion</span></h2>
+<p>RAISINS was born from an academic vision: a collective effort mentored by Department of Agricultural Statistics, College of <strong>to democratize statistics</strong>. It stands not as a commercial product, but as a bridge connecting knowledge with practice, empowering every researcher to analyze, interpret, and share data with confidence.</p>
+<p>We are with you at every step of your research journey- guiding, supporting, and growing together with the community we serve. Through our academic outreach, RAISINS proudly supports the open-access journal <a href="https://www.jostapubs.com/">Journal of Sustainable Technology in Agriculture (JOSTA)</a>, which remains free of article processing charges (APC), ensuring that knowledge stays open and accessible to all.</p>
+<p>In the same spirit, RAISINS also sustains the cloud infrastructure of <strong>GRAPES</strong>, allowing students and researchers continued <strong>free access to powerful statistical learning tools</strong>. Together, we strive to make research simpler, transparent, and inclusive for a future where <strong>statistics belongs to everyone</strong>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/www\.raisins\.live\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 RAISINS by <a href="https://www.statoberry.com/">Statoberry LLP</a><br> <img src="www/statologo.png" alt="Statoberry Logo" style="height:25px; padding: 5px 10px 5px 10px; margin-bottom: 5px;"></p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@statoberry">
+      <i class="bi bi-youtube" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://facebook.com/statoberry">
+      <i class="bi bi-facebook" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/company/statoberry">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://instagram.com/statoberry">
+      <i class="bi bi-instagram" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

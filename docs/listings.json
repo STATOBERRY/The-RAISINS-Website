@@ -2,6 +2,7 @@
   {
     "listing": "/tutorial.html",
     "items": [
+      "/tutorial/Intro/raisinsIntro.html",
       "/tutorial/cluster/Clustertutorial.html"
     ]
   }
