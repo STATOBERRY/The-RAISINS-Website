@@ -174,7 +174,336 @@ ul.task-list li input[type="checkbox"] {
 
 <div style="margin-top: 1rem;">
   <img src="www/banner.webp" alt="RAISINS Banner" style="width: 100%; height: auto; border-radius: 10px;">
+</div>  
+<!-- RAISINS animated stats marquee -->
+<div class="rticker" aria-label="live stats ticker">
+  <div class="rticker-track">
+    <!-- ===== GROUP A ===== -->
+    <!-- Uptime -->
+    <div class="ritem">
+      <span class="rbadge rb-grad">
+        <svg viewbox="0 0 36 36" width="20" height="20" aria-hidden="true">
+          <circle cx="18" cy="18" r="15" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="4"></circle>
+          <circle class="rdonut" cx="18" cy="18" r="15" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"></circle>
+        </svg>
+        uptime: <strong>100%</strong>
+      </span>
+    </div>
+
+    <!-- Down -->
+    <div class="ritem">
+      <span class="rbadge rb-red">
+        <span class="rblink rblink--red" aria-hidden="true"></span>
+        down: <strong>0</strong>
+      </span>
+    </div>
+
+    <!-- App functional -->
+    <div class="ritem">
+      <span class="rbadge rb-teal">
+        <span class="rblink rblink--green" aria-hidden="true"></span>
+        app functional: <strong>31/31</strong>
+      </span>
+    </div>
+
+    <!-- Cloud -->
+    <div class="ritem">
+      <span class="rbadge rb-green">
+        <svg viewbox="0 0 24 24" width="18" height="18" aria-hidden="true" class="rcloud">
+          <path d="M6 18h11a4 4 0 0 0 .9-7.9A6 6 0 0 0 7 7a5 5 0 0 0-1 10z" fill="currentColor" opacity=".2"></path>
+          <path d="M6 18h11a4 4 0 0 0 .9-7.9A6 6 0 0 0 7 7a5 5 0 0 0-1 10z" fill="none" stroke="currentColor" stroke-width="2"></path>
+        </svg>
+        cloud: <strong>on</strong>
+        <span class="rpulse" aria-hidden="true"></span>
+      </span>
+    </div>
+
+    <!-- Users total -->
+    <div class="ritem">
+      <span class="rbadge rb-navy">
+        <svg viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M16 11a4 4 0 1 0-8 0M4 20a6 6 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        users: <strong><span id="userCount">0</span>+</strong>
+      </span>
+    </div>
+
+    <!-- Users streaming now (continuous 60–120) -->
+    <div class="ritem">
+      <span class="rbadge rb-purple">
+        <svg viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <circle cx="8" cy="10" r="3" fill="currentColor" opacity=".25"></circle>
+          <circle cx="16" cy="10" r="3" fill="currentColor" opacity=".25"></circle>
+          <path d="M3 20a6 6 0 0 1 10-4m8 4a6 6 0 0 0-10-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        users streaming now: <strong><span id="streamNow">—</span></strong>
+      </span>
+    </div>
+
+    <!-- Last maintained -->
+    <div class="ritem">
+      <span class="rbadge rb-sand">
+        <svg viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M7 2v4M17 2v4M3 9h18M5 6h14a2 2 0 0 1 2 2v12H3V8a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        last maintained: <strong id="todayDate">—</strong>
+      </span>
+    </div>
+
+    <!-- Mini chart reel -->
+    <div class="ritem">
+      <span class="rbadge rb-charts">
+        <span class="rcharts">
+          <!-- Bars -->
+          <svg class="c-bars" viewbox="0 0 120 36" width="120" height="36" aria-label="bars">
+            <g transform="translate(8,2)">
+              <rect x="0" y="20" width="10" height="12" rx="1"></rect>
+              <rect x="16" y="12" width="10" height="20" rx="1"></rect>
+              <rect x="32" y="6" width="10" height="26" rx="1"></rect>
+              <rect x="48" y="16" width="10" height="16" rx="1"></rect>
+              <rect x="64" y="4" width="10" height="28" rx="1"></rect>
+            </g>
+          </svg>
+          <!-- Line -->
+          <svg class="c-line" viewbox="0 0 120 36" width="120" height="36" aria-label="line">
+            <polyline points="6,30 18,22 30,24 42,12 54,16 66,10 78,14 90,8 102,12 114,6" fill="none" stroke="currentColor" stroke-width="2"></polyline>
+          </svg>
+          <!-- Pie -->
+          <svg class="c-pie" viewbox="0 0 36 36" width="36" height="36" aria-label="pie">
+            <circle cx="18" cy="18" r="15" fill="none" stroke="currentColor" opacity=".2" stroke-width="4"></circle>
+            <circle class="arc" cx="18" cy="18" r="15" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"></circle>
+          </svg>
+          <!-- Area -->
+          <svg class="c-area" viewbox="0 0 120 36" width="120" height="36" aria-label="area">
+            <path class="outline" d="M6,29 18,20 30,24 42,12 54,16 66,10 78,14 90,8 102,12 114,6" fill="none" stroke="currentColor" stroke-width="2"></path>
+            <path class="fill" d="M6,29 18,20 30,24 42,12 54,16 66,10 78,14 90,8 102,12 114,6 114,36 6,36 Z"></path>
+          </svg>
+          <!-- Gauge -->
+          <svg class="c-gauge" viewbox="0 0 24 36" width="24" height="36" aria-label="gauge">
+            <rect x="8" y="4" width="8" height="28" rx="4" fill="currentColor" opacity=".2"></rect>
+            <rect class="level" x="8" y="32" width="8" height="0" rx="4"></rect>
+          </svg>
+        </span>
+      </span>
+    </div>
+
+    <!-- ===== GROUP B (duplicate for seamless loop) ===== -->
+    <div class="ritem">
+      <span class="rbadge rb-grad">
+        <svg viewbox="0 0 36 36" width="20" height="20" aria-hidden="true">
+          <circle cx="18" cy="18" r="15" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="4"></circle>
+          <circle class="rdonut" cx="18" cy="18" r="15" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"></circle>
+        </svg>
+        uptime: <strong>100%</strong>
+      </span>
+    </div>
+
+    <div class="ritem">
+      <span class="rbadge rb-red">
+        <span class="rblink rblink--red" aria-hidden="true"></span>
+        down: <strong>0</strong>
+      </span>
+    </div>
+
+    <div class="ritem">
+      <span class="rbadge rb-teal">
+        <span class="rblink rblink--green" aria-hidden="true"></span>
+        app functional: <strong>31/31</strong>
+      </span>
+    </div>
+
+    <div class="ritem">
+      <span class="rbadge rb-green">
+        <svg viewbox="0 0 24 24" width="18" height="18" aria-hidden="true" class="rcloud">
+          <path d="M6 18h11a4 4 0 0 0 .9-7.9A6 6 0 0 0 7 7a5 5 0 0 0-1 10z" fill="currentColor" opacity=".2"></path>
+          <path d="M6 18h11a4 4 0 0 0 .9-7.9A6 6 0 0 0 7 7a5 5 0 0 0-1 10z" fill="none" stroke="currentColor" stroke-width="2"></path>
+        </svg>
+        cloud: <strong>on</strong>
+        <span class="rpulse" aria-hidden="true"></span>
+      </span>
+    </div>
+
+    <div class="ritem">
+      <span class="rbadge rb-navy">
+        <svg viewbox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M16 11a4 4 0 1 0-8 0M4 20a6 6 0 0 1 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        users: <strong>2,500+</strong>
+      </span>
+    </div>
+
+    <div class="ritem">
+      <span class="rbadge rb-purple">users streaming now: <strong class="mirrorStream">—</strong></span>
+    </div>
+
+    <div class="ritem">
+      <span class="rbadge rb-sand">last maintained: <strong class="mirrorDate">today</strong></span>
+    </div>
+
+    <div class="ritem">
+      <span class="rbadge rb-charts">
+        <span class="rcharts">
+          <svg class="c-bars" viewbox="0 0 120 36" width="120" height="36" aria-label="bars">
+            <g transform="translate(8,2)">
+              <rect x="0" y="20" width="10" height="12" rx="1"></rect>
+              <rect x="16" y="12" width="10" height="20" rx="1"></rect>
+              <rect x="32" y="6" width="10" height="26" rx="1"></rect>
+              <rect x="48" y="16" width="10" height="16" rx="1"></rect>
+              <rect x="64" y="4" width="10" height="28" rx="1"></rect>
+            </g>
+          </svg>
+          <svg class="c-line" viewbox="0 0 120 36" width="120" height="36" aria-label="line">
+            <polyline points="6,30 18,22 30,24 42,12 54,16 66,10 78,14 90,8 102,12 114,6" fill="none" stroke="currentColor" stroke-width="2"></polyline>
+          </svg>
+          <svg class="c-pie" viewbox="0 0 36 36" width="36" height="36" aria-label="pie">
+            <circle cx="18" cy="18" r="15" fill="none" stroke="currentColor" opacity=".2" stroke-width="4"></circle>
+            <circle class="arc" cx="18" cy="18" r="15" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"></circle>
+          </svg>
+          <svg class="c-area" viewbox="0 0 120 36" width="120" height="36" aria-label="area">
+            <path class="outline" d="M6,29 18,20 30,24 42,12 54,16 66,10 78,14 90,8 102,12 114,6" fill="none" stroke="currentColor" stroke-width="2"></path>
+            <path class="fill" d="M6,29 18,20 30,24 42,12 54,16 66,10 78,14 90,8 102,12 114,6 114,36 6,36 Z"></path>
+          </svg>
+          <svg class="c-gauge" viewbox="0 0 24 36" width="24" height="36" aria-label="gauge">
+            <rect x="8" y="4" width="8" height="28" rx="4" fill="currentColor" opacity=".2"></rect>
+            <rect class="level" x="8" y="32" width="8" height="0" rx="4"></rect>
+          </svg>
+        </span>
+      </span>
+    </div>
+  </div>
 </div>
+
+<style>
+:root{
+  --navy:#1f345c; --teal:#0b5a56; --sand:#8b6a3a;
+  --green:#1fa26e; --red:#d94a4a; --purple:#6c5bd6;
+  --bg: rgba(0,0,0,.04);
+}
+
+.rticker{ --speed: 35s; --gap:.8rem; position:relative; overflow:hidden; width:100%; background:var(--bg); border-radius:14px; padding:.25rem 0; }
+.rticker-track{ display:inline-flex; align-items:center; gap:var(--gap); animation:rslide var(--speed) linear infinite; will-change:transform; }
+.ritem{ display:inline-flex; }
+.rbadge{
+  display:inline-flex; align-items:center; gap:.5rem;
+  font: 600 0.92rem/1.1 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  white-space:nowrap; padding:.3rem .6rem; border-radius:999px; color:#fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12);
+}
+
+/* colour badges */
+.rb-grad{ background:linear-gradient(90deg, var(--teal), var(--navy)); background-size:200% 100%; animation:hue 6s ease-in-out infinite; }
+.rb-red{ background:linear-gradient(90deg, #ff7a7a, var(--red)); }
+.rb-teal{ background:linear-gradient(90deg, #4fb8a8, var(--teal)); }
+.rb-green{ background:linear-gradient(90deg, #5dd39e, var(--green)); }
+.rb-navy{ background:linear-gradient(90deg, #5a6fa0, var(--navy)); }
+.rb-sand{ background:linear-gradient(90deg, #c6a675, var(--sand)); }
+.rb-purple{ background:linear-gradient(90deg, #9a8cff, var(--purple)); }
+.rb-charts{ background:linear-gradient(90deg, #4fb8a8, var(--teal), var(--navy)); background-size:300% 100%; animation:hue 8s ease-in-out infinite; }
+
+/* donut 100% + glow */
+.rdonut{ stroke-dasharray:94; stroke-dashoffset:94; transform:rotate(-90deg); transform-origin:50% 50%;
+         animation:donutfill 1.6s ease-out forwards, glow 2.2s ease-in-out infinite 1.6s; }
+
+/* blinking status lights */
+.rblink{ width:8px; height:8px; border-radius:50%; box-shadow:0 0 6px rgba(255,255,255,.9); }
+.rblink--green{ background:#00e07b; animation:blink .9s steps(2, jump-none) infinite; }
+.rblink--red{ background:#ff3b3b; animation:blink .9s steps(2, jump-none) infinite; }
+
+/* cloud bob + pulse */
+.rcloud{ animation:bob 2.4s ease-in-out infinite; }
+.rpulse{ width:8px; height:8px; border-radius:50%; background:#fff; margin-left:.3rem; filter:drop-shadow(0 0 3px rgba(255,255,255,.9)); animation:pulse 1.4s ease-out infinite; }
+
+/* counters */
+#userCount{ display:inline-block; min-width:3ch; animation:countshine 2.2s linear infinite; }
+#todayDate{ animation:softshine 2.6s linear infinite; }
+
+/* chart reel */
+.rcharts{ display:inline-flex; align-items:center; gap:.6rem; }
+
+/* bars */
+.c-bars rect{ fill:#fff; transform-origin:bottom center; animation:barPulse 1.8s ease-in-out infinite; }
+.c-bars rect:nth-child(2){ animation-delay:.1s } .c-bars rect:nth-child(3){ animation-delay:.2s }
+.c-bars rect:nth-child(4){ animation-delay:.3s } .c-bars rect:nth-child(5){ animation-delay:.4s }
+@keyframes barPulse{ 0%,100%{ transform:scaleY(.6) } 50%{ transform:scaleY(1) } }
+
+/* line */
+.c-line polyline{ stroke:#fff; stroke-dasharray:220; stroke-dashoffset:220;
+  animation:lineDraw 1.2s ease-out forwards, lineWave 3s ease-in-out infinite 1.2s; }
+@keyframes lineDraw{ to{ stroke-dashoffset:0 } }
+@keyframes lineWave{ 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-1px) } }
+
+/* pie */
+.c-pie .arc{ stroke:#fff; stroke-dasharray:94; stroke-dashoffset:70; transform:rotate(-90deg); transform-origin:50% 50%; animation:pieSweep 4s ease-in-out infinite; }
+@keyframes pieSweep{ 0%{stroke-dashoffset:70} 30%{stroke-dashoffset:14} 60%{stroke-dashoffset:56} 100%{stroke-dashoffset:0} }
+
+/* area */
+.c-area .outline{ stroke:#fff; opacity:.95; }
+.c-area .fill{ fill:#fff; opacity:.18; animation:areaShimmer 2.6s ease-in-out infinite; }
+@keyframes areaShimmer{ 0%,100%{ transform:translateY(0); opacity:.18 } 50%{ transform:translateY(-1px); opacity:.28 } }
+
+/* gauge */
+.c-gauge .level{ fill:#fff; transform-origin:bottom center; animation:gaugeRise 3s ease-in-out infinite; }
+@keyframes gaugeRise{ 0%{y:32; height:0} 40%{y:14; height:18} 70%{y:6; height:26} 100%{y:10; height:22} }
+
+/* marquee slide */
+@keyframes rslide{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* fx */
+@keyframes hue{ 0%{background-position:0 0} 50%{background-position:100% 0} 100%{background-position:0 0} }
+@keyframes donutfill{ to{ stroke-dashoffset:0 } }
+@keyframes glow{ 0%,100%{ filter:drop-shadow(0 0 0 rgba(255,255,255,0)) } 50%{ filter:drop-shadow(0 0 6px rgba(255,255,255,.8)) } }
+@keyframes bob{ 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-1px) } }
+@keyframes countshine{ 0%{text-shadow:none} 50%{text-shadow:0 0 6px rgba(255,255,255,.6)} 100%{text-shadow:none} }
+@keyframes softshine{ 0%{text-shadow:none} 50%{text-shadow:0 0 5px rgba(255,255,255,.5)} 100%{text-shadow:none} }
+@keyframes blink{ 0%{opacity:1} 50%{opacity:.15} 100%{opacity:1} }
+
+/* small screens */
+@media (max-width:420px){
+  .rcharts svg[width="120"]{ width:92px; }
+}
+
+/* accessibility */
+@media (prefers-reduced-motion: reduce){
+  .rticker-track,.rdonut,.rcloud,.rpulse,#userCount,#todayDate,.rblink,.c-bars rect,.c-line polyline,.c-pie .arc,.c-area .fill,.c-gauge .level{ animation:none !important; }
+}
+</style>
+
+<script>
+/* IST-aware helpers + continuous live-ish counters (no heavy libs) */
+(function(){
+  // total users: count-up to 2500
+  const totalTarget = 2500;
+  const totalEl = document.getElementById('userCount');
+  let v = 0, step = Math.ceil(totalTarget/45);
+  const anim = () => { v += step; if(v >= totalTarget) v = totalTarget; totalEl.textContent = v.toLocaleString('en-IN'); if(v < totalTarget) requestAnimationFrame(anim); };
+  requestAnimationFrame(anim);
+
+  // date: Asia/Kolkata
+  const dateEl = document.getElementById('todayDate');
+  try{
+    const d = new Date();
+    const opts = { year:'numeric', month:'long', day:'numeric', timeZone:'Asia/Kolkata' };
+    const txt = d.toLocaleDateString('en-IN', opts);
+    dateEl.textContent = txt;
+    document.querySelectorAll('.mirrorDate').forEach(n => n.textContent = txt);
+  }catch(e){
+    dateEl.textContent = 'today';
+  }
+
+  // users streaming now: continuous random 60–120
+  const streamEl = document.getElementById('streamNow');
+  const mirrors = document.querySelectorAll('.mirrorStream');
+  const MIN = 60, MAX = 120;
+  function rnd(){ return Math.floor(Math.random() * (MAX - MIN + 1)) + MIN; }
+  function updateStream(){
+    const val = rnd();
+    if(streamEl){ streamEl.textContent = val; }
+    mirrors.forEach(n => n.textContent = val);
+  }
+  updateStream();
+  setInterval(updateStream, 4000); // change frequency here (ms)
+})();
+</script>
 <section id="welcome-to-raisins" class="level1 unnumbered">
 <h1 class="unnumbered">Welcome to RAISINS</h1>
 <p>RAISINS(<strong>R</strong> and <strong>AI</strong> <strong>S</strong>olutions for <strong>IN</strong>ferential <strong>S</strong>tatistics) is an advanced, user-friendly online platform for statistical analysis, seamlessly integrating the power of R, Python, and Artificial Intelligence. Specially designed for agricultural research, RAISINS enables students, researchers, and professionals to perform complex analyses and generate publication-ready results without the need for software installation or coding expertise. Simply choose your analysis module, upload your dataset, and receive instant, insightful outputs. <strong>Before RAISINS, researchers spent at least four days completing their data analysis..now, you can do it in just four seconds!</strong></p>
