@@ -182,17 +182,12 @@ Detailed instructions on how to prepare data files are given inside each module 
 ### Column naming: do’s and don’ts
 
 ::: {style="overflow-x:auto;"}
-+-----------------------------------------------------+---------------------------------------------------------------+---------------------------------------------+
-| ✅ Do                                               | ❌ Don’t                                                      | 💡 Why                                      |
-+:====================================================+:==============================================================+:============================================+
+| ✅ Do | ❌ Don’t | 💡 Why |
+|:-----------------------|:-----------------------|:-----------------------|
 | Use short, clear names: `yield`, `treatment`, `rep` | Long or vague names: `this_is_my_final_corrected_yield_value` | Short names read better in tables and plots |
-+-----------------------------------------------------+---------------------------------------------------------------+---------------------------------------------+
-| Separate words with `_` or `.`: `plant_height`      | Use spaces: `plant height`                                    | Spaces can break code and labels            |
-+-----------------------------------------------------+---------------------------------------------------------------+---------------------------------------------+
-| Use letters first: `r1_yield`                       | Start with a number: `1yield`                                 | Column names shouldn’t start with digits    |
-+-----------------------------------------------------+---------------------------------------------------------------+---------------------------------------------+
-| Avoid symbols: `perc_mortality`                     | Use symbols: `percentage mortality (%)`                       | Symbols like `%`, `#` cause parsing issues  |
-+-----------------------------------------------------+---------------------------------------------------------------+---------------------------------------------+
+| Separate words with `_` or `.`: `plant_height` | Use spaces: `plant height` | Spaces can break code and labels |
+| Use letters first: `r1_yield` | Start with a number: `1yield` | Column names shouldn’t start with digits |
+| Avoid symbols: `perc_mortality` | Use symbols: `percentage mortality (%)` | Symbols like `%`, `#` cause parsing issues |
 :::
 
 ------------------------------------------------------------------------
