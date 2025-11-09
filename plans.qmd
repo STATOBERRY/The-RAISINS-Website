@@ -8,25 +8,35 @@ format:
 
 ## 🧩 Module License {.unnumbered}
 
-RAISINS is built **by researchers, for researchers** - a platform developed by a team of PhD scholars in Statistics who understand the real needs of the academic community.  
+RAISINS is built **by researchers, for researchers** - a platform developed by a team of PhD scholars in Statistics who understand the real needs of the academic community.\
 Our plans are thoughtfully designed to support **students and early-career researchers** in accessing quality statistical tools without financial burden.
 
-To make it simple and flexible, **each RAISINS app functions as an independent module.**  
+To make it simple and flexible, **each RAISINS app functions as an independent module.**
 
-<div class="info-card">
-  <h4>💡 Just ₹199 per month</h4>
-  <p>You can subscribe only to the tools you need, starting at <strong>just ₹199</strong> per month — and there’s no requirement to renew if you don’t need it in the next month.</p>
-  <p style="font-size:0.9rem; color:#555;">Currently, no usage limits are enforced. If you ever reach one (rarely), just drop us an email — we’ll unlock it for you.</p>
-</div>
+::: info-card
+<h4>💡 Just ₹199 per month</h4>
 
-Simply click on any app listed under [Analysis Modules](index.qmd#analysis) and choose a **monthly or 6-month license**.  
+<p>You can subscribe only to the tools you need, starting at <strong>just ₹199</strong> per month and there’s no requirement to renew if you don’t need it in the next month.</p>
+
+<p style="font-size:0.9rem; color:#555;">
+
+Currently, no usage limits are enforced. If you ever reach one (rarely), just drop us an email we’ll unlock it for you.
+
+</p>
+:::
+
+Simply click on any app listed under [Analysis Modules](index.qmd#analysis) and choose a **monthly or 6-month license**.\
 This modular subscription is perfect for students and researchers who need specific tools for a limited period.
 
-<div class="tip-card">
-  <h4>🔍 Preview any app for free</h4>
-  <p>Before subscribing, you can explore all RAISINS modules in <strong>preview mode</strong> using our built-in sample datasets. It’s the best way to experience RAISINS before committing.</p>
-  <p><a href="https://www.raisins.live/tutorial/Intro/raisinsIntro.html#gettingStarted" target="_blank">View Tutorial →</a></p>
-</div>
+::: tip-card
+<h4>🔍 Preview any app for free</h4>
+
+<p>Before subscribing, you can explore all RAISINS modules in <strong>preview mode</strong> using our built-in sample datasets. It’s the best way to experience RAISINS before committing.</p>
+
+<p><a href="https://www.raisins.live/tutorial/Intro/raisinsIntro.html#gettingStarted" target="_blank">View Tutorial →</a></p>
+:::
+
+```{=html}
 <style>
 .info-card, .tip-card, .plan-card {
   border-radius: 12px;
@@ -45,15 +55,14 @@ This modular subscription is perfect for students and researchers who need speci
 .plan-card { border-left-color: #8b6a3a; }
 a { color: #0b5a56; text-decoration: none; font-weight: 600; }
 a:hover { text-decoration: underline; }
-</style>  
+</style>
+```
 
+Module licenses give access to individual tools which is ideal for students or personal users focused on a single analysis. If you’re a **scientist or assistant professor** involved in active research, explore our Individual Plan for advanced access.
 
-Module licenses give access to individual tools which is ideal for students or personal users focused on a single analysis. If you’re a **scientist or assistant professor** involved in active research, explore our Individual Plan for advanced access.  
+## Indvidual Plan - unlimited {#sec-indv}
 
-
-## Indvidual Plan - unlimited {#sec-indv}  
-
-```{=html}  
+```{=html}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -189,11 +198,9 @@ Module licenses give access to individual tools which is ideal for students or p
 </html>
 ```
 
-
-
 ::: {.callout-tip title="💡Institutional Plan"}
-💡 If you are affiliated with an academic or research institution and require full access to all RAISINS modules, please refer to the Institutional License section below and encourage your institution to partner with us. See [Institutional License](#sec-inst) for more details. 
-:::  
+💡 If you are affiliated with an academic or research institution and require full access to all RAISINS modules, please refer to the Institutional License section below and encourage your institution to partner with us. See [Institutional License](#sec-inst) for more details.
+:::
 
 ------------------------------------------------------------------------
 
@@ -201,9 +208,9 @@ Module licenses give access to individual tools which is ideal for students or p
 
 We also offer comprehensive **Institutional Licenses** to support collaborative research and academic teaching. These plans provide **Access to all RAISINS apps** for a fixed number of users within a department, college, or university. Whether you're supervising a small team or managing a large institution, there’s a plan designed to fit your scale and scope.
 
-> *Institutional licenses are ideal for teaching labs, research projects, and campus-wide adoption of RAISINS.*  
+> *Institutional licenses are ideal for teaching labs, research projects, and campus-wide adoption of RAISINS.*
 
-```{=html}   
+```{=html}
 <!-- Contact us button -->
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdid_gAwj3U4clIKDGvntOhZC04dsv1pq46TdTlTrIG4cBIdg/viewform?usp=header"
    class="raisins-btn"
@@ -229,6 +236,4 @@ We also offer comprehensive **Institutional Licenses** to support collaborative 
   .raisins-btn:hover{ background:#08473f; box-shadow:0 6px 18px rgba(0,0,0,.16); transform:translateY(-1px); }
   .raisins-btn:active{ transform:translateY(0); box-shadow:0 3px 8px rgba(0,0,0,.12); }
 </style>
-```  
-
-
+```
