@@ -33,12 +33,12 @@ website:
         href: index.qmd#statgen
       - text: "Social Sciences"
         href: index.qmd#social
-      - text: "Custom tools"
-        href: index.qmd#customTool
+      - text: "Tutorial"
+        href: tutorial.qmd
       - text: "Others"
         menu:
-          - text: "Tutorial"
-            href: tutorial.qmd
+          - text: "Custom tools"
+            href: index.qmd#customTool
           - text: "Quick videos"
             href: video.qmd
           - text: "Citation Info"

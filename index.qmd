@@ -342,8 +342,7 @@ editor: visual
   setInterval(updateStream, 4000); // change frequency here (ms)
 })();
 </script>
-```  
-
+```
 
 # Welcome to RAISINS {.unnumbered}
 
@@ -1880,7 +1879,79 @@ document.addEventListener('DOMContentLoaded', function () {
 ## Institutional login
 
 At RAISINS, we deeply value academic collaborations and are committed to making statistical analysis easy, affordable, and enjoyable. If you believe your institution could benefit from access to RAISINS, we encourage you to inform the relevant authority to get in touch with us. We offer customised plans, our unique flavours—to match the research needs of your institution.[Click here](plans.qmd) to explore Institutional Licensing for RAISINS.
-:::
+:::  
+
+```{=html}   
+<!-- RAISINS Institutions Marquee -->
+<section class="institutions-access my-4" aria-label="Institutions having access">
+  <h5 class="text-center mb-3 fw-semibold">
+    🏛️ Institutions having access:
+  </h5>
+
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <img src="www/institutions/inst1.webp" alt="Institution 1" class="inst-logo">
+      <img src="www/institutions/inst2.webp" alt="Institution 2" class="inst-logo">
+      <img src="www/institutions/inst3.webp" alt="Institution 3" class="inst-logo">
+      <img src="www/institutions/inst4.webp" alt="Institution 4" class="inst-logo">
+      <img src="www/institutions/inst5.webp" alt="Institution 5" class="inst-logo">
+
+      <!-- Repeat for seamless loop -->
+      <img src="www/institutions/inst1.webp" alt="Institution 1 duplicate" class="inst-logo">
+      <img src="www/institutions/inst2.webp" alt="Institution 2 duplicate" class="inst-logo">
+      <img src="www/institutions/inst3.webp" alt="Institution 3 duplicate" class="inst-logo">
+      <img src="www/institutions/inst4.webp" alt="Institution 4 duplicate" class="inst-logo">
+      <img src="www/institutions/inst5.webp" alt="Institution 5 duplicate" class="inst-logo">
+    </div>
+  </div>
+</section>
+
+<style>
+.institutions-access {
+  background: #f8f9fa;
+  border-radius: 14px;
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  animation: scroll-left 25s linear infinite;
+}
+
+.inst-logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+  transition: transform 0.3s ease;
+}
+
+.inst-logo:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .inst-logo {
+    height: 45px;
+  }
+}
+</style>
+```  
+
 
 ## 💬 What Our Users Say {.unnumbered}
 
