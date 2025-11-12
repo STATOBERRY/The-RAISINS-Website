@@ -70,94 +70,69 @@ reading-time: 10
 
 *Below is a compact, practical guide you can use as a tutorial to perform Hierarchical Cluster Analysis in RAISINS.*
 
-## Getting Started in RAISINS
+## Getting Started
 
-RAISINS (R and AI Solutions in INferential Statistics) is an online platform that simplifies data analysis for agricultural research. RAISINS is completely online and doesnot require any downloads. It integrates the power of R, Python, and AI to offer user-friendly, robust statistical tools. The platform is developed by STATOBERRY LLP, with mentorship from the Department of Agricultural Statistics, College of Agriculture, Vellayani, Kerala Agricultural University.
+**RAISINS (R and AI Solutions in INferential Statistics)** is a cloud-based platform that allows you to perform statistical analyses in R and Python without writing a single line of code. It runs entirely online which needs no downloads or installations and seamlessly integrates the capabilities of R, Python, and AI to deliver powerful yet user-friendly analytical tools.
 
-Head to [www.raisins.live](https://www.raisins.live) where you can access various analytical modules. You can accesss the Cluster Analysis Module from the Analysis module under Analysis of Experiments. See @fig-cluana to get started with Cluster Analysis in RAISINS
+Learn more about RAISINS [here](https://www.raisins.live/tutorial/Intro/raisinsIntro.html).
+
+To get started with cluster analysis, visit [www.raisins.live](https://www.raisins.live), navigate to **Cluster Analysis** under [Data Analysis](https://www.raisins.live/#dataAnalysis) as shown in @fig-cluana.
 
 ![Cluster analysis in RAISINS](CLUSANA.webp){#fig-cluana fig-align="center" width="100%"}
 
-## How to Prepare Your Data?
+## Hierarchical Cluster Analysis (HCA)
 
-Proper data preparation is crucial for accurate HCA results in RAISINS. What truly matters is the quality of your data! As the saying goes, "garbage in, garbage out" - and this holds true for any software.
+The purpose of hierarchical agglomerative cluster analysis is to group similar items or observations together based on how close or related they are. It helps you find natural groupings or patterns in your data without knowing the number of groups in advance.
 
-*To prepare your dataset for analysis in RAISINS, you have two options*:
+In this method, the analysis starts with each item as its own separate group. Then, the most similar groups are joined step by step until all items come together into one big group. This process is shown using a tree-like diagram called a dendrogram, which helps you see how the groups were formed and decide where to “cut” the tree to get the right number of clusters.
 
-1.  Create your dataset in MS Excel, see @sec-cr
-2.  Build your dataset directly within the RAISINS app, see @sec-crapp
+This method is useful when you want to explore your data and understand which items are more alike based on their features or values.
 
-### Creating a Data File in MS Excel {#sec-cr}
+::: {.callout-tip title="In short"}
+Hierarchical agglomerative cluster analysis helps group similar crops, varieties, or treatments based on their measured characters. The grouping is shown using a dendrogram, and since it is exploratory, users can decide how many clusters to keep - we will discuss finding the optimal number of clusters in the coming sessions.
+:::
 
-RAISINS allows for analyzing multiple characters simultaneously. So you can enter the observations for all characters for a particular set of treatments in a single excel file.
+## Let's start with an example
 
--   Open a new microsoft excel file, use single sheet only.
+We will explain hierarchical cluster analysis (HCA) using an example. Let’s consider a dataset with 30 genotypes and four variables - **Yield**, **Plant_Height**, **Pods_per_Plant**, and **Seed_Weight**. Our aim is to perform cluster analysis to group the genotypes based on these characters.
 
--   Start with Cell A1: Open a new MS Excel file and begin entering data from cell A1. Do not leave any blank rows above.
+If you are from the social sciences, your goal will be similar, to group respondents or study units based on the variables under study. The arrangement of the data is shown in the @fig-modata. Data organized in the same way in MS Excel can be directly uploaded to **RAISINS** for analysis. For more details on data preparation see @sec-prepdata.
+
+Two terms that we will use frequently are `Labels` and `Variables`. In our example, the Labels refer to the genotypes, and the Variables are the four traits mentioned earlier - Yield, Plant_Height, Pods_per_Plant, and Seed_Weight.
+
+![Model dataset: 30 genotypes and four characters in MS Excel](modeldata.webp){#fig-modata fig-align="center"}
+
+## How to Prepare Your Data? {#sec-prepdata}
+
+Arranging data for upload in RAISINS is very simple. Prepare your data exactly like the one shown in @fig-modata, using a single-sheet Excel file. Make sure no blank rows are left above, and all columns have proper names. That’s it - your file is ready to upload.
+
+Still if you have doubt read below:-
+
+To prepare your dataset for analysis in RAISINS, you have two options:
+
+<details>
+
+<summary>Creating dataset in MS Excel</summary>
+
+-   Open a new Microsoft Excel file, use single sheet only.
+
+-   Start with Cell A1: begin entering data from cell A1. Do not leave any blank rows above.
 
 -   First Row - Column Names: The first row must contain the column names.
 
 -   Column 1: Enter treatment/labels. **There should not be any repetition in the label ID's**. If there is replications, you can use the mean values.
 
--   From Column 2 Onwards: Enter the names of each variable under study as separate columns (e.g.Murder, Assault, UrbanPop, Rape). You can give any names to the columns.
+-   From Column 2 Onwards: Enter the names of each variable under study as separate columns (e.g.yield, Plant_Height, Pods_per_Plant, and Seed_Weight). You can give any names to the columns.
 
-See @fig-modata1 showing how the prepared Excel file for upload should look like
+See @fig-modata showing how the prepared Excel file for upload should look like
 
-![Model1 showing how the prepared Excel file for upload should look like](cr.webp){#fig-modata1 fig-align="center" width="75%"}
-
-#### File Format Recommendation
-
--   In RAISINS you can upload file in xls, xlsx or csv format. But we recommend a csv format as it will be much lighter.
-
-<details>
-
-<summary>Follow the below steps save your Excel file in csv format.</summary>
-
-1.  Open your Excel file.
-
-2.  Click on **File** in the top-left corner.
-
-3.  Select `Save As` from the menu.
-
-4.  Choose the **location** where you want to save the file.
-
-5.  In the Save as type **dropdown menu**, select `CSV (Comma delimited) (*.csv)`.
-
-6.  Enter a **name** for your file.
-
-7.  Click **Save**.
-
-#### Naming Columns and Treatments
-
--   Keep It Simple and Straight (KISS): Use simple and short names for column headers.
-
--   Avoid Complexity: Do not include units, special characters, or spaces in names (e.g., use char1 instead of Character 1). This helps ensure the names appear neatly in plots and outputs.
-
--   This helps ensure the names appear neatly in plots and outputs.
-
-<details>
-
-<summary>Dataset Creation Rules</summary>
-
-1.  **Column Naming Convention**
-    -   No spaces allowed in column names.\
-    -   Use underscores (`_`) or full stops (`.`) for separation.
-    -   Avoid symbols and special characters like %,# etc
-2.  **Data Arrangement**
-    -   Start data arrangement towards the upper-left corner.\
-    -   Ensure the row above the data is not blank.
-3.  **Cell Management**
-    -   Avoid typing or deleting in cells without data.\
-    -   If needed, select affected cells, right-click, and select **Clear Contents**.
-4.  **Column Relevance**
-    -   Name all columns meaningfully.\
-    -   Exclude unnecessary columns not required for analysis.
+If you have any doubt in saving a file as csv or some basics of data preperation read our tutorial on getting started [here](https://www.raisins.live/tutorial/Intro/raisinsIntro.html#sec-prepfile)
 
 </details>
 
-### Creating Data Using the App (Recommended Method) {#sec-crapp}
+<details>
 
-*See @fig-cr and follow the below steps to create data in RAISINS*
+<summary>Creating your dataset directly within the RAISINS app</summary>
 
 -   Navigate to `Create Data` Tab: Click on the Create Dataset tab in the main menu at the top of the app.
 
@@ -175,21 +150,22 @@ See @fig-modata1 showing how the prepared Excel file for upload should look like
 
 ![Creating Data in RAISINS](create.webp){#fig-cr fig-align="center" width="100%"}
 
-## How to upload the data file for analysis ?
+</details>
 
--   Upload the Prepared CSV/XLS File: Go to the `Analysis tab`(See @fig-modata2) and upload your prepared data file by clicking `Browse`.
+## Running Analysis
 
-![Analysis tab](tab1analysis1.webp){#fig-modata2 fig-align="center" width="100%"}
+Now upload the prepared file by clicking `Browse` in the sidebar of the `Analysis tab` (see @fig-analtab).
 
-## How to Run analysis?
+![Analysis tab](anal_tab.webp){#fig-analtab fig-align="center" width="100%"}
 
-RAISINS is designed for a smooth and hassle-free experience. Once you click the Run Analysis button, all relevant results and outputs appear instantly-leaving no room for confusion.
+When the file is uploaded, options to select the variables and labels appear. Select appropriate column under Labels and variables, see @fig-upload
 
-![Run Analysis Tab in RAISINS](AnalysisRun.webp){#fig-Run fig-align="center" width="100%"}
+![Uploading the data file](upload.webp){#fig-upload fig-align="center" width="100%"}
 
-### Different plot types
+Once you click the `Run Analysis` button, all relevant results and outputs appear instantly-leaving no room for confusion. Now see the result for our example data in the form of a dendrogram @fig-result.
 
-A dendrogram is a tree-like diagram that visually represents how hierarchical clustering groups data step by step, allowing you to explore relationships and cluster formation within a dataset. A dendrogram displays the process of merging (or sometimes splitting) clusters during hierarchical cluster analysis.
+::: {.callout-note title="Dendrogram"}
+A dendrogram is a tree-like diagram that visually represents how hierarchical clustering groups data step by step, allowing you to explore relationships and cluster formation within a dataset. A dendrogram displays the process of merging (or sometimes splitting) clusters during hierarchical cluster analysis\
 
 <details>
 
@@ -206,14 +182,29 @@ A dendrogram is a tree-like diagram that visually represents how hierarchical cl
 5.  **Deciding number of clusters** - By “cutting” the tree horizontally at a given level (distance threshold), you divide the data into clusters-each branch below the cut line forms a cluster.
 
 </details>
+:::
 
-We’ve ensured that every possible plot type related to the Hierarchical Cluster analysis is readily available. Color-Coded Clusters dendrogram performed with the complete linkage method and euclidean distance metric, identified through elbow method, resulting in 2 clusters is available by default and each dendrogram comes with a gear icon at the top-left corner, allowing you to customize its appearance. You can also download these plots in high-quality PNG (300 dpi), TIFF or PDF formats for use in reports or presentations.(See @fig-Run)
+![Dendrogram of the model dataset](result.webp){#fig-result fig-align="center" width="100%"}
 
-Explore @fig-1, @fig-2, @fig-3, @fig-4, @fig-5, @fig-6, @fig-7, @fig-8 where each dendrogram available in RAISINS is **visually illustrated and accompanied by a clear, insightful description below**, helping you easily understand the structure and meaning of each clustering pattern.
+In RAISINS, the optimal number of clusters is automatically identified using the `elbow method`.Other options can be seen in `optimal clusters` tab. In this example, the method suggests two clusters, which are shown in red and blue in @fig-result.
+
+You can also change the number of clusters as needed. RAISINS provides many additional options that the experimenter can choose from depending on the type of data and research objective. The platform is highly interactive and guides you on what to use and when, making the clustering process easier and more intuitive, see @sec-detail.
+
+## RAISINS clustering options explained {#sec-detail}
+
+In @fig-Run, you can see the detailed view of the Analysis tab, along with explanations of what each option does. This section helps you understand the purpose of every setting so you can select the most appropriate ones for your data and analysis needs.
+
+![Run Analysis Tab in RAISINS](AnalysisRun.webp){#fig-Run fig-align="center" width="100%"}
+
+### Different plot types
+
+RAISINS offers a variety of plots related to Hierarchical Cluster Analysis, ensuring that all key visualizations are easily accessible. Each plot includes a gear icon at the top-left corner that lets you customize its appearance to suit your needs. You can also download these plots in high-quality PNG (300 dpi), TIFF, or PDF formats for use in your reports or presentations (see @fig-Run).
+
+From @fig-1 to @fig-8, you can see the different types of dendrograms available in RAISINS. Each one is visually illustrated and accompanied by a clear, insightful description below, making it easy to understand the structure, grouping, and interpretation of each clustering pattern.
 
 ::: {layout-ncol="2"}
 ![**Color coded clusters (k = 2)**\
-A color-coded cluster dendrogram is an enhanced version of the basic dendrogram where branches or clusters are colored differently to clearly distinguish the groupings formed by hierarchical clustering. This makes interpreting the tree much easier, especially for large datasets or when clusters overlap visually.](ColorCoded_Clusters.webp){#fig-1 width="100%"}
+A color-coded cluster dendrogram is an enhanced version of the basic dendrogram where branches or clusters are colored differently to clearly distinguish the groupings formed by hierarchical clustering. This makes interpreting the tree much easier, especially for large datasets or when clusters overlap visually.](Color_coded.webp){#fig-1 width="100%"}
 
 ![**Vertical Dendrogram (k = 2)**\
 A vertical dendrogram is a classic, user-friendly way to display hierarchical clustering results with the data points along the bottom and cluster merges represented by upward vertical lines, enabling easy interpretation of cluster hierarchy and distances.](Vertical_Dendrogram.webp){#fig-2 width="100%"}
@@ -240,16 +231,16 @@ A Circular Dendrogram is a radial, space-efficient alternative to the classical 
 A coloured rectangular dendrogram is an enhanced dendrogram visualization where clusters are not only enclosed in rectangular boxes but these boxes and the associated branches are also color-coded to clearly distinguish different clusters. This combination improves interpretability and presentation of hierarchical clustering. results.](Colored_Rectangular_Dendrogram.webp){#fig-7 fig-align="center" width="100%"}
 
 ![**Classical Dendrogram (k = 2)** A classical dendrogram is the traditional tree-like diagram used in hierarchical cluster analysis to represent the nested grouping of objects based on their similarity or distance. It is a fundamental visualization tool that shows how clusters are formed progressively, starting from each individual object and merging step by step into larger clusters until all objects are grouped into one.\
-](Classical.webp){#fig-8 fig-align="center" width="100%"}
+](Classical_Dendrogram.webp){#fig-8 fig-align="center" width="100%"}
 :::
-
-### Additional options available
 
 In addition to the various plot types available in RAISINS, the platform also provides several customization options to refine your clustering analysis (See @fig-Run)
 
 You can explore and adjust the following settings:
 
-##### **Linkage Methods available in RAISINS - single, complete, average, ward.D2, mcquitty, median and centroid**.
+### Linkage Methods
+
+Following linkage methods are available in RAISINS - single, complete, average, ward.D2, mcquitty, median and centroid.
 
 <details>
 
@@ -285,7 +276,9 @@ Centroid linkage computes the distance between two clusters as the Euclidean dis
 
 </details>
 
-##### **Distance Metrics available in RAISINS: Euclidean, Manhattan, Maximum, Canberra, Minkowski**.
+### Distance Metrics
+
+Distance metrics options available in RAISINS: Euclidean, Manhattan, Maximum, Canberra, Minkowski.
 
 <details>
 
@@ -317,11 +310,13 @@ Median distance refers to the measure of the difference between data points base
 
 </details>
 
-##### **Optimal k Methods available in RAISINS : Elbow, Silhouette, Gap Statistic**.
+### Methods to find the optimal number of clusters (k)
+
+In RAISINS, three methods are available to determine the optimal number of clusters - Elbow, Silhouette, and Gap Statistic..
 
 <details>
 
-<summary>Lets understand the different optimal k Methods</summary>
+<summary>Lets understand the different methods to find optimal number of clusters</summary>
 
 ::: {.callout-note title="🔹  Elbow Method" collapse="false"}
 The elbow method is a heuristic used in clustering analysis, particularly with K-means, to determine the optimal number of clusters. It involves plotting the within-cluster sum of squares (WCSS) against different values of k (number of clusters). As the number of clusters increases, WCSS decreases because the data points within each cluster become more tightly grouped. The goal is to identify the "elbow" point in the plot where the rate of decrease sharply changes, indicating an optimal balance between minimizing intra-cluster variance and avoiding overfitting. This point suggests the most appropriate number of clusters, where adding more clusters yields diminishing improvements.
@@ -373,8 +368,6 @@ Robust scaling uses statistics less sensitive to outliers, typically by subtract
 
 </details>
 
-##### **Number of Clusters: Specify or adjust the number of clusters to be formed based on your analysis needs.**
-
 ### Heatmap in RAISINS
 
 A heatmap in cluster analysis is a visualization technique that represents data values in a matrix format using colors to indicate magnitude, typically after both the rows and columns have been reordered based on hierarchical clustering results. The integration of heatmaps with cluster analysis allows you to visually explore and identify patterns, groupings, or similarities among observations (rows) and variables (columns).
@@ -385,37 +378,37 @@ In the RAISINS platform after uploading your data click on the `Heatmap tab` to 
 
 See @fig-hp where blocks of similar colors indicate labels or variables with related profiles, and the accompanying dendrograms illustrate their hierarchical relationships, making it easier to identify groups that share similar characteristics or expression patterns.
 
-![**Heatmap in RAISINS**](HMap.webp){#fig-hp fig-align="center" width="100%"}
+![**Heatmap in RAISINS**](heatmap.webp){#fig-hp fig-align="center" width="100%"}
 
-### The four important statistical components available in RAISINS
+### Metrics tab
 
-In the RAISINS platform after uploading your data `select the labels` then `select the clustering variables` of your choice, then click on `Run Analysis` and go to `Metrics` (See @fig-adm) to generate Distance matrix, Cluster-wise means, Intra-cluster Statistics and Inter-cluster Statistics tables and you can either copy this file or download these tables in `.xlsx` or `.csv` formats for use in reports or presentations.
+In `Metrics` (See @fig-adm) tab you can see the Distance matrix, Cluster-wise means, Intra-cluster Statistics and Inter-cluster Statistics tables and you can either copy this file or download these tables in `.xlsx` or `.csv` formats for use in reports or presentations.
 
 ![**Metrics tab in RAISINS**](mettab.webp){#fig-adm fig-align="center" width="100%"}
 
-*Below given is a brief description on the four statistical components available in RAISINS*
+Different metrics available in Metric tab is given below.
 
 1.  Distance Matrix (euclidean method) - See @fig-dm
 
-![**Distance Matrix in RAISINS**](Distance_matrix.webp){#fig-dm fig-align="center" width="100%"}
+![**Distance Matrix in RAISINS**](distance.webp){#fig-dm fig-align="center" width="100%"}
 
 In hierarchical clustering, the distance matrix represents the pairwise dissimilarities or distances between all observations in the dataset. It quantifies how similar or different each observation is from every other observation and serves as the foundation for grouping observations into clusters. The distance matrix provides a reference for understanding the relative closeness of observations and guides the formation of clusters based on similarity.
 
 2.  Cluster means - See @fig-cwm
 
-![**Cluster wise means in RAISINS**](Cluster_wise_means.webp){#fig-cwm fig-align="center" width="100%"}
+![**Cluster wise means in RAISINS**](clust_means.webp){#fig-cwm fig-align="center" width="100%"}
 
 In hierarchical clustering, the cluster mean represents the average values of all variables for the observations within a cluster, summarizing the central tendency of the cluster and providing a reference point to understand the characteristics of the grouped data. It represents the typical characteristics of that cluster.
 
 3.  Intra-cluster Statistics - See @fig-itra
 
-![**Intracluster statistics**](Intracluster_statistics.webp){#fig-itra fig-align="center" width="100%"}
+![**Intracluster statistics**](intra.webp){#fig-itra fig-align="center" width="100%"}
 
 In hierarchical clustering, intra-cluster statistics measure the compactness or similarity of observations within the same cluster. They quantify how closely the members of a cluster resemble each other, often using metrics like the average distance between observations and the cluster mean. These statistics help assess the cohesion of a cluster, indicating how homogeneous or tightly grouped the cluster members are.
 
 4.  Inter-cluster Statistics - See @fig-iter
 
-![**Intercluster statistics**](Intercluster_statistics.webp){#fig-iter fig-align="center" width="100%"}
+![**Intercluster statistics**](inter.webp){#fig-iter fig-align="center" width="100%"}
 
 In hierarchical clustering, inter-cluster statistics measure the separation or dissimilarity between different clusters. They quantify how distinct or far apart the clusters are from each other, often using metrics like the distance between cluster means or centroids. These statistics help assess the distinctness of clusters, indicating how well the clustering algorithm has separated different groups in the dataset.
 
@@ -477,7 +470,17 @@ In @fig-topvar, the table shows the top contributing variables for each cluster 
 
 In @fig-chord, the chord diagram visualizes the relationships between your original variables and the identified clusters from Hierarchical Clustering on Principal Components (HCPC). The outer ring shows two types of segments: your original dataset variables and the clusters (groups of similar observations). The ribbons connecting them represent the strength of association, with wider ribbons indicating that a variable is more characteristic or defining for that particular cluster. The width is determined by v.test statistics, which measure how strongly a variable distinguishes each cluster from others. By examining these connections, you can understand the profile of each cluster - which variables are most prominent in defining each group. Variables with thick ribbons to a cluster are key features of that group, while variables connected to multiple clusters play important roles across different groups. The diagram displays the most characteristic variables for each cluster with weights normalized within each cluster, allowing you to compare the relative importance of variables in defining cluster identities and understand what makes each group unique in your dataset.
 
-![**PCA Summary Table**](ClusSum.webp){#fig-pca width="100%"}
+::: {layout-ncol="2"}
+![**HCPC Dendrogram**](hcpc_dendro.webp){#fig-hcpc_dendro width="100%" height="250"}
+
+![**Heirarchical Factor Map**](hcpc_3d.webp){#fig-hcpc_3d width="100%" height="250"}
+:::
+
+In @fig-hcpc_dendro, the hierarchical dendrogram obtained through Hierarchical Clustering on Principal Components (HCPC) provides a visual representation of how observations are grouped based on their similarity in the principal component space. The vertical branches depict the progressive merging of individuals or groups, where shorter branches indicate closer similarity and longer branches represent greater dissimilarity between clusters. The height of each merge on the y-axis corresponds to the distance or dissimilarity at which clusters combine, allowing you to assess how distinct each group is. The colored rectangles highlight the main clusters identified by the analysis, where observations within the same color share similar multivariate characteristics derived from PCA. By examining the branching pattern and the height at which groups join, you can interpret the overall structure and relationships among the observations—how closely related they are, which clusters are more homogeneous, and where clear separations exist. This dendrogram thus serves as a hierarchical map of similarity, illustrating the underlying grouping patterns in your dataset as summarized by the principal components.
+
+In @fig-hcpc_3d, the three-dimensional hierarchical clustering plot projected onto the PCA factor map visually integrates both the dimensional reduction from Principal Component Analysis (PCA) and the grouping structure from Hierarchical Clustering on Principal Components (HCPC). The horizontal plane represents the first two principal components (Dim 1 and Dim 2), which together capture the largest proportion of variance in the dataset, while the vertical axis (“height”) indicates the dissimilarity or distance at which observations or clusters are merged. Each line segment shows how closely related individuals (such as genotypes or samples) are in the multivariate space; shorter vertical distances signify stronger similarity. The clusters, represented by colored labels, highlight groups of observations that share common patterns along the principal component dimensions. This 3D representation allows you to observe not only how clusters are hierarchically formed but also how they are spatially positioned and separated in the PCA space, providing a comprehensive view of both the clustering process and the underlying data structure derived from the principal components.
+
+![**PCA Summary Table**](clus_sum.webp){#fig-pca width="100%"}
 
 In @fig-pca, the table summarizes the results of Principal Component Analysis (PCA), showing how much variance each principal component explains in the dataset. The eigenvalue indicates the amount of variance captured by each component, with larger values representing more important components. The percent column shows the proportion of total variance explained by each component, while the cumulative percent shows the running total across components. Components with eigenvalues greater than 1 are typically considered meaningful. This information helps determine how many components are needed to adequately represent the original data and forms the basis for subsequent clustering analysis.
 
