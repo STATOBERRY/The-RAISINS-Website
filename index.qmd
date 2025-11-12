@@ -1910,7 +1910,7 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
 .institutions-access {
   background: #f8f9fa;
   border-radius: 14px;
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
@@ -1918,38 +1918,230 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
   overflow: hidden;
   position: relative;
   width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+          mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
 .marquee-track {
   display: flex;
   align-items: center;
-  gap: 3rem;
-  animation: scroll-left 25s linear infinite;
+  gap: 2.5rem;
+  animation: scroll-left 15s linear infinite;
 }
 
 .inst-logo {
   height: 60px;
   width: auto;
   object-fit: contain;
+  flex-shrink: 0;
   filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .inst-logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,0.15));
 }
 
 @keyframes scroll-left {
-  0% { transform: translateX(0); }
+  0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
+/* --- Mobile & tablet optimization --- */
 @media (max-width: 768px) {
   .inst-logo {
-    height: 45px;
+    height: 42px;
+  }
+  .marquee-track {
+    gap: 1.5rem;
+    animation-duration: 12s; /* faster on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .institutions-access h5 {
+    font-size: 1rem;
+  }
+  .inst-logo {
+    height: 36px;
   }
 }
 </style>
+```
+
+
+```{=html}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+<style>
+#inline-counter {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#inline-counter .counter-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  padding: 16px 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  min-width: 180px;
+  transition: transform 0.2s ease;
+}
+
+#inline-counter .counter-box:hover {
+  transform: translateY(-3px);
+}
+
+#inline-counter .icon {
+  font-size: 30px;
+  color: #007ACC;
+}
+
+#inline-counter .text-group {
+  text-align: left;
+}
+
+#inline-counter .number {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+#inline-counter .label {
+  font-size: 15px;
+  color: #555;
+  margin-top: 4px;
+}
+</style>
+
+<div id="inline-counter">
+  <div class="counter-box" data-aos="fade-up">
+    <div class="icon"><i class="fas fa-users"></i></div>
+    <div class="text-group">
+      <div class="number" data-target="2500">0</div>
+      <div class="label">Users</div>
+    </div>
+  </div>
+
+  <div class="counter-box" data-aos="fade-up" data-aos-delay="100">
+    <div class="icon"><i class="fas fa-university"></i></div>
+    <div class="text-group">
+      <div class="number" data-target="6">0</div>
+      <div class="label">Institutions</div>
+    </div>
+  </div>
+
+  <div class="counter-box" data-aos="fade-up" data-aos-delay="200">
+    <div class="icon"><i class="fas fa-clock"></i></div>
+    <div class="text-group">
+      <div class="number" data-target="20000">0</div>
+      <div class="label">User Hours</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ once: true });
+
+const counters = document.querySelectorAll('#inline-counter .number');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const counter = entry.target;
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+      const speed = 5;
+
+      const roll = () => {
+        if (count < target) {
+          count += Math.ceil(target / 50);
+          if (count > target) count = target;
+          counter.textContent = count;
+          setTimeout(roll, speed);
+        } else {
+          counter.textContent = target.toLocaleString() + '+';
+          observer.unobserve(counter);
+        }
+      };
+      roll();
+    }
+  });
+}, { threshold: 0.7 });
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+```  
+
+
+```{=html}  
+<!-- RAISINS Doodle Hover Link -->
+<div class="doodle-container">
+  <img src="www/doodle/doodle.webp" alt="RAISINS Doodle for National Education Day" class="doodle-img">
+  <a href="https://en.wikipedia.org/wiki/National_Education_Day_(India)" target="_blank" 
+     rel="noopener" class="doodle-link">Learn more →</a>
+</div>
+
+<style>
+.doodle-container {
+  position: relative;
+  display: inline-block;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.doodle-img {
+  width: min(100%, 780px);
+  height: auto;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.doodle-container:hover .doodle-img {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.doodle-link {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.doodle-container:hover .doodle-link {
+  opacity: 1;
+}
+
+/* optional for dark mode contrast */
+@media (prefers-color-scheme: dark) {
+  .doodle-link {
+    background: rgba(255,255,255,0.8);
+    color: #111;
+  }
+}
+</style>
+
 ```  
 
 
@@ -2035,118 +2227,6 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
 </div>
 ```
 
-```{=html}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-
-<style>
-#inline-counter {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 40px auto;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-#inline-counter .counter-box {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: #fff;
-  padding: 16px 28px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-  min-width: 180px;
-  transition: transform 0.2s ease;
-}
-
-#inline-counter .counter-box:hover {
-  transform: translateY(-3px);
-}
-
-#inline-counter .icon {
-  font-size: 30px;
-  color: #007ACC;
-}
-
-#inline-counter .text-group {
-  text-align: left;
-}
-
-#inline-counter .number {
-  font-size: 30px;
-  font-weight: 700;
-  color: #2c3e50;
-}
-
-#inline-counter .label {
-  font-size: 15px;
-  color: #555;
-  margin-top: 4px;
-}
-</style>
-
-<div id="inline-counter">
-  <div class="counter-box" data-aos="fade-up">
-    <div class="icon"><i class="fas fa-users"></i></div>
-    <div class="text-group">
-      <div class="number" data-target="2500">0</div>
-      <div class="label">Users</div>
-    </div>
-  </div>
-
-  <div class="counter-box" data-aos="fade-up" data-aos-delay="100">
-    <div class="icon"><i class="fas fa-university"></i></div>
-    <div class="text-group">
-      <div class="number" data-target="4">0</div>
-      <div class="label">Institutions</div>
-    </div>
-  </div>
-
-  <div class="counter-box" data-aos="fade-up" data-aos-delay="200">
-    <div class="icon"><i class="fas fa-clock"></i></div>
-    <div class="text-group">
-      <div class="number" data-target="20000">0</div>
-      <div class="label">User Hours</div>
-    </div>
-  </div>
-</div>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-AOS.init({ once: true });
-
-const counters = document.querySelectorAll('#inline-counter .number');
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const counter = entry.target;
-      const target = +counter.getAttribute('data-target');
-      let count = 0;
-      const speed = 5;
-
-      const roll = () => {
-        if (count < target) {
-          count += Math.ceil(target / 50);
-          if (count > target) count = target;
-          counter.textContent = count;
-          setTimeout(roll, speed);
-        } else {
-          counter.textContent = target.toLocaleString() + '+';
-          observer.unobserve(counter);
-        }
-      };
-      roll();
-    }
-  });
-}, { threshold: 0.7 });
-
-counters.forEach(counter => observer.observe(counter));
-</script>
-```
 
 ```{=html}
 <marquee behavior="scroll" direction="left" scrollamount="7" style="margin-top: 1rem;">
@@ -2324,4 +2404,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-```
+```  
+
+
+
+
+
+
+
+
+
+
