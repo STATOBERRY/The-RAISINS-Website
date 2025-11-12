@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-d537361e11716f92ab7e5a91490b23aa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -1785,90 +1785,110 @@ Institutional login
 <p>At RAISINS, we deeply value academic collaborations and are committed to making statistical analysis easy, affordable, and enjoyable. If you believe your institution could benefit from access to RAISINS, we encourage you to inform the relevant authority to get in touch with us. We offer customised plans, our unique flavours—to match the research needs of your institution.<a href="./plans.html">Click here</a> to explore Institutional Licensing for RAISINS.</p>
 </div>
 </div>
-<!-- RAISINS Institutions Marquee -->
-<section class="institutions-access my-4" aria-label="Institutions having access">
-  <h5 class="text-center mb-3 fw-semibold anchored">
-    🏛️ Institutions having access:
-  </h5>
+<!-- RAISINS institutions marquee (smooth version) -->
+<section class="institutions-access my-4" aria-label="institutions with access">
+  <h5 class="text-center mb-3 fw-semibold anchored">🏛️ institutions with access</h5>
 
-  <div class="marquee-container">
-    <div class="marquee-track">
-      <img src="www/institutions/inst1.webp" alt="Institution 1" class="inst-logo">
-      <img src="www/institutions/inst2.webp" alt="Institution 2" class="inst-logo">
-      <img src="www/institutions/inst3.webp" alt="Institution 3" class="inst-logo">
-      <img src="www/institutions/inst4.webp" alt="Institution 4" class="inst-logo">
-      <img src="www/institutions/inst5.webp" alt="Institution 5" class="inst-logo">
+  <div class="marquee" role="region" aria-label="institution logos ticker">
+    <div class="marquee__track">
+      <img src="www/institutions/inst1.webp" alt="institution 1" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst2.webp" alt="institution 2" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst3.webp" alt="institution 3" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst4.webp" alt="institution 4" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst5.webp" alt="institution 5" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst6.webp" alt="institution 5" class="inst-logo" height="60" width="160">
+    </div>
 
-      <!-- Repeat for seamless loop -->
-      <img src="www/institutions/inst1.webp" alt="Institution 1 duplicate" class="inst-logo">
-      <img src="www/institutions/inst2.webp" alt="Institution 2 duplicate" class="inst-logo">
-      <img src="www/institutions/inst3.webp" alt="Institution 3 duplicate" class="inst-logo">
-      <img src="www/institutions/inst4.webp" alt="Institution 4 duplicate" class="inst-logo">
-      <img src="www/institutions/inst5.webp" alt="Institution 5 duplicate" class="inst-logo">
+    <!-- duplicate track for seamless loop -->
+    <div class="marquee__track" aria-hidden="true">
+      <img src="www/institutions/inst1.webp" alt="" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst2.webp" alt="" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst3.webp" alt="" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst4.webp" alt="" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst5.webp" alt="" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst6.webp" alt="" class="inst-logo" height="60" width="160">
     </div>
   </div>
 </section>
 
 <style>
+/* container */
 .institutions-access {
   background: #f8f9fa;
   border-radius: 14px;
-  padding: 1.25rem 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.25rem 0 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
 }
 
-.marquee-container {
+/* marquee core */
+.marquee {
+  --gap: 2.5rem;
+  --duration: 22s;               /* adjust speed here */
+  display: flex;
   overflow: hidden;
+  gap: var(--gap);
   position: relative;
-  width: 100%;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
-          mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  padding-inline: .5rem;
 }
 
-.marquee-track {
+/* soft edge fade without mask-image (better performance) */
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 60px;
+  pointer-events: none;
+  z-index: 2;
+}
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #f8f9fa, rgba(248,249,250,0));
+}
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #f8f9fa, rgba(248,249,250,0));
+}
+
+/* each track spans full width and slides left */
+.marquee__track {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
-  gap: 2.5rem;
-  animation: scroll-left 15s linear infinite;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+  will-change: transform;
+}
+@keyframes scroll {
+  from { transform: translate3d(0,0,0); }
+  to   { transform: translate3d(calc(-100% - var(--gap)),0,0); }
 }
 
+/* logos */
 .inst-logo {
-  height: 60px;
-  width: auto;
+  height: 60px; width: auto;
   object-fit: contain;
-  flex-shrink: 0;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
-  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.1));
+  transition: transform .25s ease, filter .25s ease;
 }
-
 .inst-logo:hover {
-  transform: scale(1.08);
-  filter: drop-shadow(0 3px 4px rgba(0,0,0,0.15));
+  transform: scale(1.06);
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,.16));
 }
 
-@keyframes scroll-left {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-/* --- Mobile & tablet optimization --- */
+/* accessibility + performance niceties */
+.marquee:hover .marquee__track { animation-play-state: paused; }  /* pause on hover */
 @media (max-width: 768px) {
-  .inst-logo {
-    height: 42px;
-  }
-  .marquee-track {
-    gap: 1.5rem;
-    animation-duration: 12s; /* faster on small screens */
-  }
+  .inst-logo { height: 42px; }
+  .marquee { --gap: 1.4rem; --duration: 16s; }
 }
-
 @media (max-width: 480px) {
-  .institutions-access h5 {
-    font-size: 1rem;
-  }
-  .inst-logo {
-    height: 36px;
-  }
+  .institutions-access h5 { font-size: 1rem; }
+  .inst-logo { height: 36px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track { animation: none; }
 }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
