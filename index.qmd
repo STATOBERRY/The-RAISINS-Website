@@ -1693,7 +1693,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
          href="DIALLEL.qmd"
          title="Diallel Analysis (Hayman's Approach)">
-         Diallel Analysis (Hayman's Approach)<span class="blink-new">New Release: 08/11/2025</span> 
+         Diallel Analysis (Hayman's Approach) 
       </a>
       <!-- plans (icon only) -->
       <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
@@ -1704,6 +1704,12 @@ document.addEventListener('DOMContentLoaded', function () {
               title="Plans & Pricing">
         <i class="fa-solid fa-cart-shopping"></i>
       </button>
+      <!-- youtube (black → red hover) -->
+      <a class="btn btn-outline-youtube small py-1 px-2 mb-2 ms-1"
+         href="video.qmd#diallel-video"
+         title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
 
   </div>

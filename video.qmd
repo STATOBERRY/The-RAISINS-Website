@@ -246,6 +246,17 @@ editor: visual
   </div>
 </div>
 
+<!-- Diallel analysis -->
+<div id="diallel-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/wgXqdli-aPc" title="Diallel analysis (Hayman's Approach)" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Diallel analysis (Hayman's Approach)</h3>
+  </div>
+</div>
+
+
 <!-- Exploratory Factor Analysis -->
 <div id="efa-video" class="video-card">
   <div class="video-container">
