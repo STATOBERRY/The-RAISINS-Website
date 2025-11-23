@@ -1046,23 +1046,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
       </a>
     </div>
     
-        <!-- PCA -->
-    <div class="col d-flex">
-      <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
-         href="PCA.qmd" title="Principal Component Analysis (PCA)">
-         Principal Component Analysis (PCA)<span class="blink-new">New Release: 23/11/2025</span>
-      </a>
-
-      <button class="btn btn-sm btn-outline-warning py-2 px-2 mb-2 ms-1"
-              data-bs-toggle="modal"
-              data-bs-target="#htmlModal"
-              data-src="subplans/pca.html"
-              data-title="Plans & Pricing"
-              title="Plans & Pricing" data-bs-toggle="tooltip">
-        <i class="fa-solid fa-cart-shopping"></i>
-      </button>
-
-    </div>
+       
 
   </div>
 </div>
