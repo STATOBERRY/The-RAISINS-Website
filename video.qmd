@@ -65,12 +65,23 @@ editor: visual
 <!-- ANCOVA -->
     <div id="ancova-video" class="video-card">
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/_wiYns4gvSM" title="One-way ANCOVA" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/_wiYns4gvSM" title="ANCOVA in CRD" allowfullscreen></iframe>
       </div>
       <div class="video-info">
-        <h3 class="video-title">One-way ANCOVA</h3>
+        <h3 class="video-title">ANCOVA in CRD</h3>
       </div>
     </div>
+    
+    <!-- ANCOVA RBD-->
+    <div id="ancovarbd-video" class="video-card">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/2NrLU4Pyj6s" title="ANCOVA in RBD" allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">ANCOVA in RBD</h3>
+      </div>
+    </div>
+    
     
     <!-- RM ANOVA -->
     <div id="rmanova-video" class="video-card">
@@ -191,6 +202,16 @@ editor: visual
   </div>
   <div class="video-info">
     <h3 class="video-title">Pooled Split-Plot analysis</h3>
+  </div>
+</div>
+
+<!-- Strip Pooled analysis -->
+<div id="strippooled-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/ndK9rui6vIk" title="Pooled Strip-Plot analysis" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Pooled Strip-Plot analysis</h3>
   </div>
 </div>
 
