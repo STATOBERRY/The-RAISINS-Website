@@ -973,6 +973,23 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
 <div class="container px-4">
   <div class="row row-cols-1 row-cols-md-2 gx-3 gy-2 mt-2">
 
+    <!-- Descriptive statistics -->
+    <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
+         href="DESC.qmd" title="Descriptive Statistics">
+         Descriptive Statistics <span class="blink-new">New Release: 25/11/2025</span>
+      </a>
+
+      <!-- plans (icon only, solid cart) -->
+      <button class="btn btn-sm btn-outline-warning py-2 px-2 mb-2 ms-1"
+              data-bs-toggle="modal"
+              data-bs-target="#htmlModal"
+              data-src="subplans/descriptive.html"
+              data-title="Plans & Pricing"
+              title="Plans & Pricing" data-bs-toggle="tooltip">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      </div>
     <!-- t test -->
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
@@ -1948,9 +1965,9 @@ document.addEventListener('DOMContentLoaded', function () {
 ## Institutional login
 
 At RAISINS, we deeply value academic collaborations and are committed to making statistical analysis easy, affordable, and enjoyable. If you believe your institution could benefit from access to RAISINS, we encourage you to inform the relevant authority to get in touch with us. We offer customised plans, our unique flavours—to match the research needs of your institution.[Click here](plans.qmd) to explore Institutional Licensing for RAISINS.
-:::  
+:::
 
-```{=html}   
+```{=html}
 <!-- RAISINS institutions marquee (smooth version) -->
 <section class="institutions-access my-4" aria-label="institutions with access">
   <h5 class="text-center mb-3 fw-semibold">🏛️ institutions with access</h5>
@@ -2058,7 +2075,6 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
 }
 </style>
 ```
-
 
 ```{=html}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -2171,10 +2187,9 @@ const observer = new IntersectionObserver(entries => {
 
 counters.forEach(counter => observer.observe(counter));
 </script>
-```  
+```
 
-
-```{=html}  
+```{=html}
 <!-- RAISINS Doodle Hover Link -->
 <div class="doodle-container">
   <img src="www/doodle/doodle.webp" alt="RAISINS Doodle for National Education Day" class="doodle-img">
@@ -2230,9 +2245,7 @@ counters.forEach(counter => observer.observe(counter));
   }
 }
 </style>
-
-```  
-
+```
 
 ## 💬 What Our Users Say {.unnumbered}
 
@@ -2315,7 +2328,6 @@ counters.forEach(counter => observer.observe(counter));
   </div>
 </div>
 ```
-
 
 ```{=html}
 <marquee behavior="scroll" direction="left" scrollamount="7" style="margin-top: 1rem;">
@@ -2493,14 +2505,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-```  
-
-
-
-
-
-
-
-
-
-
+```
