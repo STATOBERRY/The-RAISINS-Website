@@ -2123,7 +2123,7 @@ counters.forEach(counter => observer.observe(counter));
         <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
           <div class="card-body">
             <h6 class="card-title mb-1 anchored">Peram Nagaseshi Reddy, Ph.D. Scholar</h6>
-            <p class="card-subtitle text-muted small mb-1">1 month ago</p>
+            <p class="card-subtitle text-muted small mb-1 review-date" data-date="2025-10-26"></p>
             <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
             <p class="card-text">As an agricultural student, I initially found statistics challenging. Thanks to <strong>RAISINS</strong>, I published my M.Sc. manuscript and now use it in my Ph.D. research. Highly recommended!</p>
           </div>
@@ -2135,7 +2135,7 @@ counters.forEach(counter => observer.observe(counter));
         <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
           <div class="card-body">
             <h6 class="card-title mb-1 anchored">ABHILA S R, Assistant Professor, KAU</h6>
-            <p class="card-subtitle text-muted small mb-1">2 months ago</p>
+            <p class="card-subtitle text-muted small mb-1 review-date" data-date="2025-08-26"></p>
             <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
             <p class="card-text">This site makes statistics so much easier to understand! Clean interface, beginner-friendly tools—perfect for students and quick analysis. 😊</p>
           </div>
@@ -2147,7 +2147,7 @@ counters.forEach(counter => observer.observe(counter));
         <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
           <div class="card-body">
             <h6 class="card-title mb-1 anchored">Dr Priya Kumari I, Asst Prof. Floriculture, KAU</h6>
-            <p class="card-subtitle text-muted small mb-1">2 months ago</p>
+            <p class="card-subtitle text-muted small mb-1 review-date" data-date="2025-06-26"></p>
             <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
             <p class="card-text">Started using RAISINS. Simple and super. All the analysis in seconds. Graphs, plots, interpretation—all in a single click. Great work!</p>
           </div>
@@ -2159,7 +2159,7 @@ counters.forEach(counter => observer.observe(counter));
         <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
           <div class="card-body">
             <h6 class="card-title mb-1 anchored">Neha E S, PhD Scholar, Food and Nutrition</h6>
-            <p class="card-subtitle text-muted small mb-1">2 months ago</p>
+            <p class="card-subtitle text-muted small mb-1 review-date" data-date="2025-07-26"></p>
             <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
             <p class="card-text"><strong>RAISINS</strong> is a miracle in digital form! What once took me hours now takes minutes with clean, publication-ready tables. Eternal gratitude to the creators!</p>
           </div>
@@ -2171,12 +2171,41 @@ counters.forEach(counter => observer.observe(counter));
         <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
           <div class="card-body">
             <h6 class="card-title mb-1 anchored">Arindam Deb</h6>
-            <p class="card-subtitle text-muted small mb-1">2 months ago</p>
+            <p class="card-subtitle text-muted small mb-1 review-date" data-date="2025-06-26"></p>
             <p class="text-warning mb-2">⭐⭐⭐⭐</p>
             <p class="card-text">I've been using RAISINS extensively. The ready-made tables are a life saver. A few tweaks like axis and color control would be great additions!</p>
           </div>
         </div>
       </div>
+      
+      <!-- Slide 6 -->
+<div class="carousel-item">
+  <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
+    <div class="card-body">
+      <h6 class="card-title mb-1 anchored">Shankarprasad K S, KAU Alumni</h6>
+      <p class="card-subtitle text-muted small mb-1 review-date" data-date="2025-05-08"></p>
+      <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
+      <p class="card-text">
+        The most efficient and smoothly operating statistical tool for students and researchers for all the basic analysis.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Slide 7 -->
+<div class="carousel-item">
+  <div class="card shadow-sm border-0 mx-auto" style="max-width: 700px;">
+    <div class="card-body">
+      <h6 class="card-title mb-1 anchored">Manjeet Singh, Research Scholar, ICRISAT</h6>
+      <p class="card-subtitle text-muted small mb-1 review-date" data-date="2025-05-11"></p>
+      <p class="text-warning mb-2">⭐⭐⭐⭐⭐</p>
+      <p class="card-text">
+        The tool is awesome and very user friendly, can easily do data analysis with huge datasets with high precision.
+        The software gives detailed analysis. Highly recommended to try.
+      </p>
+    </div>
+  </div>
+</div>
 
     </div>
 
@@ -2191,6 +2220,34 @@ counters.forEach(counter => observer.observe(counter));
     </div>
   </div>
 </div>
+
+<!-- Auto-calc script -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".review-date").forEach(function (el) {
+    const dateStr = el.getAttribute("data-date");
+    const reviewDate = new Date(dateStr);
+    const today = new Date();
+
+    const diffTime = today - reviewDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    const diffMonths = Math.floor(diffDays / 30);
+
+    let label = "";
+
+    if (diffMonths >= 1) {
+      label = diffMonths === 1 ? "1 month ago" : `${diffMonths} months ago`;
+    } else {
+      label = diffDays === 0 ? "Today" :
+              diffDays === 1 ? "1 day ago" :
+              `${diffDays} days ago`;
+    }
+
+    el.textContent = label;
+  });
+});
+</script>
+
 <marquee behavior="scroll" direction="left" scrollamount="7" style="margin-top: 1rem;">
   <img src="www/poweredby.png" alt="poweredby:" height="60" style="margin: 0 1em;">
   <img src="www/agtech.png" alt="kauagtech" height="60" style="margin: 0 1em;">
