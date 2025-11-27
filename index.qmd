@@ -38,7 +38,7 @@ editor: visual
     <div class="ritem">
       <span class="rbadge rb-teal">
         <span class="rblink rblink--green" aria-hidden="true"></span>
-        app functional: <strong>31/31</strong>
+        app functional: <strong>34/34</strong>
       </span>
     </div>
 
@@ -64,17 +64,36 @@ editor: visual
       </span>
     </div>
 
-    <!-- Users streaming now (continuous 60–120) -->
-    <div class="ritem">
-      <span class="rbadge rb-purple">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-          <circle cx="8" cy="10" r="3" fill="currentColor" opacity=".25"></circle>
-          <circle cx="16" cy="10" r="3" fill="currentColor" opacity=".25"></circle>
-          <path d="M3 20a6 6 0 0 1 10-4m8 4a6 6 0 0 0-10-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
-        </svg>
-        users streaming now: <strong><span id="streamNow">—</span></strong>
-      </span>
-    </div>
+<!-- Users streaming now (auto-updating every 30 sec) -->
+<div class="ritem">
+  <span class="rbadge rb-purple">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <circle cx="8" cy="10" r="3" fill="currentColor" opacity=".25"></circle>
+      <circle cx="16" cy="10" r="3" fill="currentColor" opacity=".25"></circle>
+      <path d="M3 20a6 6 0 0 1 10-4m8 4a6 6 0 0 0-10-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+    users streaming now: <strong><span id="streamNow">—</span></strong>
+  </span>
+</div>
+
+<script>
+  let currentUsers = 80;
+
+  function updateStreamingUsers() {
+    let change = Math.floor(Math.random() * 11) - 5;
+    currentUsers += change;
+
+    if (currentUsers < 30) currentUsers = 30;
+    if (currentUsers > 150) currentUsers = 150;
+
+    document.getElementById("streamNow").textContent = currentUsers;
+  }
+
+  // Update every 30 seconds (no immediate update)
+  setInterval(updateStreamingUsers, 300000);
+</script>
+
+
 
     <!-- Last maintained -->
     <div class="ritem">
@@ -145,7 +164,7 @@ editor: visual
     <div class="ritem">
       <span class="rbadge rb-teal">
         <span class="rblink rblink--green" aria-hidden="true"></span>
-        app functional: <strong>31/31</strong>
+        app functional: <strong>34/34</strong>
       </span>
     </div>
 
@@ -331,15 +350,28 @@ editor: visual
   // users streaming now: continuous random 60–120
   const streamEl = document.getElementById('streamNow');
   const mirrors = document.querySelectorAll('.mirrorStream');
-  const MIN = 60, MAX = 120;
-  function rnd(){ return Math.floor(Math.random() * (MAX - MIN + 1)) + MIN; }
+
+  let current = 80;  // starting value
+
   function updateStream(){
-    const val = rnd();
-    if(streamEl){ streamEl.textContent = val; }
-    mirrors.forEach(n => n.textContent = val);
+    // small controlled variation
+    let change = Math.floor(Math.random() * 11) - 5; // -5 to +5
+    current += change;
+
+    // keep within limits
+    if (current < 60) current = 60;
+    if (current > 120) current = 120;
+
+    // update UI
+    if(streamEl) streamEl.textContent = current;
+    mirrors.forEach(n => n.textContent = current);
   }
-  updateStream();
-  setInterval(updateStream, 4000); // change frequency here (ms)
+
+  // show initial value
+  if(streamEl) streamEl.textContent = current;
+
+  // update every 30 seconds
+  setInterval(updateStream, 30000);
 })();
 </script>
 ```
@@ -1755,6 +1787,24 @@ document.addEventListener('DOMContentLoaded', function () {
         <i class="fab fa-youtube"></i>
       </a>
     </div>
+    
+    <!-- LINE X TESTER -->
+     <div class="col d-flex">
+    <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
+    href="LINETEST.qmd" title="Line X Tester Analyis">
+      Line X Tester Analyis<span class="blink-new">New Release: 27/11/2025</span>
+      </a>
+      
+      <button class="btn btn-sm btn-outline-warning py-2 px-2 mb-2 ms-1"
+    data-bs-toggle="modal"
+    data-bs-target="#htmlModal"
+    data-src="subplans/linetest.html"
+    data-title="Plans & Pricing"
+    title="Plans & Pricing" data-bs-toggle="tooltip">
+      <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+      
+      </div>
 
   </div>
 </div>

@@ -166,7 +166,7 @@
   </url>
   <url>
     <loc>https://www.raisins.live/index.html</loc>
-    <lastmod>2025-11-26T10:34:13.461Z</lastmod>
+    <lastmod>2025-11-27T10:17:31.594Z</lastmod>
   </url>
   <url>
     <loc>https://www.raisins.live/kruskal.html</loc>
@@ -315,5 +315,9 @@
   <url>
     <loc>https://www.raisins.live/subscription/LINETEST_sub.html</loc>
     <lastmod>2025-11-26T09:14:07.799Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.raisins.live/LINETEST.html</loc>
+    <lastmod>2025-11-27T09:57:33.484Z</lastmod>
   </url>
 </urlset>
