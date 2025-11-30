@@ -2243,7 +2243,7 @@ counters.forEach(counter => observer.observe(counter));
 <!-- RAISINS Doodle Hover Link -->
 <div class="doodle-container">
   <img src="www/doodle/doodle.webp" alt="RAISINS Doodle for National Education Day" class="doodle-img">
-  <a href="https://en.wikipedia.org/wiki/National_Education_Day_(India)" target="_blank" 
+  <a href="https://www.raisins.live/" 
      rel="noopener" class="doodle-link">Learn more →</a>
 </div>
 

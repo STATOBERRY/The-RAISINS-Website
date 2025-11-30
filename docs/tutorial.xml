@@ -9,7 +9,7 @@
 <link>https://www.raisins.live/tutorial.html</link>
 <atom:link href="https://www.raisins.live/tutorial.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.6.39</generator>
+<generator>quarto-1.7.32</generator>
 <lastBuildDate>Thu, 06 Nov 2025 18:30:00 GMT</lastBuildDate>
 <item>
   <title>Getting Started</title>
@@ -606,9 +606,6 @@ Figure&nbsp;7: Run Analysis Tab in RAISINS
 <h3 data-number="6.1" class="anchored" data-anchor-id="different-plot-types"><span class="header-section-number">6.1</span> Different plot types</h3>
 <p>RAISINS offers a variety of plots related to Hierarchical Cluster Analysis, ensuring that all key visualizations are easily accessible. Each plot includes a gear icon at the top-left corner that lets you customize its appearance to suit your needs. You can also download these plots in high-quality PNG (300 dpi), TIFF, or PDF formats for use in your reports or presentations (see Figure&nbsp;7).</p>
 <p>From Figure&nbsp;8 to Figure&nbsp;15, you can see the different types of dendrograms available in RAISINS. Each one is visually illustrated and accompanied by a clear, insightful description below, making it easy to understand the structure, grouping, and interpretation of each clustering pattern.</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -638,9 +635,6 @@ A vertical dendrogram is a classic, user-friendly way to display hierarchical cl
 </div>
 </div>
 </div>
-</div>
-<div>
-
 </div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
@@ -672,9 +666,6 @@ Ward’s linkage is a hierarchical clustering method focused on minimizing the i
 </div>
 </div>
 </div>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
@@ -704,9 +695,6 @@ A Circular Dendrogram is a radial, space-efficient alternative to the classical 
 </div>
 </div>
 </div>
-</div>
-<div>
-
 </div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
@@ -1023,9 +1011,6 @@ Lets understand the different methods to find optimal number of clusters
 </div>
 </div>
 </details>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
@@ -1282,9 +1267,6 @@ Difference between HCPC and classical HCA
 </ul>
 </details>
 <p>In the RAISINS platform after uploading your data <code>select the labels</code> then <code>select the clustering variables</code> of your choice, then click on <code>Run Analysis</code> and go to <code>HCPC</code> to generate Factor map, Chord diagram and Chord diagram - Cluster means which are downloadable in PNG, TIFF or PDF formats with interpretation and tables. The tables can be either copied or downloaded in <code>.xlsx</code> or <code>.csv</code> formats for use in reports or presentations.</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="3">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
@@ -1338,9 +1320,6 @@ Figure&nbsp;29: <strong>Top variables</strong>
 </div>
 <p>In Figure&nbsp;29, the table shows the top contributing variables for each cluster based on the v.test statistic from the HCPC analysis. For each cluster, the five variables with the highest absolute v.test values are displayed. ‘Mean in category’ and ‘sd in category’ show the standardized mean and standard deviation within the cluster, while ‘Overall mean’ and ‘Overall sd’ provide reference values across all data. The p.value indicates the statistical significance of the variable’s contribution. Variables with higher absolute v.test values and lower p.values are more important in defining the cluster.</p>
 <p>In Figure&nbsp;27, the chord diagram visualizes the relationships between your original variables and the identified clusters from Hierarchical Clustering on Principal Components (HCPC). The outer ring shows two types of segments: your original dataset variables and the clusters (groups of similar observations). The ribbons connecting them represent the strength of association, with wider ribbons indicating that a variable is more characteristic or defining for that particular cluster. The width is determined by v.test statistics, which measure how strongly a variable distinguishes each cluster from others. By examining these connections, you can understand the profile of each cluster - which variables are most prominent in defining each group. Variables with thick ribbons to a cluster are key features of that group, while variables connected to multiple clusters play important roles across different groups. The diagram displays the most characteristic variables for each cluster with weights normalized within each cluster, allowing you to compare the relative importance of variables in defining cluster identities and understand what makes each group unique in your dataset.</p>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
