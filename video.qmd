@@ -12,6 +12,16 @@ editor: visual
 <div class="container px-3">
   <div class="video-grid">
 
+    <!-- desc stat -->
+    <div id="desc-video" class="video-card">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/_2t3W-6R2W4" title="desc" allowfullscreen></iframe>
+      </div>
+      <div class="video-info">
+        <h3 class="video-title">Descriptive Statistics</h3>
+      </div>
+    </div>
+    
     <!-- Video 1 -->
     <div id="ttest-video" class="video-card">
       <div class="video-container">
@@ -41,6 +51,18 @@ editor: visual
     <h3 class="video-title">Cluster Analysis</h3>
   </div>
 </div>
+
+<!-- PCA -->
+<div id="pca-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/R2rbrQFrkBI" title="Principal Component Analyis (PCA)" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Principal Component Analyis (PCA)</h3>
+  </div>
+</div>
+
+
 
         <!-- Video 1 -->
     <div id="rcbd-video" class="video-card">
@@ -274,6 +296,16 @@ editor: visual
   </div>
   <div class="video-info">
     <h3 class="video-title">Diallel analysis (Hayman's Approach)</h3>
+  </div>
+</div>
+
+<!-- Line x tester -->
+<div id="linetest-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/JRX8q0Wa6H4" title="Line x Tester Analysis" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">Line x Tester Analysis</h3>
   </div>
 </div>
 

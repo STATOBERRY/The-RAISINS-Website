@@ -1009,7 +1009,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
     <div class="col d-flex">
       <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
          href="DESC.qmd" title="Descriptive Statistics">
-         Descriptive Statistics <span class="blink-new">New Release: 25/11/2025</span>
+         Descriptive Statistics
       </a>
 
       <!-- plans (icon only, solid cart) -->
@@ -1021,6 +1021,12 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
               title="Plans & Pricing" data-bs-toggle="tooltip">
         <i class="fa-solid fa-cart-shopping"></i>
       </button>
+            <!-- youtube (black → red hover) -->
+      <a class="btn btn-sm btn-outline-youtube py-2 px-2 mb-2 ms-1"
+         href="video.qmd#desc-video" title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
+      
       </div>
     <!-- t test -->
     <div class="col d-flex">
@@ -1098,7 +1104,7 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
   <div class="col d-flex">
     <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
     href="PCA.qmd" title="Principal Component Analysis (PCA)">
-      Principal Component Analysis (PCA)<span class="blink-new">New Release: 24/11/2025</span>
+      Principal Component Analysis (PCA)
       </a>
       
       <button class="btn btn-sm btn-outline-warning py-2 px-2 mb-2 ms-1"
@@ -1109,7 +1115,10 @@ Explore any app for free using <i class="bi bi-eye-fill"></i> Preview Mode — n
     title="Plans & Pricing" data-bs-toggle="tooltip">
       <i class="fa-solid fa-cart-shopping"></i>
       </button>
-      
+           <a class="btn btn-sm btn-outline-youtube py-2 px-2 mb-2 ms-1"
+         href="video.qmd#pca-video" title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
       </div>
        
 
@@ -1792,7 +1801,7 @@ document.addEventListener('DOMContentLoaded', function () {
      <div class="col d-flex">
     <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
     href="LINETEST.qmd" title="Line X Tester Analyis">
-      Line X Tester Analyis<span class="blink-new">New Release: 27/11/2025</span>
+      Line X Tester Analyis
       </a>
       
       <button class="btn btn-sm btn-outline-warning py-2 px-2 mb-2 ms-1"
@@ -1803,7 +1812,10 @@ document.addEventListener('DOMContentLoaded', function () {
     title="Plans & Pricing" data-bs-toggle="tooltip">
       <i class="fa-solid fa-cart-shopping"></i>
       </button>
-      
+           <a class="btn btn-sm btn-outline-youtube py-2 px-2 mb-2 ms-1"
+         href="video.qmd#linetest-video" title="Watch Quick Video">
+        <i class="fab fa-youtube"></i>
+      </a>
       </div>
 
   </div>
