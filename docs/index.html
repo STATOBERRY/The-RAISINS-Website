@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,8 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-d537361e11716f92ab7e5a91490b23aa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -490,8 +490,8 @@ ul.task-list li input[type="checkbox"] {
 <script>
 /* IST-aware helpers + continuous live-ish counters (no heavy libs) */
 (function(){
-  // total users: count-up to 2500
-  const totalTarget = 2500;
+  // total users: count-up to 3000
+  const totalTarget = 3000;
   const totalEl = document.getElementById('userCount');
   let v = 0, step = Math.ceil(totalTarget/45);
   const anim = () => { v += step; if(v >= totalTarget) v = totalTarget; totalEl.textContent = v.toLocaleString('en-IN'); if(v < totalTarget) requestAnimationFrame(anim); };
@@ -1904,6 +1904,8 @@ Institutional login
       <img src="www/institutions/inst4.webp" alt="institution 4" class="inst-logo" height="60" width="160">
       <img src="www/institutions/inst5.webp" alt="institution 5" class="inst-logo" height="60" width="160">
       <img src="www/institutions/inst6.webp" alt="institution 5" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst7.webp" alt="institution 5" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst8.webp" alt="institution 5" class="inst-logo" height="60" width="160">
     </div>
 
     <!-- duplicate track for seamless loop -->
@@ -1914,6 +1916,8 @@ Institutional login
       <img src="www/institutions/inst4.webp" alt="" class="inst-logo" height="60" width="160">
       <img src="www/institutions/inst5.webp" alt="" class="inst-logo" height="60" width="160">
       <img src="www/institutions/inst6.webp" alt="" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst7.webp" alt="institution 5" class="inst-logo" height="60" width="160">
+      <img src="www/institutions/inst8.webp" alt="institution 5" class="inst-logo" height="60" width="160">
     </div>
   </div>
 </section>
@@ -2054,7 +2058,7 @@ Institutional login
   <div class="counter-box" data-aos="fade-up">
     <div class="icon"><i class="fas fa-users"></i></div>
     <div class="text-group">
-      <div class="number" data-target="2500">0</div>
+      <div class="number" data-target="3000">0</div>
       <div class="label">Users</div>
     </div>
   </div>
@@ -2062,7 +2066,7 @@ Institutional login
   <div class="counter-box" data-aos="fade-up" data-aos-delay="100">
     <div class="icon"><i class="fas fa-university"></i></div>
     <div class="text-group">
-      <div class="number" data-target="6">0</div>
+      <div class="number" data-target="8">0</div>
       <div class="label">Institutions</div>
     </div>
   </div>
@@ -2300,7 +2304,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
-
 <marquee behavior="scroll" direction="left" scrollamount="7" style="margin-top: 1rem;">
   <img src="www/poweredby.png" alt="poweredby:" height="60" style="margin: 0 1em;">
   <img src="www/agtech.png" alt="kauagtech" height="60" style="margin: 0 1em;">
