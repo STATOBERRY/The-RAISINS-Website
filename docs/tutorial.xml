@@ -9,7 +9,7 @@
 <link>https://www.raisins.live/tutorial.html</link>
 <atom:link href="https://www.raisins.live/tutorial.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.7.32</generator>
+<generator>quarto-1.8.25</generator>
 <lastBuildDate>Thu, 06 Nov 2025 18:30:00 GMT</lastBuildDate>
 <item>
   <title>Getting Started</title>
@@ -455,7 +455,7 @@ Figure&nbsp;1: Cluster analysis in RAISINS
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-In short
+<span class="screen-reader-only">Tip</span>In short
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -556,7 +556,7 @@ Figure&nbsp;5: Uploading the data file
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Dendrogram
+<span class="screen-reader-only">Note</span>Dendrogram
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -742,7 +742,7 @@ Lets understand the different linkage methods
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Single linkage
+<span class="screen-reader-only">Note</span>🔹 Single linkage
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -758,7 +758,7 @@ Lets understand the different linkage methods
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Complete linkage
+<span class="screen-reader-only">Note</span>🔹 Complete linkage
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -774,7 +774,7 @@ Lets understand the different linkage methods
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Average linkage
+<span class="screen-reader-only">Note</span>🔹 Average linkage
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -790,7 +790,7 @@ Lets understand the different linkage methods
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Ward.D2 Linkage
+<span class="screen-reader-only">Note</span>🔹 Ward.D2 Linkage
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -806,7 +806,7 @@ Lets understand the different linkage methods
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 McQuitty Linkage
+<span class="screen-reader-only">Note</span>🔹 McQuitty Linkage
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -822,7 +822,7 @@ Lets understand the different linkage methods
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Median Linkage
+<span class="screen-reader-only">Note</span>🔹 Median Linkage
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -838,7 +838,7 @@ Lets understand the different linkage methods
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Centroid Linkage
+<span class="screen-reader-only">Note</span>🔹 Centroid Linkage
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -863,7 +863,7 @@ Lets understand the different Distance Metrics
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Euclidean Distance
+<span class="screen-reader-only">Note</span>🔹 Euclidean Distance
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -879,7 +879,7 @@ Lets understand the different Distance Metrics
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Manhattan Distance
+<span class="screen-reader-only">Note</span>🔹 Manhattan Distance
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -895,7 +895,7 @@ Lets understand the different Distance Metrics
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Maximum Distance
+<span class="screen-reader-only">Note</span>🔹 Maximum Distance
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -911,7 +911,7 @@ Lets understand the different Distance Metrics
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Canberra Distance
+<span class="screen-reader-only">Note</span>🔹 Canberra Distance
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -927,7 +927,7 @@ Lets understand the different Distance Metrics
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Minkowski Distance
+<span class="screen-reader-only">Note</span>🔹 Minkowski Distance
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -943,7 +943,7 @@ Lets understand the different Distance Metrics
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Median and Centroid
+<span class="screen-reader-only">Note</span>🔹 Median and Centroid
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -968,7 +968,7 @@ Lets understand the different methods to find optimal number of clusters
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Elbow Method
+<span class="screen-reader-only">Note</span>🔹 Elbow Method
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -984,7 +984,7 @@ Lets understand the different methods to find optimal number of clusters
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Silhouette Method
+<span class="screen-reader-only">Note</span>🔹 Silhouette Method
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1000,7 +1000,7 @@ Lets understand the different methods to find optimal number of clusters
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Gap Statistic
+<span class="screen-reader-only">Note</span>🔹 Gap Statistic
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1063,7 +1063,7 @@ Lets understand the different scaling options
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 zscore
+<span class="screen-reader-only">Note</span>🔹 zscore
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1079,7 +1079,7 @@ Lets understand the different scaling options
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Center
+<span class="screen-reader-only">Note</span>🔹 Center
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1095,7 +1095,7 @@ Lets understand the different scaling options
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 MinMax
+<span class="screen-reader-only">Note</span>🔹 MinMax
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1111,7 +1111,7 @@ Lets understand the different scaling options
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Unit Length
+<span class="screen-reader-only">Note</span>🔹 Unit Length
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1127,7 +1127,7 @@ Lets understand the different scaling options
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-🔹 Robust
+<span class="screen-reader-only">Note</span>🔹 Robust
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
