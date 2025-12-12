@@ -269,6 +269,16 @@ editor: visual
   </div>
 </div>
 
+<!-- AMMI analysis -->
+<div id="ammianalysis-video" class="video-card">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/-_TQdbHaMjs" title="AMMI analysis" allowfullscreen></iframe>
+  </div>
+  <div class="video-info">
+    <h3 class="video-title">AMMI analysis</h3>
+  </div>
+</div>
+
 <!-- Path analysis -->
 <div id="pathanalysis-video" class="video-card">
   <div class="video-container">
