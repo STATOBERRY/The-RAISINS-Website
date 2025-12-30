@@ -2370,7 +2370,7 @@ counters.forEach(counter => observer.observe(counter));
 
 <style>
 /* =========================================
-   RAISINS Calendar 2026 – Scoped Styles
+   RAISINS Calendar 2026 – Responsive & Scoped
    ========================================= */
 
 .raisins-calendar {
@@ -2379,9 +2379,10 @@ counters.forEach(counter => observer.observe(counter));
   --shadow: rgba(0,0,0,0.45);
   --bottom-accent: #ce84db;
 
-  margin: 2.5rem auto;
-  padding: 1.25rem 1.25rem 1.75rem;
+  margin: 2rem auto;
+  padding: 1rem 1rem 1.4rem;
   width: fit-content;
+  max-width: 100%;
 
   background: linear-gradient(
     to bottom,
@@ -2390,19 +2391,19 @@ counters.forEach(counter => observer.observe(counter));
     var(--bottom-accent) 100%
   );
 
-  border-radius: 24px;
+  border-radius: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   font-family: system-ui;
 }
 
-/* Calendar frame */
+/* Calendar frame – responsive */
 .raisins-calendar .calendar {
-  width: 760px;
-  height: 440px;
-  perspective: 2200px;
+  width: min(92vw, 760px);      /* scales on mobile */
+  aspect-ratio: 760 / 440;     /* keeps landscape */
+  perspective: 1600px;
   position: relative;
 }
 
@@ -2411,12 +2412,12 @@ counters.forEach(counter => observer.observe(counter));
   width: 100vw;
   height: 100vh;
   margin: 0;
+  padding: 1rem;
   border-radius: 0;
 }
 
 .raisins-calendar.fullscreen .calendar {
-  width: 90vw;
-  height: 70vh;
+  width: min(96vw, 96vh * 1.7);
 }
 
 /* Flip sheet */
@@ -2431,22 +2432,22 @@ counters.forEach(counter => observer.observe(counter));
 /* Page faces */
 .raisins-calendar .face {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 40px 80px var(--shadow);
+  border-radius: 16px;
+  box-shadow: 0 28px 60px var(--shadow);
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Images */
+/* Images – mobile safe */
 .raisins-calendar .face img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  touch-action: manipulation;
 }
 
 /* Back face */
@@ -2456,11 +2457,11 @@ counters.forEach(counter => observer.observe(counter));
 
 /* Flip animations */
 .raisins-calendar .flip-next {
-  animation: raisinsFlipNext 1.1s cubic-bezier(.4,0,.2,1) forwards;
+  animation: raisinsFlipNext 0.9s ease forwards;
 }
 
 .raisins-calendar .flip-prev {
-  animation: raisinsFlipPrev 1.1s cubic-bezier(.4,0,.2,1) forwards;
+  animation: raisinsFlipPrev 0.9s ease forwards;
 }
 
 @keyframes raisinsFlipNext {
@@ -2481,45 +2482,52 @@ counters.forEach(counter => observer.observe(counter));
   display: none;
   justify-content: center;
   align-items: center;
-  border-radius: 18px;
+  border-radius: 16px;
   z-index: 10;
 }
 
 .raisins-calendar .transition img {
-  width: 200px;
+  width: min(160px, 40vw);
   opacity: 0.9;
 }
 
-/* Controls */
+/* Controls – mobile friendly */
 .raisins-calendar .controls {
   display: flex;
-  justify-content: center;
-  gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
 }
 
 .raisins-calendar .control-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 22px;
+  gap: 8px;
+  padding: 10px 18px;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--navy), var(--navy-dark));
   color: #ffffff;
   border: none;
-  font-size: 14px;
+  font-size: 13px;
   cursor: pointer;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.35);
-  transition: transform .2s ease, box-shadow .2s ease;
-}
-
-.raisins-calendar .control-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 45px rgba(0,0,0,0.45);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+  touch-action: manipulation;
 }
 
 .raisins-calendar .control-btn span {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .raisins-calendar {
+    padding: 0.75rem;
+  }
+
+  .raisins-calendar .control-btn {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
 }
 </style>
 
@@ -2543,21 +2551,19 @@ counters.forEach(counter => observer.observe(counter));
 
 <div class="controls">
   <button class="control-btn" id="raisinsPrevBtn">
-    <span>◀</span> Previous
+    <span>◀</span> Prev
   </button>
-
   <button class="control-btn" id="raisinsNextBtn">
     Next <span>▶</span>
   </button>
-
   <button class="control-btn" id="raisinsFullBtn">
-    <span>⛶</span> Full screen
+    <span>⛶</span> Full
   </button>
 </div>
 
 <script>
 /* =========================================
-   RAISINS Calendar 2026 – Script
+   RAISINS Calendar – Mobile-safe Script
    ========================================= */
 
 const raisinsImages = [
@@ -2575,8 +2581,8 @@ const raisinsImages = [
   "https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/Calendar2026%2Fdecember.jpeg?alt=media"
 ];
 
-let raisinsIndex = 0;
-let raisinsAnimating = false;
+let index = 0;
+let animating = false;
 
 const wrapper = document.querySelector(".raisins-calendar");
 const sheet   = document.getElementById("raisinsSheet");
@@ -2585,32 +2591,29 @@ const back    = document.getElementById("raisinsBackImg");
 const overlay = document.getElementById("raisinsTransition");
 const fullBtn = document.getElementById("raisinsFullBtn");
 
-front.src = raisinsImages[raisinsIndex];
+front.src = raisinsImages[index];
 
-document.getElementById("raisinsNextBtn").onclick = () => raisinsFlip(1);
-document.getElementById("raisinsPrevBtn").onclick = () => raisinsFlip(-1);
+document.getElementById("raisinsNextBtn").onclick = () => flip(1);
+document.getElementById("raisinsPrevBtn").onclick = () => flip(-1);
 fullBtn.onclick = toggleFullscreen;
 
-function raisinsFlip(dir) {
-  if (raisinsAnimating) return;
-  raisinsAnimating = true;
+function flip(dir) {
+  if (animating) return;
+  animating = true;
 
-  const nextIndex =
-    (raisinsIndex + dir + raisinsImages.length) % raisinsImages.length;
-
+  const nextIndex = (index + dir + raisinsImages.length) % raisinsImages.length;
   back.src = raisinsImages[nextIndex];
-  overlay.style.display = "flex";
 
-  sheet.className =
-    "sheet " + (dir === 1 ? "flip-next" : "flip-prev");
+  overlay.style.display = "flex";
+  sheet.className = "sheet " + (dir === 1 ? "flip-next" : "flip-prev");
 
   setTimeout(() => {
-    raisinsIndex = nextIndex;
-    front.src = raisinsImages[raisinsIndex];
+    index = nextIndex;
+    front.src = raisinsImages[index];
     sheet.className = "sheet";
     overlay.style.display = "none";
-    raisinsAnimating = false;
-  }, 1100);
+    animating = false;
+  }, 900);
 }
 
 /* Fullscreen toggle */
@@ -2622,20 +2625,15 @@ function toggleFullscreen() {
   }
 }
 
-/* Update button text/icon */
 document.addEventListener("fullscreenchange", () => {
-  if (document.fullscreenElement) {
-    wrapper.classList.add("fullscreen");
-    fullBtn.innerHTML = "<span>⤢</span> Exit full screen";
-  } else {
-    wrapper.classList.remove("fullscreen");
-    fullBtn.innerHTML = "<span>⛶</span> Full screen";
-  }
+  wrapper.classList.toggle("fullscreen", !!document.fullscreenElement);
+  fullBtn.innerHTML = document.fullscreenElement
+    ? "<span>⤢</span> Exit"
+    : "<span>⛶</span> Full";
 });
 </script>
 
 </div>
-
 
 </section>
 <section id="what-our-users-say" class="level2 unnumbered">
