@@ -2369,9 +2369,9 @@ counters.forEach(counter => observer.observe(counter));
 <div class="raisins-calendar">
 
 <style>
-/* ================================
-   RAISINS Calendar – Scoped Styles
-   ================================ */
+/* =========================================
+   RAISINS Calendar 2026 – Scoped Styles
+   ========================================= */
 
 .raisins-calendar {
   --navy: #1f345c;
@@ -2380,17 +2380,21 @@ counters.forEach(counter => observer.observe(counter));
   --bottom-accent: #ce84db;
 
   margin: 2.5rem auto;
-  padding: 2rem 1.5rem 3rem;
+  padding: 1.25rem 1.25rem 1.75rem;
+  width: fit-content;
+
   background: linear-gradient(
     to bottom,
     #111827 0%,
-    #0b1220 55%,
+    #0b1220 60%,
     var(--bottom-accent) 100%
   );
-  border-radius: 28px;
+
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.25rem;
   font-family: system-ui;
 }
 
@@ -2399,8 +2403,20 @@ counters.forEach(counter => observer.observe(counter));
   width: 760px;
   height: 440px;
   perspective: 2200px;
-  margin-bottom: 28px;
   position: relative;
+}
+
+/* Fullscreen sizing */
+.raisins-calendar.fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  border-radius: 0;
+}
+
+.raisins-calendar.fullscreen .calendar {
+  width: 90vw;
+  height: 70vh;
 }
 
 /* Flip sheet */
@@ -2477,14 +2493,16 @@ counters.forEach(counter => observer.observe(counter));
 /* Controls */
 .raisins-calendar .controls {
   display: flex;
-  gap: 22px;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .raisins-calendar .control-btn {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 26px;
+  padding: 12px 22px;
   border-radius: 999px;
   background: linear-gradient(135deg, var(--navy), var(--navy-dark));
   color: #ffffff;
@@ -2527,15 +2545,20 @@ counters.forEach(counter => observer.observe(counter));
   <button class="control-btn" id="raisinsPrevBtn">
     <span>◀</span> Previous
   </button>
+
   <button class="control-btn" id="raisinsNextBtn">
     Next <span>▶</span>
+  </button>
+
+  <button class="control-btn" id="raisinsFullBtn">
+    <span>⛶</span> Full screen
   </button>
 </div>
 
 <script>
-/* ================================
-   RAISINS Calendar – Script
-   ================================ */
+/* =========================================
+   RAISINS Calendar 2026 – Script
+   ========================================= */
 
 const raisinsImages = [
   "https://firebasestorage.googleapis.com/v0/b/raisins-2025.firebasestorage.app/o/Calendar2026%2Fjanuary.jpeg?alt=media",
@@ -2555,15 +2578,18 @@ const raisinsImages = [
 let raisinsIndex = 0;
 let raisinsAnimating = false;
 
+const wrapper = document.querySelector(".raisins-calendar");
 const sheet   = document.getElementById("raisinsSheet");
 const front   = document.getElementById("raisinsFrontImg");
 const back    = document.getElementById("raisinsBackImg");
 const overlay = document.getElementById("raisinsTransition");
+const fullBtn = document.getElementById("raisinsFullBtn");
 
 front.src = raisinsImages[raisinsIndex];
 
 document.getElementById("raisinsNextBtn").onclick = () => raisinsFlip(1);
 document.getElementById("raisinsPrevBtn").onclick = () => raisinsFlip(-1);
+fullBtn.onclick = toggleFullscreen;
 
 function raisinsFlip(dir) {
   if (raisinsAnimating) return;
@@ -2586,9 +2612,31 @@ function raisinsFlip(dir) {
     raisinsAnimating = false;
   }, 1100);
 }
+
+/* Fullscreen toggle */
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    wrapper.requestFullscreen();
+  } else {
+    document.exitFullscreen();
+  }
+}
+
+/* Update button text/icon */
+document.addEventListener("fullscreenchange", () => {
+  if (document.fullscreenElement) {
+    wrapper.classList.add("fullscreen");
+    fullBtn.innerHTML = "<span>⤢</span> Exit full screen";
+  } else {
+    wrapper.classList.remove("fullscreen");
+    fullBtn.innerHTML = "<span>⛶</span> Full screen";
+  }
+});
 </script>
 
 </div>
+
+
 </section>
 <section id="what-our-users-say" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="what-our-users-say">💬 What Our Users Say</h2>
