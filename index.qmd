@@ -38,7 +38,7 @@ editor: visual
     <div class="ritem">
       <span class="rbadge rb-teal">
         <span class="rblink rblink--green" aria-hidden="true"></span>
-        app functional: <strong>36/36</strong>
+        app functional: <strong>38/38</strong>
       </span>
     </div>
 
@@ -164,7 +164,7 @@ editor: visual
     <div class="ritem">
       <span class="rbadge rb-teal">
         <span class="rblink rblink--green" aria-hidden="true"></span>
-        app functional: <strong>36/36</strong>
+        app functional: <strong>38/38</strong>
       </span>
     </div>
 
@@ -1840,6 +1840,26 @@ document.addEventListener('DOMContentLoaded', function () {
       </a>
     </div>
     
+    <!-- Griffings method 1 -->
+           <div class="col d-flex">
+      <a class="btn btn-outline-primary text-start small py-1 px-3 mb-2 flex-grow-1"
+         href="GRIFFING1.qmd"
+         title="Diallel Analysis (Griffing Method I)">
+         Diallel Analysis (Griffing Method I) <span class="blink-new">New Release: 09/01/2026</span>
+
+      </a>
+      <!-- plans (icon only) -->
+      <button class="btn btn-outline-warning small py-2 px-2 mb-2 ms-1"
+              data-bs-toggle="modal"
+              data-bs-target="#htmlModal"
+              data-src="subplans/griffing1.html"
+              data-title="Plans & Pricing"
+              title="Plans & Pricing">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+
+    </div>
+    
     <!-- LINE X TESTER -->
      <div class="col d-flex">
     <a class="btn btn-outline-primary text-start small py-2 px-3 mb-2 flex-grow-1"
@@ -2263,7 +2283,7 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
   <div class="counter-box" data-aos="fade-up">
     <div class="icon"><i class="fas fa-users"></i></div>
     <div class="text-group">
-      <div class="number" data-target="3000">0</div>
+      <div class="number" data-target="3500">0</div>
       <div class="label">Users</div>
     </div>
   </div>
@@ -2279,7 +2299,7 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
   <div class="counter-box" data-aos="fade-up" data-aos-delay="200">
     <div class="icon"><i class="fas fa-clock"></i></div>
     <div class="text-group">
-      <div class="number" data-target="20000">0</div>
+      <div class="number" data-target="25000">0</div>
       <div class="label">User Hours</div>
     </div>
   </div>
