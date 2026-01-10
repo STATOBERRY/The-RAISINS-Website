@@ -2224,7 +2224,324 @@ At RAISINS, we deeply value academic collaborations and are committed to making 
   .marquee__track { animation: none; }
 }
 </style>
-```
+```  
+
+::: callout-note
+## Citing RAISINS
+
+RAISINS is an open-reviewed online platform developed to support transparent, reproducible, and high-quality research in agriculture and allied sciences. If you have used RAISINS for data analysis, visualization, or statistical modelling in your research, we encourage you to cite the software in your publications. Proper citation helps acknowledge the tool and supports its continued development for the academic community.  
+[Click here](citation.qmd) to view the recommended citation format for RAISINS.
+:::
+
+
+```{=html}  
+<!-- RAISINS citations marquee – APA style, premium cards -->
+<section class="citations-access my-4" aria-label="papers citing RAISINS">
+  <h4 class="text-center mb-3 fw-semibold">
+    RAISINS Cited in Peer-reviewed Journals
+    <span class="cite-count">5 Citations!</span>
+  </h4>
+
+  <div class="marquee" role="region" aria-label="citations ticker">
+
+    <!-- Track 1 -->
+    <div class="marquee__track">
+
+      <a class="citation-card"
+         href="https://www.tandfonline.com/doi/abs/10.1080/03235408.2025.2607734"
+         target="_blank" rel="noopener">
+
+        <span class="year">2026</span>
+        <div class="citation-body">
+          <div class="citation-authors">Narwade et al. (2026)</div>
+          <div class="citation-title">
+            Eco-friendly management of <em>Earias vittella</em> using a novel
+            sequential pest management strategy in okra ecosystem.
+          </div>
+          <div class="citation-journal">
+            <em>Archives of Phytopathology and Plant Protection</em>
+          </div>
+        </div>
+      </a>
+
+      <a class="citation-card"
+         href="https://link.springer.com/article/10.1007/s11694-025-03746-0"
+         target="_blank" rel="noopener">
+
+        <span class="year">2025</span>
+        <div class="citation-body">
+          <div class="citation-authors">Beegum et al. (2025)</div>
+          <div class="citation-title">
+            Quality characterization of natural vinegars from coconut derivatives: a comparative study with cider apple vinegar
+          </div>
+          <div class="citation-journal">
+            <em>Journal of Food Measurement and Characterization</em>
+          </div>
+        </div>
+      </a>
+
+      <a class="citation-card" href="https://www.jostapubs.com/volume1/issue1/AGRON/JOSTA615202501736.html" target="_blank" rel="noopener">
+        <span class="year">2025</span>
+        <div class="citation-body">
+          <div class="citation-authors">Vikram et al. (2025)</div>
+          <div class="citation-title">
+            Biochar for enhancing yield, nutrient uptake, and soil fertility in okra.
+          </div>
+          <div class="citation-journal">
+            <em>Journal of Sustainable Technology in Agriculture</em>
+          </div>
+        </div>
+      </a>
+
+      <a class="citation-card" href="https://journaljabb.com/index.php/JABB/article/view/3325" target="_blank" rel="noopener">
+        <span class="year">2025</span>
+        <div class="citation-body">
+          <div class="citation-authors">Harsha et al. (2025)</div>
+          <div class="citation-title">
+            In vitro germination and seedling development of mangosteen influenced by
+            GA₃ and sucrose levels.
+          </div>
+          <div class="citation-journal">
+            <em>Journal of Advances in Biology & Biotechnology</em>
+          </div>
+        </div>
+      </a>
+
+      <a class="citation-card" href="https://www.jostapubs.com/volume1/issue1/lovelyB/generationmean.html" target="_blank" rel="noopener">
+        <span class="year">2025</span>
+        <div class="citation-body">
+          <div class="citation-authors">Lovely & Radhadevi (2025)</div>
+          <div class="citation-title">
+            Digenic interactions on yield in yardlong bean:
+            A generation mean analysis.
+          </div>
+          <div class="citation-journal">
+            <em>Journal of Sustainable Technology in Agriculture</em>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+<!-- Track 2 (duplicate for seamless loop) -->
+<div class="marquee__track" aria-hidden="true">
+
+  <a class="citation-card"
+     href="https://www.tandfonline.com/doi/abs/10.1080/03235408.2025.2607734"
+     target="_blank" rel="noopener">
+    <span class="year">2026</span>
+    <div class="citation-body">
+      <div class="citation-authors">Narwade et al. (2026)</div>
+      <div class="citation-title">
+        Eco-friendly management of <em>Earias vittella</em> using a novel
+        sequential pest management strategy in okra ecosystem.
+      </div>
+      <div class="citation-journal">
+        <em>Archives of Phytopathology and Plant Protection</em>
+      </div>
+    </div>
+  </a>
+
+  <a class="citation-card"
+     href="https://link.springer.com/article/10.1007/s11694-025-03746-0"
+     target="_blank" rel="noopener">
+    <span class="year">2025</span>
+    <div class="citation-body">
+      <div class="citation-authors">Beegum et al. (2025)</div>
+      <div class="citation-title">
+        Quality characterization of natural vinegars from coconut derivatives:
+        a comparative study with cider apple vinegar
+      </div>
+      <div class="citation-journal">
+        <em>Journal of Food Measurement and Characterization</em>
+      </div>
+    </div>
+  </a>
+
+  <a class="citation-card"
+     href="https://www.jostapubs.com/volume1/issue1/AGRON/JOSTA615202501736.html"
+     target="_blank" rel="noopener">
+    <span class="year">2025</span>
+    <div class="citation-body">
+      <div class="citation-authors">Vikram et al. (2025)</div>
+      <div class="citation-title">
+        Biochar for enhancing yield, nutrient uptake, and soil fertility in okra.
+      </div>
+      <div class="citation-journal">
+        <em>Journal of Sustainable Technology in Agriculture</em>
+      </div>
+    </div>
+  </a>
+
+  <a class="citation-card"
+     href="https://journaljabb.com/index.php/JABB/article/view/3325"
+     target="_blank" rel="noopener">
+    <span class="year">2025</span>
+    <div class="citation-body">
+      <div class="citation-authors">Harsha et al. (2025)</div>
+      <div class="citation-title">
+        In vitro germination and seedling development of mangosteen influenced by
+        GA₃ and sucrose levels.
+      </div>
+      <div class="citation-journal">
+        <em>Journal of Advances in Biology & Biotechnology</em>
+      </div>
+    </div>
+  </a>
+
+  <a class="citation-card"
+     href="https://www.jostapubs.com/volume1/issue1/lovelyB/generationmean.html"
+     target="_blank" rel="noopener">
+    <span class="year">2025</span>
+    <div class="citation-body">
+      <div class="citation-authors">Lovely &amp; Radhadevi (2025)</div>
+      <div class="citation-title">
+        Digenic interactions on yield in yardlong bean:
+        A generation mean analysis.
+      </div>
+      <div class="citation-journal">
+        <em>Journal of Sustainable Technology in Agriculture</em>
+      </div>
+    </div>
+  </a>
+
+</div>
+</section>
+
+<style>
+/* container */
+.citations-access {
+  background: #f8f9fa;
+  border-radius: 18px;
+  padding: 1.6rem 0 1.8rem;
+  box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+
+/* citation count badge */
+.cite-count {
+  margin-left: .5rem;
+  background: #1f345c;
+  color: #fff;
+  padding: .35rem .7rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+/* marquee */
+.marquee {
+  --gap: 3rem;
+  --duration: 24s;
+  display: flex;
+  overflow: hidden;
+  gap: var(--gap);
+  position: relative;
+  padding-inline: .75rem;
+}
+
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 80px;
+  pointer-events: none;
+  z-index: 2;
+}
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #f8f9fa, rgba(248,249,250,0));
+}
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #f8f9fa, rgba(248,249,250,0));
+}
+
+.marquee__track {
+  flex-shrink: 0;
+  display: flex;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+  will-change: transform;
+}
+
+@keyframes scroll {
+  from { transform: translate3d(0,0,0); }
+  to   { transform: translate3d(calc(-100% - var(--gap)),0,0); }
+}
+
+.marquee:hover .marquee__track {
+  animation-play-state: paused;
+}
+
+/* citation card */
+.citation-card {
+  min-width: 520px;
+  max-width: 560px;
+  background: #ffffff;
+  border-left: 7px solid #0b5a56;
+  padding: 1.2rem 1.3rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 1rem;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.citation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.14);
+}
+
+.citation-card .year {
+  background: #0b5a56;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: .4rem .6rem;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.citation-authors {
+  font-weight: 600;
+  color: #1f345c;
+  font-size: .95rem;
+}
+
+.citation-title {
+  margin-top: .3rem;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.citation-journal {
+  margin-top: .4rem;
+  font-size: .85rem;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .citation-card {
+    min-width: 360px;
+    font-size: .85rem;
+  }
+  .marquee {
+    --gap: 1.8rem;
+    --duration: 18s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track { animation: none; }
+}
+</style>
+
+```  
+
 
 ```{=html}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
